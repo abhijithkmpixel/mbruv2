@@ -1,0 +1,138 @@
+/** @format */
+
+.hero__banner {
+  padding: 0;
+  width: 100%;
+  height: calc(100dvh - 75px);
+  position: relative;
+  .scroll__down {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 16px;
+    height: auto;
+    bottom: 100px;
+    z-index: 30;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    padding: 0;
+  }
+  .hero__banner__slider {
+    width: 100%;
+    height: 100%;
+    .slick-list {
+      height: 100%;
+      width: 100%;
+      .slick-track {
+        height: 100%;
+      }
+    }
+    .hero__banner__slider__item {
+      width: 100vw;
+      height: 100%;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        // background: linear-gradient(to bottom, rgba());
+        background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.8) 9.98%,
+          rgba(0, 0, 0, 0.4) 66.71%,
+          rgba(0, 0, 0, 0) 100%
+        );
+        opacity: 0.8;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+        z-index: 5;
+      }
+      .hero__banner__slider__item__content {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 600px;
+        text-align: center;
+        bottom: 180px;
+        z-index: 15;
+        h2 {
+          font-size: 38px;
+          line-height: 1.1;
+          color: #fff;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  .hero__banner__navigation__outer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    bottom: 140px;
+    display: flex;
+    align-items: center;
+    .slick__arrow {
+      background-color: transparent;
+      border: 0;
+      padding: 0;
+      width: 7px;
+      height: auto;
+      outline: none;
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+      svg {
+        width: 100%;
+        height: auto;
+      }
+      &.slick-disabled {
+        opacity: 0.6;
+      }
+    }
+    .hero__banner__navigation__inner {
+      width: max-content;
+    }
+    .slick-dots {
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      position: static;
+      justify-content: center;
+      li {
+        margin: 0 8px;
+        width: unset;
+        height: unset;
+        button {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: rgba($color: #fff, $alpha: 0.5);
+          border-left: 2px solid transparent;
+          border-right: 2px solid transparent;
+          padding: 0;
+          &::before {
+            content: none;
+          }
+        }
+        &.slick-active {
+          button {
+            border-radius: 0;
+            background-color: transparent;
+            border-color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
