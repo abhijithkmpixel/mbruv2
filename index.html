@@ -44,6 +44,8 @@
     <link rel="stylesheet" href="./assets/css/app.css" />
   </head>
   <body>
+   
+
     <header>
       <div class="container">
         <div class="header__inner">
@@ -51,7 +53,7 @@
             <a href="#" class="brand__logo"
               ><img src="./assets/img/mbrulogo.svg" alt=""
             /></a>
-            <ul class="header__menu__toggle__hamburger">
+            <ul class="header__menu__toggle__hamburger" id="header__menu__toggle__hamburger">
               <li></li>
               <li></li>
               <li></li>
@@ -119,6 +121,81 @@
         </div>
       </div>
     </header>
+
+     <!-- hamburger menu -->
+    <div class="fixed__main__navigation__menu__overlay"></div>
+    <aside class="fixed__main__navigation__menu">
+      <buton class="close__menu" id="close__menu__fixed__main__navigation__menu" type="button"
+        ><svg
+          width="14"
+          height="14"
+          viewBox="0 0 14 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M13.3002 0.709971C12.9102 0.319971 12.2802 0.319971 11.8902 0.709971L7.00022 5.58997L2.11021 0.699971C1.72021 0.309971 1.09021 0.309971 0.700215 0.699971C0.310215 1.08997 0.310215 1.71997 0.700215 2.10997L5.59021 6.99997L0.700215 11.89C0.310215 12.28 0.310215 12.91 0.700215 13.3C1.09021 13.69 1.72021 13.69 2.11021 13.3L7.00022 8.40997L11.8902 13.3C12.2802 13.69 12.9102 13.69 13.3002 13.3C13.6902 12.91 13.6902 12.28 13.3002 11.89L8.41021 6.99997L13.3002 2.10997C13.6802 1.72997 13.6802 1.08997 13.3002 0.709971Z"
+            fill="#AEAEAE" />
+        </svg>
+      </buton>
+      <ul>
+        <li><a href="#">Admissions</a></li>
+        <li class="has__children">
+          <a href="#">Academics</a>
+          <ul class="sub__menu">
+            <li class="sub__menu__has__children">
+              <a href="#">Academics</a>
+              <ul class="sub__menu__has__children__menu">
+                <li><h5>Academics</h5></li>
+                <li>
+                  <a href="#">Hamdan Bin Mohammed College of Dental Medicine</a>
+                </li>
+                <li><a href="#">College of Medicine</a></li>
+                <li><a href="#">College of Nursing and Midwifery</a></li>
+                <li>
+                  <a href="#"
+                    >The Institute for Excellence in Health Professions
+                    Education</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="sub__menu__has__children">
+              <a href="#">College Catalogs</a>
+              <ul class="sub__menu__has__children__menu">
+                <li><h5>College Catalogs</h5></li>
+                <li>
+                  <a href="#">Hamdan Bin Mohammed College of Dental Medicine</a>
+                </li>
+                <li><a href="#">College of Medicine</a></li>
+                <li><a href="#">College of Nursing and Midwifery</a></li>
+                <li>
+                  <a href="#"
+                    >The Institute for Excellence in Health Professions
+                    Education</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="">
+              <a href="#">Faculty</a>
+            </li>
+            <li class="">
+              <a href="#">Student Life</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Postgraduate Medical Education</a></li>
+        <li><a href="#">Research</a></li>
+        <li><a href="#">Learning Resources</a></li>
+        <li><a href="#">About MBRU</a></li>
+        <li><a href="#">Media Center</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </aside>
+    <!-- hamburger menu end-->
+    
     <section class="hero__banner">
       <div class="hero__banner__slider" id="homepage_hero_slider">
         <div class="hero__banner__slider__item">
@@ -164,7 +241,7 @@
         </svg>
       </button>
     </section>
-    <section class="services__grid__listing">
+    <section class="services__grid__listing p-0">
       <div class="container">
         <div class="row">
           <div class="col-12 col-sm-6 col-xl-3">
@@ -198,6 +275,866 @@
         </div>
       </div>
     </section>
+    <section class="why__choose__us pt-2">
+      <div class="container">
+        <h2 class="primary__title">Why Choose MBRU?</h2>
+        <div class="row why__choose__us__row">
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="why__choose__us__card">
+              <picture><img src="./uploads/w1.jpg" alt="" /></picture>
+              <div class="why__choose__us__card__body">
+                <h4>Innovative Research Driven Environment</h4>
+                <p>
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatu
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="why__choose__us__card">
+              <picture><img src="./uploads/w2.jpg" alt="" /></picture>
+              <div class="why__choose__us__card__body">
+                <h4>Dubai’s Largest Medical Simulation Center</h4>
+                <p>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo con
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="why__choose__us__card">
+              <picture><img src="./uploads/w3.jpg" alt="" /></picture>
+              <div class="why__choose__us__card__body">
+                <h4>International Academic Faculty</h4>
+                <p>
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                  odit aut fugit, sed quia consequuntur ma
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="our__programs__search__section">
+      <div class="container">
+        <div class="our__programs__search__section__form__wrap">
+          <h2 class="primary__title">Our Programs</h2>
+
+          <form action="">
+            <fieldset class="search__field">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.5007 17.5L13.8757 13.875M15.8341 9.16667C15.8341 12.8486 12.8493 15.8333 9.1674 15.8333C5.4855 15.8333 2.50073 12.8486 2.50073 9.16667C2.50073 5.48477 5.4855 2.5 9.1674 2.5C12.8493 2.5 15.8341 5.48477 15.8341 9.16667Z"
+                  stroke="#335C85"
+                  stroke-width="1.66667"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              <input
+                type="text"
+                id="keyword_search"
+                name="keyword_search"
+                placeholder="Search by keyword" />
+            </fieldset>
+            <fieldset class="select__field">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_87_1841)">
+                  <path
+                    d="M22.001 4.47221L20.529 3.00021L10.001 13.5282L-0.527025 3.00021L-1.99903 4.47221L9.26497 15.7362L10.001 16.4402L10.737 15.7362L22.001 4.47221Z"
+                    fill="#003366" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_87_1841">
+                    <rect
+                      width="20"
+                      height="20"
+                      fill="white"
+                      transform="translate(0.000976562)" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <select name="programselect" id="programselect">
+                <option value="All programs">All programs</option>
+                <option value="Certificates">Certificates</option>
+                <option value="Internship">Internship</option>
+                <option value="Fellowship">Fellowship</option>
+              </select>
+            </fieldset>
+            <button class="cta__btn cta__btn__secondary" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="testimonies__section">
+      <div class="container">
+        <div
+          class="testimonies__section__slider"
+          id="testimonies__section__slider">
+          <div class="testimonies__section__slider__item">
+            <div class="testimonies__section__slider__item__content">
+              <svg
+                width="92"
+                height="64"
+                viewBox="0 0 92 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M85.8026 57.8227C81.8061 61.8062 76.4925 64 70.8407 64C65.0754 64 59.7531 61.7788 55.8545 57.7454C51.8738 53.627 49.6814 47.8704 49.6814 41.5357C49.6814 24.7775 56.9161 14.6502 62.9852 9.10542C70.2974 2.42489 78.3065 0 81.9059 0C82.7295 0 83.456 0.537319 83.6945 1.32304C83.9332 2.10877 83.6276 2.95755 82.9423 3.41291C78.5864 6.30676 74.5588 10.4224 71.8923 14.7044C69.3489 18.7889 69.1293 21.24 69.3401 21.8114C69.3695 21.8151 69.4099 21.8182 69.4629 21.8182C76.4123 21.8182 82.213 23.9561 86.2378 28.001C88.1297 29.9023 89.5864 32.1784 90.5676 34.7662C91.5181 37.2729 92 40.0126 92 42.9092C92 48.5427 89.7991 53.8391 85.8026 57.8227ZM21.1592 64C15.3938 64 10.0716 61.7788 6.17308 57.7455C2.19238 53.6271 6.10352e-05 47.8705 -3.05176e-05 41.5357C-3.05176e-05 24.7775 7.23458 14.6502 13.3037 9.10542C20.6159 2.42489 28.625 0 32.2244 0C33.0479 0 33.7744 0.537319 34.0131 1.32304C34.2517 2.10877 33.9462 2.95755 33.2608 3.41291C28.9049 6.30676 24.8773 10.4223 22.2108 14.7044C19.6674 18.7889 19.4479 21.24 19.6587 21.8114C19.6879 21.8151 19.7283 21.8182 19.7813 21.8182C26.7308 21.8182 32.5315 23.9561 36.5564 28.001C38.4482 29.9023 39.9049 32.1784 40.8861 34.7662C41.8366 37.2729 42.3185 40.0126 42.3185 42.9092C42.3185 48.5427 40.1176 53.8391 36.1211 57.8227C32.1247 61.8062 26.8111 64 21.1592 64Z"
+                  fill="#CCD6E0" />
+              </svg>
+              <p>
+                My favourite thing about MBRU is its diversity. We have so many
+                different people here that share their experiences with one
+                another, its eye opening. I’m a lot more confident than I was
+                before coming here.
+              </p>
+              <h5>Hedaiet Ghanem</h5>
+              <h6>Undergraduate Student</h6>
+            </div>
+            <div class="testimonies__section__slider__item__image">
+              <img src="./uploads/p1.png" alt="" />
+            </div>
+          </div>
+          <div class="testimonies__section__slider__item">
+            <div class="testimonies__section__slider__item__content">
+              <svg
+                width="92"
+                height="64"
+                viewBox="0 0 92 64"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M85.8026 57.8227C81.8061 61.8062 76.4925 64 70.8407 64C65.0754 64 59.7531 61.7788 55.8545 57.7454C51.8738 53.627 49.6814 47.8704 49.6814 41.5357C49.6814 24.7775 56.9161 14.6502 62.9852 9.10542C70.2974 2.42489 78.3065 0 81.9059 0C82.7295 0 83.456 0.537319 83.6945 1.32304C83.9332 2.10877 83.6276 2.95755 82.9423 3.41291C78.5864 6.30676 74.5588 10.4224 71.8923 14.7044C69.3489 18.7889 69.1293 21.24 69.3401 21.8114C69.3695 21.8151 69.4099 21.8182 69.4629 21.8182C76.4123 21.8182 82.213 23.9561 86.2378 28.001C88.1297 29.9023 89.5864 32.1784 90.5676 34.7662C91.5181 37.2729 92 40.0126 92 42.9092C92 48.5427 89.7991 53.8391 85.8026 57.8227ZM21.1592 64C15.3938 64 10.0716 61.7788 6.17308 57.7455C2.19238 53.6271 6.10352e-05 47.8705 -3.05176e-05 41.5357C-3.05176e-05 24.7775 7.23458 14.6502 13.3037 9.10542C20.6159 2.42489 28.625 0 32.2244 0C33.0479 0 33.7744 0.537319 34.0131 1.32304C34.2517 2.10877 33.9462 2.95755 33.2608 3.41291C28.9049 6.30676 24.8773 10.4223 22.2108 14.7044C19.6674 18.7889 19.4479 21.24 19.6587 21.8114C19.6879 21.8151 19.7283 21.8182 19.7813 21.8182C26.7308 21.8182 32.5315 23.9561 36.5564 28.001C38.4482 29.9023 39.9049 32.1784 40.8861 34.7662C41.8366 37.2729 42.3185 40.0126 42.3185 42.9092C42.3185 48.5427 40.1176 53.8391 36.1211 57.8227C32.1247 61.8062 26.8111 64 21.1592 64Z"
+                  fill="#CCD6E0" />
+              </svg>
+              <p>
+                My favourite thing about MBRU is its diversity. We have so many
+                different people here that share their experiences with one
+                another, its eye opening. I’m a lot more confident than I was
+                before coming here.
+              </p>
+              <h5>John Conor</h5>
+              <h6>PHD</h6>
+            </div>
+            <div class="testimonies__section__slider__item__image">
+              <img src="./uploads/p1.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="testimonies__section__slider__navigation__outer">
+          <div class="testimonies__section__slider__navigation__inner"></div>
+        </div>
+      </div>
+    </section>
+    <section class="learn__about__mbru">
+      <div class="container">
+        <h2 class="primary__title text-left">Learn About MBRU</h2>
+        <ul
+          id="resources__tab__links__wrap"
+          class="resources__tab__links__wrap">
+          <li class="link__active">All</li>
+          <li>Life at MBRU</li>
+          <li>Learning resources</li>
+          <li>Research</li>
+        </ul>
+        <div class="resources__tab__body__wrap" id="resources__tab__body__wrap">
+          <div
+            class="resources__tab__bodyitem resources__tab__bodyitem__active">
+            <div class="resources__tab__bodyitem__list__item">
+              <img
+                src="https://mbrunew.pixelflames.net/wp-content/uploads/Graduation-website-banner-.jpg"
+                alt="" />
+              <div class="resources__tab__bodyitem__list__item__content">
+                <span>About #MBRUGRAD</span>
+                <h4>Graduation 2023</h4>
+                <p>Find the latest news about #MBRUGRAD</p>
+                <a href="#"
+                  >Find more
+                  <svg
+                    width="12"
+                    height="20"
+                    viewBox="0 0 12 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1.39341 0L0.166748 1.22667L8.94008 10L0.166748 18.7733L1.39341 20L10.7801 10.6133L11.3667 10L10.7801 9.38667L1.39341 0Z"
+                      fill="#32AFFC" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <a href="#" class="resources__tab__bodyitem__list__item">
+              <img
+                src="https://mbrunew.pixelflames.net/wp-content/uploads/Website-shop--261x206.png"
+                alt="" />
+              <div class="resources__tab__bodyitem__list__item__content">
+                <span>About #MBRUGRAD</span>
+                <h4>MBRU Shop</h4>
+                <p>Buy your own MBRU personalized merchandise.</p>
+              </div>
+            </a>
+            <a href="#" class="resources__tab__bodyitem__list__item">
+              <img
+                src="https://mbrunew.pixelflames.net/wp-content/uploads/Ambassador-badge.png"
+                alt="" />
+              <div class="resources__tab__bodyitem__list__item__content">
+                <span>About #MBRUGRAD</span>
+                <h4>Learn MBRU</h4>
+                <p>
+                  Continue your journey by building new skills and knowledge on
+                  topics within your discipline and beyond.
+                </p>
+              </div>
+            </a>
+            <a href="#" class="resources__tab__bodyitem__list__item">
+              <img
+                src="https://mbrunew.pixelflames.net/wp-content/uploads/Newsletter-.jpg"
+                alt="" />
+              <div class="resources__tab__bodyitem__list__item__content">
+                <span>About #MBRUGRAD</span>
+                <h4>MBRU 360 Newsletter</h4>
+                <p>
+                  Check out what MBRU has been up to the with the latest issue
+                  of MBRU 360
+                </p>
+              </div>
+            </a>
+            <a href="#" class="resources__tab__bodyitem__list__item">
+              <img
+                src="https://mbrunew.pixelflames.net/wp-content/uploads/Endo-2-.png"
+                alt="" />
+              <div class="resources__tab__bodyitem__list__item__content">
+                <span>About #MBRUGRAD</span>
+                <h4>Endodontic Residency Program</h4>
+                <p>
+                  Learn about the only Saudi Board accredited Endodontic
+                  Residency Program in the UAE and outside KSA.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="resources__tab__bodyitem">
+            <div class="resources__tab__bodyitem__list__item">
+              <img
+                src="https://mbrunew.pixelflames.net/wp-content/uploads/2018/09/MBRU4143-edt-2-1-570x848.jpg"
+                alt="" />
+              <div class="resources__tab__bodyitem__list__item__content">
+                <span>About #MBRUGRAD</span>
+                <h4>Graduation 2023</h4>
+                <p>Find the latest news about #MBRUGRAD</p>
+                <a href="#"
+                  >Find more
+                  <svg
+                    width="12"
+                    height="20"
+                    viewBox="0 0 12 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1.39341 0L0.166748 1.22667L8.94008 10L0.166748 18.7733L1.39341 20L10.7801 10.6133L11.3667 10L10.7801 9.38667L1.39341 0Z"
+                      fill="#32AFFC" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <a href="#" class="resources__tab__bodyitem__list__item">
+              <img
+                src="https://mbrunew.pixelflames.net/wp-content/uploads/Website-shop--261x206.png"
+                alt="" />
+              <div class="resources__tab__bodyitem__list__item__content">
+                <span>About #MBRUGRAD</span>
+                <h4>MBRU Shop</h4>
+                <p>Buy your own MBRU personalized merchandise.</p>
+              </div>
+            </a>
+            <a href="#" class="resources__tab__bodyitem__list__item">
+              <img
+                src="https://mbrunew.pixelflames.net/wp-content/uploads/Ambassador-badge.png"
+                alt="" />
+              <div class="resources__tab__bodyitem__list__item__content">
+                <span>About #MBRUGRAD</span>
+                <h4>Learn MBRU</h4>
+                <p>
+                  Continue your journey by building new skills and knowledge on
+                  topics within your discipline and beyond.
+                </p>
+              </div>
+            </a>
+            <a href="#" class="resources__tab__bodyitem__list__item">
+              <img
+                src="https://mbrunew.pixelflames.net/wp-content/uploads/Newsletter-.jpg"
+                alt="" />
+              <div class="resources__tab__bodyitem__list__item__content">
+                <span>About #MBRUGRAD</span>
+                <h4>MBRU 360 Newsletter</h4>
+                <p>
+                  Check out what MBRU has been up to the with the latest issue
+                  of MBRU 360
+                </p>
+              </div>
+            </a>
+            <a href="#" class="resources__tab__bodyitem__list__item">
+              <img
+                src="https://mbrunew.pixelflames.net/wp-content/uploads/Endo-2-.png"
+                alt="" />
+              <div class="resources__tab__bodyitem__list__item__content">
+                <span>About #MBRUGRAD</span>
+                <h4>Endodontic Residency Program</h4>
+                <p>
+                  Learn about the only Saudi Board accredited Endodontic
+                  Residency Program in the UAE and outside KSA.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="resources__tab__bodyitem">
+            <div class="resources__tab__bodyitem__list__item">
+              <img
+                src="https://mbrunew.pixelflames.net/wp-content/uploads/2018/09/Simulation-3-1-570x666.jpg"
+                alt="" />
+              <div class="resources__tab__bodyitem__list__item__content">
+                <span>About #MBRUGRAD</span>
+                <h4>Graduation 2023</h4>
+                <p>Find the latest news about #MBRUGRAD</p>
+                <a href="#"
+                  >Find more
+                  <svg
+                    width="12"
+                    height="20"
+                    viewBox="0 0 12 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1.39341 0L0.166748 1.22667L8.94008 10L0.166748 18.7733L1.39341 20L10.7801 10.6133L11.3667 10L10.7801 9.38667L1.39341 0Z"
+                      fill="#32AFFC" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <a href="#" class="resources__tab__bodyitem__list__item">
+              <img
+                src="https://mbrunew.pixelflames.net/wp-content/uploads/Website-shop--261x206.png"
+                alt="" />
+              <div class="resources__tab__bodyitem__list__item__content">
+                <span>About #MBRUGRAD</span>
+                <h4>MBRU Shop</h4>
+                <p>Buy your own MBRU personalized merchandise.</p>
+              </div>
+            </a>
+            <a href="#" class="resources__tab__bodyitem__list__item">
+              <img
+                src="https://mbrunew.pixelflames.net/wp-content/uploads/Ambassador-badge.png"
+                alt="" />
+              <div class="resources__tab__bodyitem__list__item__content">
+                <span>About #MBRUGRAD</span>
+                <h4>Learn MBRU</h4>
+                <p>
+                  Continue your journey by building new skills and knowledge on
+                  topics within your discipline and beyond.
+                </p>
+              </div>
+            </a>
+            <a href="#" class="resources__tab__bodyitem__list__item">
+              <img
+                src="https://mbrunew.pixelflames.net/wp-content/uploads/Newsletter-.jpg"
+                alt="" />
+              <div class="resources__tab__bodyitem__list__item__content">
+                <span>About #MBRUGRAD</span>
+                <h4>MBRU 360 Newsletter</h4>
+                <p>
+                  Check out what MBRU has been up to the with the latest issue
+                  of MBRU 360
+                </p>
+              </div>
+            </a>
+            <a href="#" class="resources__tab__bodyitem__list__item">
+              <img
+                src="https://mbrunew.pixelflames.net/wp-content/uploads/Endo-2-.png"
+                alt="" />
+              <div class="resources__tab__bodyitem__list__item__content">
+                <span>About #MBRUGRAD</span>
+                <h4>Endodontic Residency Program</h4>
+                <p>
+                  Learn about the only Saudi Board accredited Endodontic
+                  Residency Program in the UAE and outside KSA.
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="resources__tab__bodyitem">
+            <div class="resources__tab__bodyitem__list__item">
+              <img
+                src="https://mbrunew.pixelflames.net/wp-content/uploads/2018/09/MBRU4351-1-570x848.jpg"
+                alt="" />
+              <div class="resources__tab__bodyitem__list__item__content">
+                <span>About #MBRUGRAD</span>
+                <h4>Graduation 2023</h4>
+                <p>Find the latest news about #MBRUGRAD</p>
+                <a href="#"
+                  >Find more
+                  <svg
+                    width="12"
+                    height="20"
+                    viewBox="0 0 12 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1.39341 0L0.166748 1.22667L8.94008 10L0.166748 18.7733L1.39341 20L10.7801 10.6133L11.3667 10L10.7801 9.38667L1.39341 0Z"
+                      fill="#32AFFC" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <a href="#" class="resources__tab__bodyitem__list__item">
+              <img
+                src="https://mbrunew.pixelflames.net/wp-content/uploads/Website-shop--261x206.png"
+                alt="" />
+              <div class="resources__tab__bodyitem__list__item__content">
+                <span>About #MBRUGRAD</span>
+                <h4>MBRU Shop</h4>
+                <p>Buy your own MBRU personalized merchandise.</p>
+              </div>
+            </a>
+            <a href="#" class="resources__tab__bodyitem__list__item">
+              <img
+                src="https://mbrunew.pixelflames.net/wp-content/uploads/Ambassador-badge.png"
+                alt="" />
+              <div class="resources__tab__bodyitem__list__item__content">
+                <span>About #MBRUGRAD</span>
+                <h4>Learn MBRU</h4>
+                <p>
+                  Continue your journey by building new skills and knowledge on
+                  topics within your discipline and beyond.
+                </p>
+              </div>
+            </a>
+            <a href="#" class="resources__tab__bodyitem__list__item">
+              <img
+                src="https://mbrunew.pixelflames.net/wp-content/uploads/Newsletter-.jpg"
+                alt="" />
+              <div class="resources__tab__bodyitem__list__item__content">
+                <span>About #MBRUGRAD</span>
+                <h4>MBRU 360 Newsletter</h4>
+                <p>
+                  Check out what MBRU has been up to the with the latest issue
+                  of MBRU 360
+                </p>
+              </div>
+            </a>
+            <a href="#" class="resources__tab__bodyitem__list__item">
+              <img
+                src="https://mbrunew.pixelflames.net/wp-content/uploads/Endo-2-.png"
+                alt="" />
+              <div class="resources__tab__bodyitem__list__item__content">
+                <span>About #MBRUGRAD</span>
+                <h4>Endodontic Residency Program</h4>
+                <p>
+                  Learn about the only Saudi Board accredited Endodontic
+                  Residency Program in the UAE and outside KSA.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="latest__news">
+      <div class="container">
+        <h2
+          class="primary__title text-left d-flex align-items-center flex-wrap justify-content-between">
+          Latest News & Events
+
+          <a href="#" class="cta__btn cta__btn__secondary"> View all </a>
+        </h2>
+        <div class="latest__news__grid">
+          <div class="latest__news__grid__item">
+            <picture>
+              <img src="./uploads/n1.jpg" alt="" />
+            </picture>
+            <div class="latest__news__grid__item__content">
+              <h4>
+                Dubai Health Scientists placed on the World’s Top 2% of
+                Scientists list by Stanford University
+              </h4>
+              <p>
+                Dubai Health is thrilled to announce that more than 10% of
+                faculty members at Mohammed Bin Rashid University of Medicine
+                and Health Sciences have been recognized and placed on the
+                World’s Top 2% of Scientists list by Stanford University in the
+                subfields of Dentistry, Obstetrics & Reproductive Medicine,
+                Genetics & Heredity, and Gastroenterology & Hepatology. This
+                list represents the top 2 percent of the most-cited researchers
+                worldwide.
+              </p>
+              <div class="latest__news__grid__item__content__footer">
+                <a href="#"
+                  >Find more
+                  <svg
+                    width="12"
+                    height="20"
+                    viewBox="0 0 12 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1.39341 0L0.166748 1.22667L8.94008 10L0.166748 18.7733L1.39341 20L10.7801 10.6133L11.3667 10L10.7801 9.38667L1.39341 0Z"
+                      fill="#32AFFC" />
+                  </svg>
+                </a>
+                <div>
+                  <span>1 Mar 2024</span>
+                  <span class="badge news__badge">News</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="latest__news__grid__item">
+            <picture>
+              <img src="./uploads/n2.png" alt="" />
+            </picture>
+            <div class="latest__news__grid__item__content">
+              <h4>Virtual Open Day – The College of Nursing and Midwifery</h4>
+              <p>
+                The College of Nursing and Midwifery invites you to our upcoming
+                virtual Open Day for prospective applicants to our Master of
+                Science in Pediatric Nursing and Master of Science in
+                Cardiovascular Nursing.
+              </p>
+              <div class="latest__news__grid__item__content__footer">
+                <a href="#"
+                  >Learn more
+                  <svg
+                    width="12"
+                    height="20"
+                    viewBox="0 0 12 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1.39341 0L0.166748 1.22667L8.94008 10L0.166748 18.7733L1.39341 20L10.7801 10.6133L11.3667 10L10.7801 9.38667L1.39341 0Z"
+                      fill="#32AFFC" />
+                  </svg>
+                </a>
+                <div>
+                  <span>1 Mar 2024</span>
+                  <span class="badge event__badge">Event</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="latest__news__grid__item">
+            <picture>
+              <img src="./uploads/n3.png" alt="" />
+            </picture>
+            <div class="latest__news__grid__item__content">
+              <h4>Covidence platform is now available on Trial</h4>
+              <p>
+                l Maktoum Medical Library is delighted to offer all current
+                staff, researchers and students access to a 2-month trial
+                institutional licence to Covidence from 1st March 2024 to 30th
+                April 2024. Covidence is a web-based software platform that
+                streamlines the production of systematic/ scoping/ rapid/
+                literature reviews. It supports citation screening, full-text
+                review, risk of bias/quality assessment, extraction of study
+                characteristics and outcomes, and the export of data and
+                references. The platform interface is intuitive and can save
+                time on repetitive review tasks, enabling faster review
+                production and more time for analysis and interpretation.
+              </p>
+              <div class="latest__news__grid__item__content__footer">
+                <a href="#"
+                  >Read more
+                  <svg
+                    width="12"
+                    height="20"
+                    viewBox="0 0 12 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1.39341 0L0.166748 1.22667L8.94008 10L0.166748 18.7733L1.39341 20L10.7801 10.6133L11.3667 10L10.7801 9.38667L1.39341 0Z"
+                      fill="#32AFFC" />
+                  </svg>
+                </a>
+                <div>
+                  <span>22 Feb 2024</span>
+                  <span class="badge news__badge">News</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="latest__news__grid__item">
+            <picture>
+              <img src="./uploads/n4.png" alt="" />
+            </picture>
+            <div class="latest__news__grid__item__content">
+              <h4>
+                Applications Now Open for Graduate Medical Education at Dubai
+                Health
+              </h4>
+              <p>
+                Dubai Health, the first integrated academic health system in
+                Dubai, has announced the opening of applications for its
+                graduate training programs offered by the Graduate Medical
+                Education (GME) at Mohammed Bin Rashid University of Medicine
+                and Health Sciences (MBRU). The GME at MBRU offers an extensive
+                range of training opportunities, including two internship
+                programs, 20 residencies, and 15 fellowships spanning medical,
+                dental, and surgical specialties. These programs have earned
+                accreditation from key regional accreditation bodies, including
+                the Saudi Commission for Health Specialties, the UAE National
+                Institute for Health Specialties, and the Arab Board of Health
+                Specializations.
+              </p>
+              <div class="latest__news__grid__item__content__footer">
+                <a href="#"
+                  >Read more
+                  <svg
+                    width="12"
+                    height="20"
+                    viewBox="0 0 12 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M1.39341 0L0.166748 1.22667L8.94008 10L0.166748 18.7733L1.39341 20L10.7801 10.6133L11.3667 10L10.7801 9.38667L1.39341 0Z"
+                      fill="#32AFFC" />
+                  </svg>
+                </a>
+                <div>
+                  <span>20 Feb 2024</span>
+                  <span class="badge news__badge">News</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-2">
+            <a href="#" class="brendlogo">
+              <img src="./assets/img/mbrulogo.svg" alt="" />
+            </a>
+          </div>
+          <div class="col-12 col-md-12 col-xl-7 footer__navigation__menu">
+            <ul class="footer__links">
+              <li>
+                <a href="#">Hamdan Bin Mohammed College of Dental Medicine</a>
+              </li>
+              <li><a href="#">College of Nursing and Midwifery</a></li>
+              <li><a href="#">College of Medicine</a></li>
+              <li><a href="#">Research</a></li>
+              <li><a href="#">Learning Resources</a></li>
+              <li><a href="#">Life at MBRU</a></li>
+              <li><a href="#">About MBRU</a></li>
+              <li><a href="#">Media Center</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">FAQ’s</a></li>
+            </ul>
+            <ul class="footer__links other__links">
+              <li><a href="#">Students</a></li>
+              <li><a href="#">Parents</a></li>
+              <li><a href="#">Faculty & Staff</a></li>
+              <li><a href="#">Giving</a></li>
+              <li><a href="#">A-Z Directory</a></li>
+              <li><a href="#">Work@MBRU</a></li>
+            </ul>
+            <div class="config__switches__and__toggles">
+              <div class="filter_wrap">
+                <!-- <div class="filter_dropdown">Light</div> -->
+                <div class="label">Contrast</div>
+                <div class="btn-group filter_options contrast-switch">
+                  <button
+                    type="button"
+                    class="btn btn-filter active"
+                    value="light">
+                    Light
+                  </button>
+                  <button type="button" class="btn btn-filter" value="dark">
+                    Dark
+                  </button>
+                </div>
+              </div>
+
+              <div class="filter_wrap">
+                <!-- <div class="filter_dropdown"></div> -->
+                <div class="label">Font Size</div>
+                <div
+                  class="btn-group filter_options fontsize-switch"
+                  id="fontsize-control">
+                  <button
+                    type="button"
+                    class="btn btn-filter decrese"
+                    value="decrese">
+                    <i class="icon icon-decrese" style="font-size: 14px"></i>
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-filter normal-size"
+                    value="normal"
+                    style="font-size: 18px">
+                    A
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-filter increse"
+                    value="increse">
+                    <i class="icon icon-increse"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-xl-3">
+            <div class="reach__us__on">
+              <span>Reach us on</span>
+              <a href="#"
+                ><svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.2708 22.1998C14.1939 22.1998 10.6554 20.4433 7.26054 17.0639C3.85541 13.6742 2.10156 10.0997 2.10156 7.07975C2.10156 5.21029 2.62464 4.01876 3.8349 2.89914C3.91695 2.82724 3.999 2.75534 4.08105 2.68343C4.75797 2.08767 5.45541 1.78979 6.11182 1.80006C6.88105 1.81033 7.599 2.23148 8.21438 3.11485L10.3785 6.21692C11.0554 7.1722 11.1067 8.29182 10.2452 9.15465L9.48618 9.91476C9.21951 10.1818 9.199 10.4284 9.40413 10.7262C9.80413 11.3528 10.5528 12.1951 11.2811 12.9244C12.0093 13.6434 13.0554 14.5679 13.6093 14.9479C13.9169 15.1534 14.1631 15.1328 14.4195 14.8658L15.1887 14.1056C16.0503 13.2428 17.1682 13.2942 18.1221 13.9618L21.1785 16.0881C22.0913 16.7249 22.5016 17.4234 22.5016 18.1938C22.5016 18.8409 22.2041 19.5497 21.599 20.2276C21.5272 20.3201 21.4554 20.4022 21.3836 20.4844C20.2862 21.6862 19.0657 22.1998 17.2708 22.1998ZM17.2708 20.4947C18.3785 20.4741 19.3426 20.0838 20.0195 19.3032C20.0811 19.2313 20.1323 19.1594 20.1939 19.0875C20.4503 18.7998 20.5734 18.4814 20.5734 18.2041C20.5734 17.8959 20.4605 17.6391 20.1528 17.4337L17.3016 15.5437C16.9426 15.3074 16.5528 15.2869 16.2144 15.6464L15.3939 16.4784C14.6452 17.2488 13.7528 17.1872 13.0554 16.6839C12.3067 16.1395 11.0349 14.9993 10.1221 14.0954C9.26054 13.2428 8.22464 12.0718 7.67079 11.2912C7.16823 10.5927 7.10669 9.69906 7.87592 8.94922L8.70669 8.12748C9.05541 7.77823 9.04515 7.38791 8.80926 7.03867L6.88105 4.14203C6.67592 3.83387 6.40926 3.71061 6.11182 3.71061C5.82464 3.71061 5.51695 3.84414 5.22977 4.09067C5.14772 4.1523 5.08618 4.20366 5.01438 4.26529C4.2349 4.9535 3.84515 5.90877 3.82464 7.01812C3.78361 9.63743 5.71182 13.0271 8.55285 15.8416C11.3836 18.656 14.6554 20.5358 17.2708 20.4947Z"
+                    fill="#32AFFC" />
+                </svg>
+                800 MBRU (6278)</a
+              >
+              <a href="#"
+                ><svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22M12 2C9.49872 4.73835 8.07725 8.29203 8 12C8.07725 15.708 9.49872 19.2616 12 22M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22M2.50002 9H21.5M2.5 15H21.5"
+                    stroke="#32AFFC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                info@mbru.ac.ae</a
+              >
+              <p>
+                Building 14, Dubai Healthcare City P.O Box 505055, Dubai UAE
+              </p>
+              <ul class="achieved__badges">
+                <li>
+                  <img
+                    src="https://www.mbru.ac.ae/wp-content/uploads/uni-arts_and_culture-5star-01.png"
+                    alt="" />
+                </li>
+                <li>
+                  <img
+                    src="https://www.mbru.ac.ae/wp-content/uploads/uni-arts_and_culture-5star-01.png"
+                    alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="middle__footer">
+          <div class="middle__footer__left">
+            <ul class="quick__links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+            <p>© Copyright MBRU 2024 All rights reserved.</p>
+          </div>
+          <div class="middle__footer__right">
+            <div class="social-media-wrap">
+              <!-- <div class="label">Stay Connected!</div> -->
+              <ul class="social-media">
+                <li>
+                  <a href="https://www.facebook.com/MBRUniversity/"
+                    ><i class="icon icon-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/MBRUniversity"
+                    ><i class="icon icon-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/MBRUniversity/"
+                    ><i class="icon icon-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UCgV8W4veQNuxb_jhK5UIFfQ"
+                    ><i class="icon icon-youtube"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/mbruniversity"
+                    ><i class="icon icon-linkedin"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div>
+            <a href="#" class="action__btn">
+              <img src="./uploads/DH-logo.svg" alt="" />
+              Back to Dubai Health
+            </a>
+          </div>
+          <div class="d-flex other__quicklinks">
+            <a href="#" class="action__btn">
+              <img src="./uploads/library.svg" alt="" />
+              Library
+            </a>
+            <a href="#" class="action__btn">
+              <img src="./uploads/student.svg" alt="" />
+              Students
+            </a>
+            <a href="#" class="action__btn">
+              <img src="./uploads/parents.svg" alt="" />
+              Parents
+            </a>
+            <a href="#" class="action__btn">
+              <img src="./uploads/box.svg" alt="" />
+              Work@MBRU
+            </a>
+            <a href="#" class="action__btn">
+              <img src="./uploads/location.svg" alt="" />
+              Locations
+            </a>
+            <a href="#" class="action__btn">
+              <img src="./uploads/Phone.svg" alt="" />
+              Contact us
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="

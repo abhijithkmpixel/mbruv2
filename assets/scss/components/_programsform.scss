@@ -1,0 +1,74 @@
+/** @format */
+
+.our__programs__search__section {
+  padding: 80px 0;
+  background-color: #fff;
+  .our__programs__search__section__form__wrap {
+    border: 1px solid #e5ebf0;
+    border-radius: 20px;
+    padding: 56px 28px 64px;
+    box-shadow: 0px 25px 36px 0px #00336614;
+    form {
+      display: flex;
+      align-items: center;
+      fieldset {
+        position: relative;
+        border: 0;
+        padding: 0;
+        margin: 0;
+        outline: 0;
+        // width: 35%;
+        // flex: 0 0 35%;
+        width: -webkit-fill-available;
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+        input,
+        select {
+          font-size: 14px;
+          line-height: 1;
+          font-weight: 400;
+          color: #8099B2;
+          width: 100%;
+          padding: 11px 16px 11px 50px;
+          border: 1px solid #8099b2;
+          border-radius: 12px;
+          appearance: none;
+          -webkit-appearance: none;
+          outline: none !important;
+          box-shadow: none !important;
+          &::placeholder {
+            color: #8099b2;
+            font-size: inherit;
+            font-weight: inherit;
+          }
+        }
+        select {
+          padding-left: 16px;
+        }
+        &.search__field {
+          svg {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: auto;
+            z-index: 10;
+          }
+        }
+        &.select__field {
+          svg {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 16px;
+            height: auto;
+            z-index: 10;
+          }
+        }
+      }
+    }
+  }
+}
