@@ -5,11 +5,29 @@
   background-color: #f1fcff;
   position: relative;
   z-index: 12;
+  @media (max-width: 1200px) {
+    padding-top: 60px !important;
+  }
 }
 .row.why__choose__us__row {
   margin: 0 -12px;
+  @media (max-width: 990px) {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
   & > div {
     padding: 0 12px;
+    @media (max-width: 990px) {
+      scroll-snap-align: start;
+      width: 45vw;
+      flex: 0 0 45vw;
+    }
+    @media (max-width: 720px) {
+      width: 80vw;
+      flex: 0 0 80vw;
+    }
     .why__choose__us__card {
       height: 100%;
     }
@@ -35,19 +53,28 @@
   }
   .why__choose__us__card__body {
     padding: 16px 24px 16px;
+    @media (max-width: 720px) {
+      padding: 10px 16px 14px;
+    }
     h4 {
-      font-size: 20px;
+      font-size: 24px;
       line-height: 1.2;
       color: #002f70;
       font-weight: 700;
       margin-bottom: 10px;
+      @media (max-width: 720px) {
+        font-size: 18px;
+      }
     }
     p {
-      font-size: 12px;
+      font-size: 13px;
       line-height: 1.4;
       color: #002f70;
       font-weight: 400;
       margin-bottom: 10px;
+      @media (max-width: 720px) {
+        font-size: 12px;
+      }
     }
   }
 }
@@ -58,4 +85,7 @@
   text-align: center;
   line-height: 1.2;
   margin-bottom: 40px;
+  @media (max-width: 720px) {
+    font-size: 24px;
+  }
 }

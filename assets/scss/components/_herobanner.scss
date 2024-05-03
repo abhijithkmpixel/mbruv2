@@ -5,6 +5,7 @@
   width: 100%;
   height: calc(100dvh - 75px);
   position: relative;
+  overflow: hidden;
   .scroll__down {
     position: absolute;
     left: 50%;
@@ -21,6 +22,9 @@
     svg {
       width: 100%;
       height: auto;
+    }
+    @media (max-width: 1200px) {
+      display: none;
     }
   }
   .hero__banner__slider {
@@ -69,11 +73,24 @@
         text-align: center;
         bottom: 180px;
         z-index: 15;
+        @media (max-width: 1200px) {
+          bottom: auto;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          max-width: 700px;
+          width: 100%;
+        }
+        @media (max-width: 720px) {
+          top: 43%;
+        }
         h2 {
-          font-size: 38px;
+          font-size: 36px;
           line-height: 1.1;
           color: #fff;
-          font-weight: 700;
+          font-weight: 500;
+          @media (max-width: 720px) {
+            font-size: 30px;
+          }
         }
       }
     }
@@ -86,6 +103,16 @@
     bottom: 150px;
     display: flex;
     align-items: center;
+    @media (max-width: 1200px) {
+      bottom: auto;
+      top: 62%;
+      transform: translateX(-50%) scale(1.4);
+    }
+    @media (max-width: 720px) {
+      top: 55%;
+      transform: translateX(-50%) scale(1.1);
+
+    }
     .slick__arrow {
       background-color: transparent;
       border: 0;
@@ -114,28 +141,27 @@
       padding: 0 16px;
       position: static;
       justify-content: center;
+      margin: 0;
+      list-style: none;
       li {
         margin: 0 8px;
-        width: unset;
-        height: unset;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: rgba($color: #fff, $alpha: 0.5);
+        border-left: 2px solid transparent;
+        border-right: 2px solid transparent;
         button {
-          width: 8px;
-          height: 8px;
-          border-radius: 50%;
-          background-color: rgba($color: #fff, $alpha: 0.5);
-          border-left: 2px solid transparent;
-          border-right: 2px solid transparent;
           padding: 0;
+          display: none;
           &::before {
             content: none;
           }
         }
         &.slick-active {
-          button {
-            border-radius: 0;
-            background-color: transparent;
-            border-color: #fff;
-          }
+          border-radius: 0;
+          background-color: transparent;
+          border-color: #fff;
         }
       }
     }
