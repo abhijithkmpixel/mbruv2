@@ -44,8 +44,6 @@
     <link rel="stylesheet" href="./assets/css/app.css" />
   </head>
   <body>
-   
-
     <header>
       <div class="container">
         <div class="header__inner">
@@ -53,7 +51,9 @@
             <a href="#" class="brand__logo"
               ><img src="./assets/img/mbrulogo.svg" alt=""
             /></a>
-            <ul class="header__menu__toggle__hamburger" id="header__menu__toggle__hamburger">
+            <ul
+              class="header__menu__toggle__hamburger"
+              id="header__menu__toggle__hamburger">
               <li></li>
               <li></li>
               <li></li>
@@ -102,6 +102,48 @@
                   </clipPath>
                 </defs>
               </svg>
+              <div class="icon__quick__nav__dropdown">
+                <div class="filter_wrap">
+                  <div class="label">Contrast</div>
+                  <div class="btn-group filter_options contrast-switch">
+                    <button
+                      type="button"
+                      class="btn btn-filter active"
+                      value="light">
+                      Light
+                    </button>
+                    <button type="button" class="btn btn-filter" value="dark">
+                      Dark
+                    </button>
+                  </div>
+                </div>
+                <div class="filter_wrap">
+                  <div class="label">Font Size</div>
+                  <div
+                    class="btn-group filter_options fontsize-switch"
+                    id="fontsize-control">
+                    <button
+                      type="button"
+                      class="btn btn-filter decrese"
+                      value="decrese">
+                      <i class="icon icon-decrese" style="font-size: 14px"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-filter normal-size"
+                      value="normal"
+                      style="font-size: 18px">
+                      A
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-filter increse"
+                      value="increse">
+                      <i class="icon icon-increse"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </a>
             <a href="#" class="cta__btn cta__btn__primary">العربية</a>
             <a href="#" class="cta__btn cta__btn__primary cta__with__icon"
@@ -122,10 +164,13 @@
       </div>
     </header>
 
-     <!-- hamburger menu -->
+    <!-- hamburger menu -->
     <div class="fixed__main__navigation__menu__overlay"></div>
     <aside class="fixed__main__navigation__menu">
-      <buton class="close__menu" id="close__menu__fixed__main__navigation__menu" type="button"
+      <buton
+        class="close__menu"
+        id="close__menu__fixed__main__navigation__menu"
+        type="button"
         ><svg
           width="14"
           height="14"
@@ -195,7 +240,7 @@
       </ul>
     </aside>
     <!-- hamburger menu end-->
-    
+
     <section class="hero__banner">
       <div class="hero__banner__slider" id="homepage_hero_slider">
         <div class="hero__banner__slider__item">
@@ -318,7 +363,7 @@
         </div>
       </div>
     </section>
-    
+
     <section class="our__programs__search__section">
       <div class="container">
         <div class="our__programs__search__section__form__wrap">
@@ -450,14 +495,17 @@
     <section class="learn__about__mbru">
       <div class="container">
         <h2 class="primary__title text-left">Learn About MBRU</h2>
-        <ul
-          id="resources__tab__links__wrap"
-          class="resources__tab__links__wrap">
-          <li class="link__active">All</li>
-          <li>Life at MBRU</li>
-          <li>Learning resources</li>
-          <li>Research</li>
-        </ul>
+        <div class="resources__tab__links__wrap__outer">
+
+          <ul
+            id="resources__tab__links__wrap"
+            class="resources__tab__links__wrap">
+            <li class="link__active">All</li>
+            <li>Life at MBRU</li>
+            <li>Learning resources</li>
+            <li>Research</li>
+          </ul>
+        </div>
         <div class="resources__tab__body__wrap" id="resources__tab__body__wrap">
           <div
             class="resources__tab__bodyitem resources__tab__bodyitem__active">
@@ -765,7 +813,9 @@
           class="primary__title text-left d-flex align-items-center flex-wrap justify-content-between">
           Latest News & Events
 
-          <a href="#" class="cta__btn cta__btn__secondary d-none d-sm-block"> View all </a>
+          <a href="#" class="cta__btn cta__btn__secondary d-none d-sm-block">
+            View all
+          </a>
         </h2>
         <div class="latest__news__grid">
           <div class="latest__news__grid__item">
@@ -926,8 +976,11 @@
             </div>
           </div>
         </div>
-          <a href="#" class="cta__btn cta__btn__secondary d-block text-center d-sm-none"> View all </a>
-
+        <a
+          href="#"
+          class="cta__btn cta__btn__secondary d-block text-center d-sm-none">
+          View all
+        </a>
       </div>
     </section>
     <footer>
@@ -1107,14 +1160,12 @@
             <a href="#" class="action__btn">
               <img src="./uploads/DH-logo.svg" alt="" />
               <span>Back to Dubai Health</span>
-              
             </a>
           </div>
           <div class="d-flex other__quicklinks">
             <a href="#" class="action__btn">
               <img src="./uploads/library.svg" alt="" />
               <span>Library</span>
-              
             </a>
             <a href="#" class="action__btn">
               <img src="./uploads/student.svg" alt="" />

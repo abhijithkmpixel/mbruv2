@@ -1,7 +1,7 @@
 /** @format */
 
 .testimonies__section {
-  padding: 20 0 80px;
+  padding: 40px 0 80px;
   position: relative;
   .container {
     position: relative;
@@ -9,10 +9,13 @@
   .testimonies__section__slider__navigation__outer {
     position: absolute;
     z-index: 10;
-    left: 60px;
+    left: 117px;
     bottom: 0;
     display: flex;
     align-items: center;
+    @media (max-width: 1200px) {
+      left: 60px;
+    }
     @media (max-width: 720px) {
       left: 50%;
       transform: translateX(-50%);
@@ -64,6 +67,8 @@
   .testimonies__section__slider {
     width: 100%;
     padding-bottom: 30px;
+    max-width: 1000px;
+    margin: auto;
     @media (max-width: 720px) {
       padding-bottom: 50px;
       // margin-bottom: 0;

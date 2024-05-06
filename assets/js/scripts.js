@@ -5,6 +5,13 @@ $(document).ready(function () {
             listing.style.setProperty('--height', `-${listing.clientHeight}px`);
         });
     }, 500);
+    $('.icon__quick__nav--wheelchair').click(function () {
+        $(this).toggleClass('icon__quick__nav__active')
+    })
+    $('.icon__quick__nav--wheelchair .icon__quick__nav__dropdown').click(function (e) {
+        // $(this).toggleClass('icon__quick__nav__active')
+        e.stopPropagation();
+    })
     $('#homepage_hero_slider').slick({
         infinite: false,
         slidesToShow: 1,
@@ -125,6 +132,6 @@ $(document).ready(function () {
         $(this).closest('.sub__menu__has__children').removeClass('sub__menu__has__children__active')
     })
     // if ($(window.innerWidth < 1200)) {
-   
+
     // }
 })

@@ -58,7 +58,11 @@
   display: block;
   text-decoration: none !important;
   height: 100%;
-  @media (max-width: 1200px) {
+  transition: 0.2s all ease-in-out;
+  &:hover {
+    @media (min-width: 1200px) {
+      // box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+    }
   }
   img {
     width: 48px;
