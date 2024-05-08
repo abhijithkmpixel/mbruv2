@@ -5,11 +5,17 @@
   position: relative;
   .container {
     position: relative;
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: rgba($color: #fff, $alpha: 1);
+    }
   }
   .testimonies__section__slider__navigation__outer {
     position: absolute;
     z-index: 10;
-    left: 117px;
+    left: 120px;
     bottom: 0;
     display: flex;
     align-items: center;
@@ -28,6 +34,7 @@
       background-color: transparent;
       border: 0;
       outline: 0;
+      display: flex;
       &.slick-disabled {
         opacity: 0.4;
       }
@@ -88,6 +95,7 @@
           width: 100%;
           padding: 0px;
           flex: 0 0 100%;
+          margin-bottom: 15px;
         }
         svg {
           width: 90px;
@@ -141,6 +149,10 @@
         aspect-ratio: 1/1;
         border-radius: 20px;
         overflow: hidden;
+        @media (max-width: 990px) {
+          width: 30%;
+          flex: 0 0 30%;
+        }
         @media (max-width: 720px) {
           width: 130px;
           flex: 0 0 130px;
@@ -151,6 +163,55 @@
           object-fit: cover;
         }
       }
+    }
+  }
+}
+.dark {
+  .testimonies__section {
+    .container {
+      position: relative;
+      &::after {
+        content: "";
+        width: calc(100% - 30px);
+        height: 1px;
+        background-color: #1a4775;
+        position: absolute;
+        bottom: -80px;
+        left: 15px;
+      }
+    }
+  }
+  .testimonies__section
+    .testimonies__section__slider
+    .testimonies__section__slider__item
+    .testimonies__section__slider__item__content {
+    svg path {
+      fill: #1a4775;
+    }
+    p,
+    h5,
+    h6 {
+      color: #fff;
+    }
+  }
+  .testimonies__section
+    .testimonies__section__slider__navigation__outer
+    .testimonies__section__slider__navigation__inner
+    .slick-dots
+    li {
+    background-color: #b2c2d1;
+    &.slick-active {
+      background-color: #fff;
+    }
+  }
+  .testimonies__section
+    .testimonies__section__slider__navigation__outer
+    .slick__arrow {
+    svg path {
+      fill: rgba($color: #fff, $alpha: 1);
+    }
+    &.slick-disabled {
+      opacity: 0.4;
     }
   }
 }

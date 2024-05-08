@@ -1,0 +1,151 @@
+/** @format */
+
+.dark {
+  .sidebar-inner-wrap.uk-sticky .indicator-wrap .indicator-item,
+  .sidebar-inner-wrap.uk-sticky .indicator-wrap,
+  .sidebar-inner-wrap.uk-sticky {
+    background-color: rgba($color: #fff, $alpha: 0.04);
+  }
+  .sidebar-inner-wrap.uk-sticky {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .links-list-wrap .link-list .link-item:after {
+    border-color: #fff;
+  }
+  .links-list-wrap .link-list .link-item {
+    border-color: transparent;
+    background-color: rgba($color: #fff, $alpha: 0.04);
+    background: transparent;
+  }
+  .sidebar-inner-wrap.uk-sticky .indicator-wrap .indicator-item {
+    color: #fff;
+    &.active {
+      color: #32affc;
+    }
+    &:hover {
+      @media (min-width: 1200px) {
+        color: #32affc;
+      }
+    }
+  }
+  .sidebar-wrap .indicator-wrap .indicator-item.active::after,
+  .sidebar-wrap .indicator-wrap .indicator-item::after {
+    border-color: #fff;
+  }
+  section.banner-panel .panel-wrap {
+    background-color: rgba($color: #fff, $alpha: 0.04) !important;
+  }
+  .tab-content > .tab-pane h4 {
+    color: #fff;
+  }
+  section.library-hours .content-wrap .hours-wrap .hour-item,
+  .block.well .block-title.with-icon {
+    background-color: rgba($color: #fff, $alpha: 0.04);
+  }
+  section.library-hours
+    .content-wrap
+    .hours-wrap
+    .hour-item
+    .icon-wrap
+    svg
+    path,
+  section.library-hours
+    .content-wrap
+    .hours-wrap
+    .hour-item
+    .icon-wrap
+    svg
+    line,
+  section.library-hours
+    .content-wrap
+    .hours-wrap
+    .hour-item
+    .icon-wrap
+    svg
+    circle {
+    stroke: #fff;
+  }
+  .block.well .block-title {
+    border-color: rgba($color: #fff, $alpha: 0.1);
+  }
+  .block.well::after {
+    border-color: #fff;
+  }
+  .block.well .block-title.simple .icon-wrap,
+  .block.well .block-title.simple h4,
+  .block.well a:hover .block-title * {
+    color: #fff !important;
+  }
+  section.mbru-offers .offers-wrap {
+    background-color: rgba($color: #fff, $alpha: 0.04);
+  }
+  section.mbru-offers .offers-wrap .offers-title .icon,
+  section.mbru-offers .offers-wrap .offers-title h3,
+  section.mbru-offers .offers-wrap p {
+    color: #fff;
+  }
+  .library-nav-block .nav-block {
+    background-color: rgba($color: #fff, $alpha: 0.04);
+    border-color: rgba($color: #fff, $alpha: 0.1);
+  }
+  .library-nav-block .nav-block .block-title h3,
+  .library-nav-block .nav-block .icon-wrap,
+  .library-nav-block .nav-block .icon-wrap i,
+  .library-nav-block .nav-block .block-title p {
+    color: #fff;
+  }
+  .tab-pane .WhiteLink {
+    color: #fff !important;
+  }
+  .banner-panel .nav-tabs {
+    border-color: rgba($color: #fff, $alpha: 0.1);
+    .nav-link {
+      background: transparent;
+      color: #fff;
+      &.active {
+        background: rgba($color: #fff, $alpha: 0.1);
+      }
+    }
+  }
+  .title {
+    color: #fff;
+    h2 {
+      color: inherit;
+    }
+  }
+  .simple-ico-box {
+    background-color: rgba($color: #fff, $alpha: 0.04);
+    border-color: rgba($color: #fff, $alpha: 0.1);
+    .content-wrap h3,
+    .icon-wrap .icon,
+    .icon-wrap .icon i {
+      color: #fff;
+    }
+  }
+  .block.well a .block-title,
+  .block.well a:hover .block-title {
+    background: rgba($color: #fff, $alpha: 0.04);
+    color: #fff;
+    box-shadow: none;
+    .category {
+      color: #fff;
+    }
+  }
+  .custom-check label {
+    color: #fff;
+  }
+  .custom-check label:after {
+    color: transparent;
+  }
+  .custom-check label:before {
+    border-color: rgba($color: #fff, $alpha: 0.1);
+  }
+  .digital-learning .wall-block {
+    background: rgba($color: #fff, $alpha: 0.04);
+    .wall-desc h3,
+    .wall-desc p {
+      color: #fff;
+    }
+  }
+}

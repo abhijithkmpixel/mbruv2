@@ -48,7 +48,7 @@
 
         input,
         select {
-          font-size: 14px;
+          font-size: 18px;
           line-height: 1;
           font-weight: 400;
           color: #8099b2;
@@ -61,7 +61,8 @@
           -webkit-appearance: none;
           outline: none !important;
           box-shadow: none !important;
-          height: 45px;
+          height: 49px;
+
           @media (max-width: 720px) {
             border-radius: 8px;
           }
@@ -99,5 +100,75 @@
         }
       }
     }
+  }
+}
+.dark {
+  .our__programs__search__section {
+    background-color: transparent;
+  }
+  .our__programs__search__section
+    .our__programs__search__section__form__wrap
+    form
+    fieldset
+    input,
+  .our__programs__search__section
+    .our__programs__search__section__form__wrap
+    form
+    fieldset
+    select,
+  .our__programs__search__section
+    .our__programs__search__section__form__wrap
+    .form
+    fieldset
+    input,
+  .our__programs__search__section
+    .our__programs__search__section__form__wrap
+    .form
+    fieldset
+    select {
+    background-color: #18243c !important;
+  }
+  .our__programs__search__section
+    .our__programs__search__section__form__wrap
+    form
+    fieldset.select__field
+    svg
+    path,
+  .our__programs__search__section
+    .our__programs__search__section__form__wrap
+    .form
+    fieldset.select__field
+    svg
+    path {
+    fill: #fff;
+  }
+  .our__programs__search__section .our__programs__search__section__form__wrap {
+    border: 0;
+    box-shadow: 0;
+    background-color: rgba($color: #fff, $alpha: 0.04);
+  }
+}
+body:not(.dark) {
+  .our__programs__search__section
+    .our__programs__search__section__form__wrap
+    form
+    fieldset
+    input,
+  .our__programs__search__section
+    .our__programs__search__section__form__wrap
+    form
+    fieldset
+    select,
+  .our__programs__search__section
+    .our__programs__search__section__form__wrap
+    .form
+    fieldset
+    input,
+  .our__programs__search__section
+    .our__programs__search__section__form__wrap
+    .form
+    fieldset
+    select {
+    background-color: #fff !important;
   }
 }

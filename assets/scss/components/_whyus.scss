@@ -74,7 +74,7 @@
       line-height: 1.4;
       color: #002f70;
       font-weight: 400;
-      margin-bottom: 10px;
+      margin-bottom: 0px;
       @media (max-width: 720px) {
         font-size: 12px;
       }
@@ -91,5 +91,20 @@
   @media (max-width: 720px) {
     font-size: 24px;
     margin-bottom: 30px;
+  }
+}
+.dark {
+  .why__choose__us {
+    background-color: rgba($color: #fff, $alpha: 0.04);
+  }
+  .why__choose__us__card {
+    background-color: transparent;
+    border-color: #1a4775;
+    .why__choose__us__card__body {
+      h4,
+      p {
+        color: inherit;
+      }
+    }
   }
 }

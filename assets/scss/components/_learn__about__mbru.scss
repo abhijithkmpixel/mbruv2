@@ -6,6 +6,11 @@
   @media (max-width: 720px) {
     padding: 40px 0;
   }
+  .primary__title {
+    @media (max-width: 720px) {
+      text-align: center !important;
+    }
+  }
   .resources__tab__links__wrap__outer {
     @media (max-width: 990px) {
       overflow-x: auto;
@@ -41,6 +46,7 @@
       cursor: pointer;
       width: max-content;
       display: block;
+      text-transform: capitalize;
       @media (max-width: 990px) {
         margin-bottom: 15px;
         // scroll-snap-align: start;
@@ -72,6 +78,7 @@
           overflow-x: scroll;
           scroll-snap-type: x mandatory;
           -webkit-overflow-scrolling: touch;
+          padding-right: 15px;
         }
       }
     }
@@ -246,6 +253,20 @@
             }
           }
         }
+      }
+    }
+  }
+}
+.dark {
+  .learn__about__mbru {
+    background-color: transparent;
+    .resources__tab__links__wrap li {
+      background-color: rgba($color: #fff, $alpha: 0.04);
+      border: 1px solid rgba($color: #fff, $alpha: 0.1);
+      color: #fff;
+      &.link__active {
+        background-color: #fff;
+        color: #002f70;
       }
     }
   }
