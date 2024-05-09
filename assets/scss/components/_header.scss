@@ -281,6 +281,22 @@ header {
     }
   }
 }
+.cta__btn__secondary--border {
+  background-color: transparent;
+  border: 1px solid #002f70;
+  color: #002f70;
+  &:hover {
+    @media (min-width: 1200px) {
+      background-color: #002f70;
+      color: #fff;
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+}
 .cta__btn__tertiary {
   background-color: transparent;
   border: 1px solid #fff;

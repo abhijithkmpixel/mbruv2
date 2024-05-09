@@ -148,4 +148,234 @@
       color: #fff;
     }
   }
+  .overview .message-box-wrap .message-box blockquote {
+    color: #fff;
+  }
+  .overview .message-box-wrap .message-box h3 {
+    color: #fff;
+  }
+  .why__choose__us__card__new,
+  .block .why__choose__us__card__new,
+  section.why-choose .block .why__choose__us__card__new {
+    border: 0;
+    background-color: rgba($color: #fff, $alpha: 0.04);
+  }
+  .why__choose__us__card__new .block-title h4,
+  .block .why__choose__us__card__new .block-title h4,
+  section.why-choose .block .why__choose__us__card__new .block-title h4 {
+    color: #fff !important;
+  }
+  .carousel .controls .slick-arrow.carousel-next .icon,
+  .carousel .controls .slick-arrow.carousel-prev .icon {
+    color: #fff !important;
+    border-color: #fff !important;
+  }
+  .navigate-wrap span .icon i,
+  .navigate-wrap span .icon {
+    color: #fff;
+  }
+  .navigate .navigate-wrap a:after {
+    border-color: #fff;
+  }
+  .select2-container--default .select2-selection--single {
+    background-color: rgba($color: #fff, $alpha: 0.04);
+  }
+  .academic-calender
+    .select2-container--default
+    .select2-selection--single
+    .select2-selection__rendered,
+  .academic-calender
+    .custom-select-dropdown
+    .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow
+    b {
+    color: #fff;
+  }
+  .faq-wrap .faq-item {
+    background-color: rgba($color: #fff, $alpha: 0.04) !important;
+  }
+  .acad-cal-pdf {
+    background-color: transparent;
+  }
+  .acad-cal-pdf::after {
+    border-color: #fff;
+  }
+  .simple-slideshow .slider {
+    background: url(../images/loading.gif) center center no-repeat
+      rgba($color: #fff, $alpha: 0.04);
+  }
+  .btn.btn-primary-outline::after {
+    border-color: #fff;
+  }
+  .faq-wrap .faq-item .faq-head {
+    background-color: rgba($color: #fff, $alpha: 0.04);
+  }
+  .faq-wrap .faq-item .faq-head::after {
+    border-color: #fff;
+  }
+  section .content_wrap.fill,
+  section.fill {
+    background: #0a233c;
+  }
+  .simple-slideshow .slide-item .slide-title,
+  .simple-slideshow.well-grey {
+    background: transparent;
+  }
+  .simple-slideshow .slide-item .slide-title h3,
+  .simple-slideshow .slide-item .slide-title p {
+    color: #fff;
+  }
+  .discover-mbru .vertical-tabs-wrap .vertical-tabs a.tab_item {
+    background-color: rgba($color: #fff, $alpha: 0.04);
+    color: #fff;
+  }
+  .discover-mbru .vertical-tabs-wrap .vertical-tabs a.tab_item.active {
+    background-color: rgba($color: #fff, $alpha: 0.1);
+  }
+  .vertical-tabs .tab_item:after {
+    border-left-color: rgba($color: #fff, $alpha: 0.1);
+  }
+  section.about-university-overview
+    .facts
+    .border-block
+    .counter-block
+    .counter-block-new-icon,
+  section.about-university-overview
+    .facts
+    .border-block
+    .counter-block
+    .counter-block-new-icon
+    i {
+    color: #fff;
+  }
+  .counter-wrap .counter-block h2 *,
+  .counter-wrap .counter-block h2 {
+    color: #fff;
+  }
+  .why__choose__us__card__new .block-title p,
+  .block .why__choose__us__card__new .block-title p,
+  section.why-choose .block .why__choose__us__card__new .block-title p {
+    color: #fff;
+  }
+  .image-text-wrap .image-text-row .text-holder {
+    background-color: rgba($color: #fff, $alpha: 0.04);
+  }
+  .image-text-wrap .image-text-row {
+    border-color: rgba($color: #fff, $alpha: 0.1);
+    background-color: transparent;
+    background: transparent;
+  }
+  section.life-at-mbru.overview .content-wrap .overview-description p,
+  section.life-at-mbru.overview .content-wrap .overview-description li,
+  section.life-at-mbru.overview .content-wrap .overview-description ul {
+    color: #fff;
+  }
+  .block-with-pro .pro-description {
+    border-color: rgba($color: #fff, $alpha: 0.1);
+  }
+  form.top-selector
+    .select2-container--default
+    .select2-selection--single
+    .select2-selection__rendered {
+    color: #fff;
+  }
+  .title .custom-select-dropdown .select2-container .select2-selection--single {
+    border-color: rgba($color: #fff, $alpha: 0.1);
+  }
+  .custom-select-dropdown
+    .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow
+    b {
+    color: #fff;
+  }
+  .events.events-section .panel {
+    background: rgba($color: #fff, $alpha: 0.04);
+  }
+  .form-block {
+    background-color: rgba($color: #fff, $alpha: 0.1);
+  }
+  .contact .form-block .form-title h3,
+  section.get-in-touch .contact-options .btn.btn-link,
+  .simple-ico-box .content-wrap p {
+    color: #fff;
+  }
+  .directory-header:before,
+  .directory-header {
+    background: #0a233c;
+  }
+  section.sidebar-template .content-wrap .page-content .header h4 {
+    color: #fff;
+  }
+  .pagination-wrap ul.pagination li a {
+    background-color: rgba($color: #fff, $alpha: 0.1);
+  }
+  .sidebar-wrap .faq-wrap {
+    background: transparent;
+  }
+  .faq-wrap .faq-item .faq-head {
+    border-color: rgba($color: #fff, $alpha: 0.1);
+  }
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__rendered {
+    color: #fff;
+  }
+  .cta__btn__secondary--border {
+    border-color: #fff;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="search"],
+  input[type="txt"],
+  input[type="tel"],
+  input[type="number"],
+  select,
+  textarea {
+    border: 0.5px solid rgba($color: #fff, $alpha: 0.1) !important;
+    background-color: rgba($color: #fff, $alpha: 0.04) !important;
+    color: #fff !important;
+    option {
+      background: #113f67;
+    }
+    &::placeholder {
+      color: #fff9 !important;
+    }
+  }
+  .faq-header .tags-list .block.well .block-title.simple {
+    border-color: rgba($color: #fff, $alpha: 0.1);
+  }
+  .page-content .content-area .content-area-inner li {
+    color: #fff;
+    strong,
+    span {
+      color: #fff;
+    }
+  }
+  section.apply .tab-panel-content .content-wrap h4,
+  section.apply .tab-panel-content .content-wrap strong {
+    color: #fff;
+  }
+  section.apply .tab-panel .tab-items li.active a {
+    background: rgba($color: #fff, $alpha: 0.1);
+  }
+  section.apply .tab-panel .tab-items li.active a i {
+    color: #fff !important;
+  }
+  .news-content h4 {
+    color: #fff;
+  }
+  .result-list-ul li {
+    background-color: rgba($color: #fff, $alpha: 0.04);
+    border-color: rgba($color: #fff, $alpha: 0.1) !important;
+  }
+  .result-list-ul li p,
+  .result-list-ul li p b,
+  .result-list-ul li h3 {
+    color: #fff !important;
+  }
+  .result-listing-wrap .result-item .label-wrap .year {
+    color: #fff;
+  }
 }
