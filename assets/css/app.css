@@ -2057,8 +2057,12 @@ footer .filter_wrap .filter_options .btn-filter {
 .title.with-desc {
   color: #002f70; }
 
-.title.with-desc p {
+.title.with-desc p, section.apply .tab-panel-content .content-wrap ul li {
   color: #1a4775; }
+
+section.apply .tab-panel-content .content-wrap li strong,
+section.apply .tab-panel-content .content-wrap p strong {
+  color: #002f70; }
 
 body:not(.home) {
   padding-top: 133px; }
@@ -2321,7 +2325,8 @@ section.library-hours .content-wrap .hours-wrap .hour-item .icon-wrap {
 .hours-wrap.row {
   padding: 0; }
 
-section.about-university-overview .overview .content-wrap p {
+section.about-university-overview .overview .content-wrap p,
+section.about-university-overview .overview .content-wrap li {
   color: #1a4775; }
 
 section.event-filter .filter-wrap .icon-wrap,
@@ -2636,7 +2641,7 @@ i {
 .block-title .close-text {
   color: #002f70; }
 
-section.life-at-mbru.overview .content-wrap .overview-video {
+section.life-at-mbru.overview .content-wrap .overview-video, section.life-at-mbru.overview .content-wrap .overview-video img {
   border-radius: 16px;
   overflow: hidden; }
 
@@ -2685,7 +2690,8 @@ section.student-council .carousel:after {
 
 .contact .form-block {
   border-radius: 20px;
-  background-color: #ecf2f5; }
+  background-color: #ecf2f5;
+  height: auto !important; }
   .contact .form-block .form-title h3 {
     color: #002f70; }
 
@@ -2906,6 +2912,34 @@ section.sidebar-template .content-wrap .page-content .dir-letters a {
 
 .sidebar-template.event-filter .block.well::after {
   display: none; }
+
+.counter-block-new-icon img {
+  width: 60px;
+  height: auto;
+  margin: 0 auto;
+  display: block; }
+
+@media (min-width: 1200px) {
+  .title .custom-select-dropdown .select2-container .select2-selection--single:hover {
+    border-color: #4D7094; } }
+
+.faq-header .field-wrap {
+  border: 0; }
+
+section.event-filter .result-wrap .result-item p a, .news-slider-wrap .news-slider .news-block .news-info p a {
+  font-family: "DubaiFont Bold",Helvetica,Arial,sans-serif; }
+
+.breadcrumb-wrap .breadcrumb .breadcrumb-item a {
+  color: #002f70; }
+
+.event-slider-wrap .event-wall, .event-slider-wrap .event-list {
+  opacity: 1; }
+
+.page-template-template-apply section.apply .tab-panel-content .content-wrap p strong, .page-template-template-apply section.apply .tab-panel-content .content-wrap ul strong {
+  color: #002f70; }
+
+.simple-ico-box .content-wrap li {
+  color: #1a4775; }
 
 /** @format */
 .dark .sidebar-inner-wrap.uk-sticky .indicator-wrap .indicator-item,
