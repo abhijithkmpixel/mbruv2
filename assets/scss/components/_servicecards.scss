@@ -67,11 +67,16 @@
       // box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
     }
   }
-  img {
+  img,
+  .icon-wrap {
     width: 48px;
     height: 48px;
     margin: 0 auto 24px;
     display: block;
+    i {
+      color: #32affc;
+      font-size: 45px;
+    }
     @media (max-width: 720px) {
       width: 36px;
       height: 36px;

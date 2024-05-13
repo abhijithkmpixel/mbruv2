@@ -7,7 +7,7 @@
   color: #1a4775;
 }
 body:not(.home) {
-  padding-top: 130px;
+  padding-top: 133px;
 }
 .sidebar-inner-wrap.uk-sticky .indicator-wrap .indicator-item,
 .sidebar-inner-wrap.uk-sticky .indicator-wrap,
@@ -28,6 +28,7 @@ body:not(.home) {
 .sidebar-wrap .faq-wrap .faq-item .faq-head:before,
 .sidebar-wrap .indicator-wrap .indicator-item:before {
   border-color: #e5e5e5;
+  opacity: 1;
 }
 
 .sidebar-wrap .indicator-wrap .indicator-item {
@@ -126,6 +127,7 @@ section.mbru-offers .offers-wrap .offers-title .icon {
   }
 }
 section.our-facilities .slider-footer {
+  margin-left: 15px;
   border: 0;
 }
 section.our-facilities .slider-footer .controls .slick-arrow {
@@ -440,7 +442,7 @@ section.event-filter .filter-wrap .filter-item.head-item {
     border-right: 1px solid #32affc;
     border-bottom: 1px solid #32affc;
     transform: rotate(-45deg);
-    top: 15px;
+    top: 17px;
   }
   &:hover {
     color: #32affc;
@@ -491,6 +493,9 @@ section.why-choose .block .why__choose__us__card__new {
   overflow: hidden;
   display: block;
   background-color: #fff;
+  .morecontent {
+    display: none !important;
+  }
   .block-title {
     margin-top: 0;
     margin-left: 0;
@@ -530,6 +535,8 @@ section.why-choose .block .why__choose__us__card__new {
   background-color: transparent;
 }
 .carousel .controls .slick-arrow.carousel-next .icon,
+.simple-slideshow .controls .slick-arrow.prev .icon,
+.simple-slideshow .controls .slick-arrow.next .icon,
 .carousel .controls .slick-arrow.carousel-prev .icon {
   border: 1px solid #002f70 !important;
   color: #002f70 !important;
@@ -870,4 +877,42 @@ section.sidebar-template .content-wrap .page-content .dir-letters a {
 }
 .result-listing-wrap .result-item .label-wrap .year {
   color: #002f70;
+}
+.title h2 + .filter_wrap .filter_options {
+  border: 0;
+}
+.title h2 + .filter_wrap .filter_options .btn-filter:not(:last-child),
+.generic-toggle .filter_wrap .filter_options .btn-filter:not(:last-child) {
+  margin-right: 12px;
+}
+.discover-mbru .filter_wrap .filter_options .btn-filter,
+.title h2 + .filter_wrap .filter_options .btn-filter,
+.generic-toggle .filter_wrap .filter_options .btn-filter {
+  padding: 8px 20px;
+  border: 1px solid #ccd6e0;
+  background-color: #e5ebf0;
+  border-radius: 60px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #002f70;
+  line-height: 1;
+  transition: 0.2s all ease-in-out;
+  cursor: pointer;
+  width: max-content;
+  display: block;
+  text-transform: capitalize;
+  &.active {
+    border-color: #002f70;
+    background-color: #002f70;
+    color: #fff;
+  }
+}
+.sidebar-template .title.with-desc p {
+  color: #002f70;
+}
+.core-faculty .row.simple-box-wrap > div {
+  margin-bottom: 15px;
+}
+.sidebar-template.event-filter .block.well::after {
+  display: none;
 }
