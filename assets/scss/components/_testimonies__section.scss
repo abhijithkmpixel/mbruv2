@@ -3,6 +3,9 @@
 .testimonies__section {
   padding: 40px 0 80px;
   position: relative;
+  @media (max-width:720px) {
+    padding-bottom: 40px;
+  }
   .container {
     position: relative;
     &::after {
@@ -128,6 +131,7 @@
           @media (max-width: 720px) {
             font-size: 18px;
             text-align: center;
+            transform: translateY(140px);
           }
         }
         h6 {
@@ -139,6 +143,7 @@
           @media (max-width: 720px) {
             font-size: 14px;
             text-align: center;
+            transform: translateY(140px);
           }
         }
       }
@@ -156,6 +161,8 @@
         @media (max-width: 720px) {
           width: 130px;
           flex: 0 0 130px;
+            transform: translateY(-60px);
+
         }
         img {
           width: 100%;

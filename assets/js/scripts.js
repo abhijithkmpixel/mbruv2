@@ -5,6 +5,15 @@ $(document).ready(function () {
             listing.style.setProperty('--height', `-${listing.clientHeight}px`);
         });
     }, 500);
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 10) {
+            // Add the class to your element
+            $('body').addClass('sticky__header');
+        } else {
+            // Remove the class if the user scrolls back up
+            $('body').removeClass('sticky__header');
+        }
+    });
     $('.icon__quick__nav--wheelchair').click(function () {
         $(this).toggleClass('icon__quick__nav__active')
     })
@@ -32,6 +41,9 @@ $(document).ready(function () {
         pauseOnFocus: false,
         pauseOnHover: false,
         speed: 900,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        infinite: true,
         dots: true,
         appendDots: $('.hero__banner__navigation__inner'),
         prevArrow: `<button class="slick__arrow slick_prev">
@@ -44,8 +56,37 @@ $(document).ready(function () {
 <path d="M1.70492 0L0.294922 1.41L4.87492 6L0.294922 10.59L1.70492 12L7.70492 6L1.70492 0Z" fill="white"/>
 </svg>
 </button>`,
-        appendArrows: $('.hero__banner__navigation__outer')
+        appendArrows: $('.hero__banner__navigation__outer'),
     });
+
+    // $('#homepage_hero_slider').on('slick', function (event, slick) {
+    //     console.log('Slick slider initialized');
+
+    //     $('.hero__banner .slick-dots li.slick-active').append(`    <div class="circle-container">
+    //     <svg>
+    //         <circle class="circle" cx="12" cy="12" r="10"></circle>
+    //     </svg>
+    // </div>`)
+    // });
+setTimeout(() => {
+    $('.hero__banner .slick-dots li.slick-active').append(`    <div class="circle-container">
+        <svg>
+            <circle class="circle" cx="12" cy="12" r="10"></circle>
+        </svg>
+    </div>`)
+}, 500);
+  
+    $('#homepage_hero_slider').on('afterChange', function (event, slick, currentSlide, nextSlide) {
+        $('.hero__banner .slick-dots li.slick-active').append(`    <div class="circle-container">
+        <svg>
+            <circle class="circle" cx="12" cy="12" r="10"></circle>
+        </svg>
+    </div>`)
+    });
+    $('#homepage_hero_slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        $('.hero__banner .slick-dots li.slick-active .circle-container').remove()
+    });
+
     $('#testimonies__section__slider').slick({
         infinite: false,
         slidesToShow: 1,

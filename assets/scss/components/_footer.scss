@@ -72,6 +72,7 @@ footer {
           @media (max-width: 720px) {
             text-align: center;
             display: block;
+            font-size: 14px;
           }
         }
       }
@@ -194,6 +195,8 @@ footer {
         max-width: 70%;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
       }
     }
     .achieved__badges {
@@ -245,6 +248,7 @@ footer {
       flex-flow: column;
       justify-content: center;
       align-items: center;
+      padding-bottom: 70px;
     }
     .quick__links {
       display: flex;
@@ -254,6 +258,7 @@ footer {
       @media (max-width: 720px) {
         flex-flow: column;
         justify-content: center;
+        margin-bottom: 35px;
       }
       li {
         &:not(:last-child) {
@@ -277,6 +282,9 @@ footer {
       font-weight: 400;
       color: #6685a3;
       margin: 0;
+      @media (max-width:720px) {
+        transform: translateY(30px);
+      }
     }
     .social-media-wrap {
       @media (max-width: 1200px) {
@@ -286,9 +294,23 @@ footer {
         @media (max-width: 1200px) {
           margin-top: 0;
         }
+        li{
+          &:not(:last-child){
+
+            @media (max-width:720px) {
+             margin-right: 24px;
+          }
+      }
+        }
         a {
           color: #32affc;
+            @media (max-width:720px) {
+             font-size: 21px;
+            }
         }
+      }
+       @media (max-width:720px) {
+        transform: translateY(-30px);
       }
     }
   }
@@ -296,6 +318,10 @@ footer {
     padding: 8px 0;
     background-color: #fff;
     margin-top: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
     @media (max-width: 720px) {
       background-color: #002f70;
     }

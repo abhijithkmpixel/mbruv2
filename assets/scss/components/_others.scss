@@ -10,6 +10,9 @@ section.apply .tab-panel-content .content-wrap li strong,
 section.apply .tab-panel-content .content-wrap p strong{
   color: #002f70;
 }
+body{
+  overflow: hidden;
+}
 body:not(.home) {
   padding-top: 133px;
 }
@@ -949,4 +952,9 @@ font-family: "DubaiFont Bold",Helvetica,Arial,sans-serif;
 }
 .simple-ico-box .content-wrap li{
 color: #1a4775;
+}
+.our__programs__search__section + .testimonies__section{
+  @media (max-width:720px) {
+    padding-top: 0;
+  }
 }
