@@ -3060,7 +3060,7 @@ header .login-popup {
 .search-ul-block li.search-fld-01 .icon-search {
   color: #335c85; }
 
-.select2-results__option, .select2-container--default .select2-results__option--highlighted[aria-selected], .acad-cal-pdf {
+.select2-results__option, .select2-container--default .select2-results__option--highlighted[aria-selected], .acad-cal-pdf, .academic-calender .select2-container--default .select2-selection--single .select2-selection__rendered {
   color: #002f70 !important; }
 
 /** @format */
