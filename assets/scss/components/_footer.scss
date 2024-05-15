@@ -4,6 +4,9 @@ footer {
   background-color: #002f70;
   position: relative;
   z-index: 100;
+  @media (min-width:720px) { 
+  padding-bottom: 108px;
+  }
   .container {
     @media (max-width: 990px) {
       max-width: 100%;
