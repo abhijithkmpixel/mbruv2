@@ -251,7 +251,7 @@ footer {
       flex-flow: column;
       justify-content: center;
       align-items: center;
-      padding-bottom: 70px;
+      padding-bottom: 80px;
     }
     .quick__links {
       display: flex;
@@ -327,6 +327,8 @@ footer {
     z-index: 100;
     @media (max-width: 720px) {
       background-color: #002f70;
+    padding: 8px 0 15px;
+
     }
     .action__btn {
       padding: 12px 0;
@@ -364,6 +366,7 @@ footer {
           margin-left: 20px;
           @media (max-width: 1200px) {
             border-left: 0;
+          padding-left: 12px;
           }
           @media (max-width: 720px) {
             padding-left: 7px;
