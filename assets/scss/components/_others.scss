@@ -1020,3 +1020,12 @@ section.discover-mbru .split-area{
     }
   }
 }
+.overview .message-box-wrap .message-thumbnail{
+  &:empty{
+
+    @media (max-width:720px) {
+      display: none !important;
+  }
+    
+  }
+}

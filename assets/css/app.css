@@ -3081,6 +3081,10 @@ section.sidebar-template .content-wrap li, section.sidebar-template .content-wra
   section.discover-mbru .split-area .col-md-9 {
     margin-top: 40px; } }
 
+@media (max-width: 720px) {
+  .overview .message-box-wrap .message-thumbnail:empty {
+    display: none !important; } }
+
 /** @format */
 .dark .sidebar-inner-wrap.uk-sticky .indicator-wrap .indicator-item,
 .dark .sidebar-inner-wrap.uk-sticky .indicator-wrap,
