@@ -432,6 +432,7 @@ section.event-filter .filter-wrap .filter-item.head-item {
   background-color: #fff;
   color: #002f70;
   border-radius: 12px;
+  text-decoration: none !important;
   p {
     color: inherit;
   }
@@ -990,4 +991,7 @@ header .login-popup{
       }
     }
   }
+}
+.faq-wrap a{
+  text-decoration: none !important;
 }
