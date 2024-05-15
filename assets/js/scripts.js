@@ -41,6 +41,7 @@ $(document).ready(function () {
         pauseOnFocus: false,
         pauseOnHover: false,
         speed: 900,
+        fade:true,
         autoplay: true,
         autoplaySpeed: 3000,
         infinite: true,

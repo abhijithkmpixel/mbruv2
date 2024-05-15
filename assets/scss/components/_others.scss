@@ -920,7 +920,7 @@ section.sidebar-template .content-wrap .page-content .dir-letters a {
   color: #002f70;
 }
 .core-faculty .row.simple-box-wrap > div {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 .sidebar-template.event-filter .block.well::after {
   display: none;
@@ -960,6 +960,8 @@ color: #1a4775;
 }
 header .login-popup{
   background: #fff;
+  margin-top: -37px;
+  z-index: -1;
   .title h2,.title p{
     color: #002f70;
   }

@@ -2989,7 +2989,7 @@ section.sidebar-template .content-wrap .page-content .dir-letters a {
   color: #002f70; }
 
 .core-faculty .row.simple-box-wrap > div {
-  margin-bottom: 15px; }
+  margin-bottom: 30px; }
 
 .sidebar-template.event-filter .block.well::after {
   display: none; }
@@ -3027,7 +3027,9 @@ section.event-filter .result-wrap .result-item p a, .news-slider-wrap .news-slid
     padding-top: 0; } }
 
 header .login-popup {
-  background: #fff; }
+  background: #fff;
+  margin-top: -37px;
+  z-index: -1; }
   header .login-popup .title h2, header .login-popup .title p {
     color: #002f70; }
   header .login-popup .login-grid .login-link {
