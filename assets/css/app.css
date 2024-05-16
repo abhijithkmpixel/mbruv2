@@ -227,6 +227,8 @@ header {
     margin-right: 10px; }
   .cta__btn:hover {
     text-decoration: none; }
+  .cta__btn:focus {
+    outline: none !important; }
 
 .cta__btn__primary {
   background-color: #f5f7f9; }
@@ -1214,7 +1216,8 @@ select {
             .testimonies__section .testimonies__section__slider .testimonies__section__slider__item .testimonies__section__slider__item__content h5 {
               font-size: 18px;
               text-align: center;
-              transform: translateY(140px); } }
+              transform: translateY(140px);
+              min-height: 22px; } }
         .testimonies__section .testimonies__section__slider .testimonies__section__slider__item .testimonies__section__slider__item__content h6 {
           font-size: 16px;
           line-height: 1.2;
@@ -1225,7 +1228,8 @@ select {
             .testimonies__section .testimonies__section__slider .testimonies__section__slider__item .testimonies__section__slider__item__content h6 {
               font-size: 14px;
               text-align: center;
-              transform: translateY(140px); } }
+              transform: translateY(140px);
+              min-height: 17px; } }
       .testimonies__section .testimonies__section__slider .testimonies__section__slider__item .testimonies__section__slider__item__image {
         width: 250px;
         flex: 0 0 250px;
@@ -2177,15 +2181,19 @@ body:not(.home) {
   border-color: #e5e5e5;
   opacity: 1; }
 
-.sidebar-wrap .indicator-wrap .indicator-item {
+.sidebar-wrap .indicator-wrap .indicator-item, .sidebar-wrap .indicator-wrap .tabs ul li {
   position: relative;
   text-decoration: none !important;
-  padding-right: 20px; }
+  padding-right: 20px;
+  border-color: #E5E5E5; }
+  .sidebar-wrap .indicator-wrap .indicator-item:hover, .sidebar-wrap .indicator-wrap .tabs ul li:hover {
+    background-color: #fff !important; }
 
 section.sidebar-template .content-wrap .sidebar-wrap {
   width: 330px; }
 
 .sidebar-wrap .indicator-wrap .indicator-item.active::after,
+.sidebar-wrap .indicator-wrap .tabs ul li::after,
 .sidebar-wrap .indicator-wrap .indicator-item::after {
   content: "" !important;
   width: 14px;
@@ -2204,10 +2212,11 @@ section.sidebar-template .content-wrap .sidebar-wrap {
   bottom: auto;
   left: auto; }
 
-.sidebar-wrap .indicator-wrap .indicator-item.active {
+.sidebar-wrap .indicator-wrap .indicator-item.active, .sidebar-wrap .indicator-wrap .tabs ul li.active {
   font-size: 18px;
   font-family: "DubaiFont Medium", Helvetica, Arial, sans-serif;
-  color: #32affc; }
+  color: #32affc;
+  background-color: #fff; }
 
 .title,
 .title h2 {
@@ -2256,6 +2265,11 @@ section.mbru-offers .offers-wrap .offers-title .icon {
 .library-nav-block .nav-block .icon-wrap,
 .library-nav-block .nav-block .icon-wrap i {
   color: #002f70; }
+  .library-nav-block .nav-block .block-title h3 img,
+  .library-nav-block .nav-block .icon-wrap img,
+  .library-nav-block .nav-block .icon-wrap i img {
+    width: 46px;
+    height: auto; }
 
 .library-nav-block .nav-block .block-title p {
   color: #1a4775; }
@@ -2590,7 +2604,7 @@ b {
 
 .why__choose__us__card__new,
 .block .why__choose__us__card__new,
-section.why-choose .block .why__choose__us__card__new {
+section.why-choose .block .why__choose__us__card__new, .sidebar-wrap .widget .block > a {
   width: 100%;
   border: 1px solid #ccd6e0;
   border-radius: 16px;
@@ -2599,11 +2613,11 @@ section.why-choose .block .why__choose__us__card__new {
   background-color: #fff; }
   .why__choose__us__card__new .morecontent,
   .block .why__choose__us__card__new .morecontent,
-  section.why-choose .block .why__choose__us__card__new .morecontent {
+  section.why-choose .block .why__choose__us__card__new .morecontent, .sidebar-wrap .widget .block > a .morecontent {
     display: none !important; }
   .why__choose__us__card__new .block-title,
   .block .why__choose__us__card__new .block-title,
-  section.why-choose .block .why__choose__us__card__new .block-title {
+  section.why-choose .block .why__choose__us__card__new .block-title, .sidebar-wrap .widget .block > a .block-title {
     margin-top: 0;
     margin-left: 0;
     padding: 16px 24px 16px;
@@ -2611,7 +2625,7 @@ section.why-choose .block .why__choose__us__card__new {
     min-height: 150px; }
     .why__choose__us__card__new .block-title h4,
     .block .why__choose__us__card__new .block-title h4,
-    section.why-choose .block .why__choose__us__card__new .block-title h4 {
+    section.why-choose .block .why__choose__us__card__new .block-title h4, .sidebar-wrap .widget .block > a .block-title h4 {
       font-size: 24px;
       line-height: 1.2;
       color: #002f70 !important;
@@ -2619,7 +2633,7 @@ section.why-choose .block .why__choose__us__card__new {
       margin-bottom: 10px; }
     .why__choose__us__card__new .block-title p,
     .block .why__choose__us__card__new .block-title p,
-    section.why-choose .block .why__choose__us__card__new .block-title p {
+    section.why-choose .block .why__choose__us__card__new .block-title p, .sidebar-wrap .widget .block > a .block-title p {
       font-size: 13px;
       line-height: 1.4;
       color: #002f70;
@@ -2627,7 +2641,21 @@ section.why-choose .block .why__choose__us__card__new {
       margin-bottom: 0px; }
   .why__choose__us__card__new .block-thumbnail img,
   .block .why__choose__us__card__new .block-thumbnail img,
-  section.why-choose .block .why__choose__us__card__new .block-thumbnail img {
+  section.why-choose .block .why__choose__us__card__new .block-thumbnail img, .sidebar-wrap .widget .block > a .block-thumbnail img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 421/280;
+    object-fit: cover; }
+
+#mediaNewsData .col-md-3 .block.wall.small > a,
+#mediaNewsData .col-md-6 .block.wall.small {
+  border: 1px solid #ccd6e0;
+  border-radius: 16px;
+  overflow: hidden;
+  display: block;
+  background-color: #fff; }
+  #mediaNewsData .col-md-3 .block.wall.small > a .block-thumbnail img,
+  #mediaNewsData .col-md-6 .block.wall.small .block-thumbnail img {
     width: 100%;
     height: auto;
     aspect-ratio: 421/280;
@@ -2754,8 +2782,10 @@ section.life-at-mbru.overview .content-wrap .overview-description ul {
 .image-text-wrap .image-text-row .text-holder h3 {
   color: #002f70; }
 
-.image-text-wrap .image-text-row .text-holder p {
+.image-text-wrap .image-text-row .text-holder p, .image-text-wrap .image-text-row .text-holder li {
   color: #1a4775; }
+  .image-text-wrap .image-text-row .text-holder p strong, .image-text-wrap .image-text-row .text-holder p span, .image-text-wrap .image-text-row .text-holder li strong, .image-text-wrap .image-text-row .text-holder li span {
+    color: inherit; }
 
 .block-with-pro .pro-thumbnail {
   border-radius: 16px;
@@ -2864,14 +2894,14 @@ textarea {
 .about-program p,
 .page-content .content-area .content-area-inner li,
 .page-content .content-area .content-area-inner p {
-  color: #1a4775; }
+  color: #1a4775 !important; }
   .about-program p strong,
   .about-program p span,
   .page-content .content-area .content-area-inner li strong,
   .page-content .content-area .content-area-inner li span,
   .page-content .content-area .content-area-inner p strong,
   .page-content .content-area .content-area-inner p span {
-    color: #002f70; }
+    color: #002f70 !important; }
 
 section.apply .tab-panel .tab-items li.active a {
   background: #d6effe;
@@ -2924,6 +2954,9 @@ section.sidebar-template .content-wrap .page-content .dir-letters a.active {
   background-color: #002f70;
   color: #fff;
   display: inline-block; }
+  @media (min-width: 1200px) {
+    .simple-ico-box .content-wrap a:hover {
+      background-color: #1a4775; } }
 
 .news-content h4 {
   color: #002f70; }
@@ -3068,7 +3101,7 @@ header .login-popup {
 .search-ul-block li.search-fld-01 .icon-search {
   color: #335c85; }
 
-.select2-results__option, .select2-container--default .select2-results__option--highlighted[aria-selected], .acad-cal-pdf, .academic-calender .select2-container--default .select2-selection--single .select2-selection__rendered {
+.select2-results__option, .select2-container--default .select2-results__option--highlighted[aria-selected], .acad-cal-pdf, .academic-calender .select2-container--default .select2-selection--single .select2-selection__rendered, .expanding-section .block .block-title h4 {
   color: #002f70 !important; }
 
 .result-listing-wrap .result-item p a {
@@ -3076,6 +3109,8 @@ header .login-popup {
 
 section.sidebar-template .content-wrap li, section.sidebar-template .content-wrap p {
   color: #1a4775; }
+  section.sidebar-template .content-wrap li span, section.sidebar-template .content-wrap li strong, section.sidebar-template .content-wrap p span, section.sidebar-template .content-wrap p strong {
+    color: #002f70; }
 
 @media (max-width: 1200px) {
   section.discover-mbru .split-area .col-md-9 {
@@ -3084,6 +3119,93 @@ section.sidebar-template .content-wrap li, section.sidebar-template .content-wra
 @media (max-width: 720px) {
   .overview .message-box-wrap .message-thumbnail:empty {
     display: none !important; } }
+
+.icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options.fontsize-switch > .btn, section.event-filter .filtering-header .date-holder .next-calender.disabled i {
+  color: #002f70; }
+
+.hospital-wall .wall-block {
+  border-radius: 20px;
+  overflow: hidden; }
+
+.page-template-template-media-landing section.media-news #mediaNewsData .block-title p {
+  color: #1a4775; }
+  .page-template-template-media-landing section.media-news #mediaNewsData .block-title p a:not(.btn) {
+    color: inherit; }
+
+.page-template-template-media-landing section.media-news #mediaNewsData .date, section.event-filter .filtering-header .current-day, section.event-filter .result-wrap .result-item .date {
+  color: #6685A3; }
+
+section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ol, section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content p, section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ul, .content-wrap-inner .inner-content p, .content-wrap-inner .second-content ul li, section.event-filter .result-wrap .result-item .location, .facility-detail .discription p, .faq-wrap .faq-item .faq-body p, .page-content .content-area .content-area-inner h4, .page-content .content-area .content-area-inner h5, .page-content .content-area .content-area-inner h6, .page-content .content-area .content-area-inner h3, .page-content .content-area .content-area-inner h2 {
+  color: #1a4775 !important; }
+  section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ol strong, section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content p strong, section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ul strong, .content-wrap-inner .inner-content p strong, .content-wrap-inner .second-content ul li strong, section.event-filter .result-wrap .result-item .location strong, .facility-detail .discription p strong, .faq-wrap .faq-item .faq-body p strong, .page-content .content-area .content-area-inner h4 strong, .page-content .content-area .content-area-inner h5 strong, .page-content .content-area .content-area-inner h6 strong, .page-content .content-area .content-area-inner h3 strong, .page-content .content-area .content-area-inner h2 strong {
+    color: #002f70 !important; }
+  section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ol span, section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content p span, section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ul span, .content-wrap-inner .inner-content p span, .content-wrap-inner .second-content ul li span, section.event-filter .result-wrap .result-item .location span, .facility-detail .discription p span, .faq-wrap .faq-item .faq-body p span, .page-content .content-area .content-area-inner h4 span, .page-content .content-area .content-area-inner h5 span, .page-content .content-area .content-area-inner h6 span, .page-content .content-area .content-area-inner h3 span, .page-content .content-area .content-area-inner h2 span {
+    color: inherit !important; }
+
+section.sidebar-template.right-sidebar .content-wrap .page-content .page-title .tagline, section.sidebar-template.right-sidebar .content-wrap .page-content .page-title .tagline .date, section.sidebar-template.right-sidebar .content-wrap .page-content .page-title .tagline .category, section.event-filter .result-wrap .result-item .category {
+  color: #6685A3; }
+
+.content-wrap-inner .not-found-wrap .inner-content a.back-top-page {
+  margin-top: 15px !important; }
+
+.content-wrap-inner .inner-content p {
+  text-align: center; }
+
+.block.wall a:hover .block-title .tagline {
+  border-left: 3px solid #fff; }
+
+.facility-list #mediaGalleryDataResponse .col-md-4 > .block {
+  height: 100%; }
+  .facility-list #mediaGalleryDataResponse .col-md-4 > .block .why__choose__us__card__new .block-title h4 {
+    min-height: unset; }
+
+.page-content .content-area .content-area-inner .diagram-holder .diagram-body .flow-row .bubble-item h4 {
+  color: #002f70; }
+
+a.back-top-page {
+  margin-bottom: 45px; }
+
+.btn-primary--withicon {
+  position: relative;
+  display: inline-flex;
+  align-items: center; }
+  .btn-primary--withicon::after {
+    display: none !important; }
+  .btn-primary--withicon i {
+    margin-right: -35px;
+    margin-left: 15px;
+    color: #32affc; }
+
+.gallery-carosel .controls .gallery-slider-next:hover .icon, .gallery-carosel .controls .gallery-slider-prev:hover .icon {
+  background: #002f70;
+  border-color: #002f70; }
+
+.facility-list .block .block-title h4 {
+  min-height: unset; }
+
+.page-template-template-program-landing .btn-wrap.right-btn {
+  padding-bottom: 100px; }
+
+.leadership {
+  padding-bottom: 100px; }
+  .leadership .leadership-listing .leadership-block {
+    margin: 50px 16px; }
+    .leadership .leadership-listing .leadership-block .thumbnail-wrap {
+      border-radius: 16px;
+      box-shadow: none; }
+    .leadership .leadership-listing .leadership-block .info-panel {
+      border-radius: 16px; }
+
+section.history .history-timeline-wrap .timeline-item a {
+  border-radius: 16px;
+  overflow: hidden; }
+
+.sub-block.addimg .thumbholder {
+  width: 200px;
+  flex: 0  0 200px; }
+
+section.faq-detail .faq-wrap .faq-item .faq-body {
+  border-radius: 16px; }
 
 /** @format */
 .dark .sidebar-inner-wrap.uk-sticky .indicator-wrap .indicator-item,

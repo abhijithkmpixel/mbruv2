@@ -250,6 +250,9 @@ header {
   &:hover {
     text-decoration: none;
   }
+  &:focus{
+    outline: none !important;
+  }
 }
 .cta__btn__primary {
   background-color: #f5f7f9;
