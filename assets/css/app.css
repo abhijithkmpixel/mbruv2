@@ -2151,9 +2151,6 @@ section.apply .tab-panel-content .content-wrap li strong,
 section.apply .tab-panel-content .content-wrap p strong {
   color: #002f70; }
 
-body {
-  overflow: hidden; }
-
 body:not(.home) {
   padding-top: 133px; }
   @media (max-width: 720px) {
