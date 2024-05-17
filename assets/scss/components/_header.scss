@@ -253,6 +253,9 @@ header {
   &:focus{
     outline: none !important;
   }
+  @media (max-width:720px) {
+    font-size: 14px;
+  }
 }
 .cta__btn__primary {
   background-color: #f5f7f9;

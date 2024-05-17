@@ -4,11 +4,11 @@
   .sidebar-inner-wrap.uk-sticky .indicator-wrap .indicator-item,
   .sidebar-inner-wrap.uk-sticky .indicator-wrap,
   .sidebar-inner-wrap.uk-sticky {
-    background-color: rgba($color: #fff, $alpha: 0.04);
+    background-color: transparent;
   }
   .sidebar-inner-wrap.uk-sticky {
-    border-radius: 10px;
-    overflow: hidden;
+    // border-radius: 10px;
+    // overflow: hidden;
   }
   .links-list-wrap .link-list .link-item:after {
     border-color: #fff;
@@ -34,7 +34,7 @@
     border-color: #fff;
   }
   section.banner-panel .panel-wrap {
-    background-color: rgba($color: #fff, $alpha: 0.04) !important;
+    background-color:#142c44  !important;
   }
   .tab-content > .tab-pane h4 {
     color: #fff;
@@ -388,4 +388,174 @@
         border: 1px solid rgba($color: #fff, $alpha: 0.1);
       }
   }
+  .breadcrumb-item + .breadcrumb-item::before{
+    border-color: #fff;
+  }
+   .breadcrumbs li a svg path,.breadcrumb-wrap .breadcrumb .breadcrumb-item a svg path{
+      fill: #b1cee3 !important;
+    }
+    .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options.fontsize-switch > .btn,section.sidebar-template .content-wrap li, section.sidebar-template .content-wrap p,section.sidebar-template .content-wrap li, section.sidebar-template .content-wrap p,section.sidebar-template .content-wrap li, section.sidebar-template .content-wrap p,section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ol strong, section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content p strong, section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ul strong, .content-wrap-inner .inner-content p strong, .content-wrap-inner .second-content ul li strong, section.event-filter .result-wrap .result-item .location strong, .facility-detail .discription p strong, .faq-wrap .faq-item .faq-body p strong, .page-content .content-area .content-area-inner h4 strong, .page-content .content-area .content-area-inner h5 strong, .page-content .content-area .content-area-inner h6 strong, .page-content .content-area .content-area-inner h3 strong, .page-content .content-area .content-area-inner h2 strong, .facility-detail .discription li strong{
+      color: #fff !important;
+      a,b,strong{
+        color: inherit !important;
+      }
+    }
+    .acad-cal-pdf ,.academic-calender .select2-container--default .select2-selection--single .select2-selection__rendered,.select2-results__option{
+      color: #fff !important;
+    }
+    .latest__news .latest__news__grid .latest__news__grid__item .latest__news__grid__item__content .latest__news__grid__item__content__footer a svg path, .latest__news .latest__news__grid .latest__news__grid__item .latest__news__grid__item__content .latest__news__grid__item__content__footer .anchor svg path{
+      fill: #32affc;
+    }
+    .sidebar-wrap .indicator-wrap .tabs ul li:hover{
+      background-color: transparent !important;
+      background: transparent !important;
+    }
+    .sidebar-wrap .indicator-wrap .indicator-item.active, .sidebar-wrap .indicator-wrap .tabs ul li.active{
+      background-color: transparent;
+      background: transparent;
+      color: #32affc;
+      &::after{
+        border-color: #32affc;
+      }
+    }
+    .sidebar-wrap .indicator-wrap .indicator-item.active::after, .sidebar-wrap .indicator-wrap .tabs ul li::after, .sidebar-wrap .indicator-wrap .indicator-item::after{
+      border-color: #fff;
+    }
+    section.sidebar-template .content-wrap li span, section.sidebar-template .content-wrap li strong, section.sidebar-template .content-wrap p span, section.sidebar-template .content-wrap p strong{
+      color: #32affc;
+    }
+    .sidebar-wrap .indicator-wrap .indicator-item, .sidebar-wrap .indicator-wrap .tabs ul li{
+      border-color: rgba($color: #fff, $alpha: 0.1);
+    }
+    section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ol, section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content p, section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ul, .content-wrap-inner .inner-content p, .content-wrap-inner .second-content ul li, section.event-filter .result-wrap .result-item .location, .facility-detail .discription p, .faq-wrap .faq-item .faq-body p, .page-content .content-area .content-area-inner h4, .page-content .content-area .content-area-inner h5, .page-content .content-area .content-area-inner h6, .page-content .content-area .content-area-inner h3, .page-content .content-area .content-area-inner h2, .facility-detail .discription li,.pagination-wrap ul.pagination li a, .pagination-wrap ul.pagination2 li a,.page-content h3,.about-program p strong, .about-program p span, .page-content .content-area .content-area-inner li strong, .page-content .content-area .content-area-inner li span, .page-content .content-area .content-area-inner p strong, .page-content .content-area .content-area-inner p span{
+      color: #fff !important;
+    }
+    .section-block .content-wrap ul li:before{
+      background: #fff;
+    }
+    .logo-block-wrap .logo-block-item{
+      background: rgba($color: #fff, $alpha: 0.04);
+    }
+    .about-program p, .page-content .content-area .content-area-inner li, .page-content .content-area .content-area-inner p{
+      color: #fff !important;
+      strong{
+        color: inherit !important;
+      }
+    }
+    .page-content .content-area .content-area-inner .diagram-holder .diagram-body .flow-row .bubble-item h4{
+      background: rgba($color: #fff, $alpha: 0.04);
+      border: 1px solid rgba($color: #fff, $alpha: 0.1);
+      border-radius: 15px;
+    }
+    select.input-01a{
+      background: #fff url(../images/arrowdown.svg) no-repeat 96% center;
+    }
+    .faq-header .field-wrap.search-input .icon{
+      color: #fff;
+    }
+    section.about-university-overview .overview .content-wrap p, section.about-university-overview .overview .content-wrap li,section.history .history-timeline-wrap .timeline-item .timeline-year span,.image-text-wrap .image-text-row .text-holder p, .image-text-wrap .image-text-row .text-holder li{
+      color: #fff;
+      strong,a,span,b{
+        color: #fff;
+      }
+    }
+    .counter-block-new-icon img , .simple-ico-box .icon-wrap img{
+      filter: invert(100%) sepia(100%) saturate(10%) hue-rotate(90deg) brightness(100%) contrast(100%);
+    }
+    div.wpforms-container-full .wpforms-form select option{
+      background-color: #002f70;
+    }
+    .banner-panel .nav-tabs .nav-link.active{
+      background: #002f70;
+    }
+    .services__grid__listing__card{
+      background-color:rgba($color: #fff, $alpha: 0.04) ;
+    }
+    .cta__btn__secondary{
+      &:hover{
+        @media (min-width:1200px) {
+          background-color: #32affc;
+          color: #fff;
+        }
+      }
+    }
+    section.faq-detail .faq-wrap .faq-item .faq-body{
+      background: transparent;
+      border-color: rgba($color: #fff, $alpha: 0.1);
+    }
+    .simple-ico-box .content-wrap li,.page-template-template-media-landing section.media-news #mediaNewsData .block-title p{
+      color: #fff;
+    }
+    .info-window{
+      color: #002f70;
+    }
+   .fill .vertical-tabs .tab_item.active, .image-text-wrap .image-text-row .text-holder .btn, .navigate, section.get-in-touch .contact-options{
+      background-color:rgba($color: #fff, $alpha: 0.04) !important;
+   }
+   #mediaNewsData .col-md-3 .block.wall.small > a, #mediaNewsData .col-md-6 .block.wall.small{
+      border-color: rgba($color: #fff, $alpha: 0.1);
+      background-color: transparent;
+   }
+    section.media-news #mediaNewsData .block-title p{
+    color: #fff;
+   }
+   .sidebar-wrap .indicator-wrap .indicator-item:hover, .sidebar-wrap .indicator-wrap .tabs ul li:hover{
+    background-color: transparent !important;
+    color: #fff;
+    b,strong{
+      color: inherit;
+    }
+   }
+   .tab-wrap.mCustomScrollbar .vertical-tabs .tab_item.active{
+    background-color: rgba($color: #fff, $alpha: 0.1);
+   }
+   .blue-block{
+    background-color: rgba($color: #fff, $alpha: 0.04);
+   }
+     .form-block {
+     .form-title,label{
+      color: #fff !important;
+      span,strong,b{
+        color: inherit !important;
+      }
+
+    }
+   }
+   div.wpforms-container-full .wpforms-form button[type="submit"]{
+    background-color:  #fff !important;
+    color: #002f70 !important;
+    &:hover{
+      @media (min-width:1200px) {
+        background-color:  #32affc !important;
+      }
+    }
+   }
+   section.history .history-timeline-wrap .timeline-item a{
+    background-color: rgba($color: #fff, $alpha: 0.04);
+   }
+   .select2-results__option, .select2-container--default .select2-results__option--highlighted[aria-selected], .acad-cal-pdf, .academic-calender .select2-container--default .select2-selection--single .select2-selection__rendered, .expanding-section .block .block-title h4{
+    color: #fff !important;
+   }
+   .btn.btn-download .icon{
+    color: #002f70;
+   }
+   .career-filter span.category{
+    border-left: 3px solid #fff;
+   }
+   .btn.btn-secondary{
+    background: #fff;
+    color: #002f70;
+    &:hover{
+      @media (min-width:1200px) {
+        background: #32affc;
+        color: #fff;
+      }
+    }
+   }
+   .our__programs__search__section .our__programs__search__section__form__wrap form fieldset.search__field svg path, .our__programs__search__section .our__programs__search__section__form__wrap .form fieldset.search__field svg path{
+    stroke: #fff;
+   }
+   div.wpforms-container-full .wpforms-form h3{
+    color: #fff;
+   }
 }
