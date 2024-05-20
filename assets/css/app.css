@@ -117,7 +117,7 @@ header {
       header .header__inner .header__inner__right .icon__quick__nav {
         margin-right: 16px; }
 
-.icon__quick__nav {
+.icon__quick__nav, .accessibility__menu {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -130,23 +130,23 @@ header {
   position: relative;
   cursor: pointer; }
   @media (max-width: 1200px) {
-    .icon__quick__nav {
+    .icon__quick__nav, .accessibility__menu {
       background-color: transparent; } }
   @media (min-width: 1200px) {
-    .icon__quick__nav:hover {
+    .icon__quick__nav:hover, .accessibility__menu:hover {
       background-color: #cce2f7; } }
-  .icon__quick__nav svg {
+  .icon__quick__nav svg, .accessibility__menu svg {
     width: 100%;
     height: auto;
     object-fit: contain;
     pointer-events: none; }
-  @media (max-width: 720px) {
-    .icon__quick__nav.icon__quick__nav--wheelchair {
+  @media (max-width: 990px) {
+    .icon__quick__nav.icon__quick__nav--wheelchair, .accessibility__menu.icon__quick__nav--wheelchair {
       display: none; } }
   @media (max-width: 720px) {
-    .icon__quick__nav.icon__quick__nav--search {
+    .icon__quick__nav.icon__quick__nav--search, .accessibility__menu.icon__quick__nav--search {
       margin-right: 40px !important; } }
-  .icon__quick__nav .icon__quick__nav__dropdown {
+  .icon__quick__nav .icon__quick__nav__dropdown, .accessibility__menu .icon__quick__nav__dropdown {
     position: absolute;
     top: calc(100% + 30px);
     right: 0;
@@ -159,28 +159,28 @@ header {
     opacity: 0;
     visibility: hidden;
     transition: 0.2s all ease-in-out; }
-    .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap:not(:last-child) {
+    .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap:not(:last-child), .accessibility__menu .icon__quick__nav__dropdown .filter_wrap:not(:last-child) {
       margin-bottom: 24px; }
-    .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_dropdown {
+    .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_dropdown, .accessibility__menu .icon__quick__nav__dropdown .filter_wrap .filter_dropdown {
       display: none; }
-    .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .label {
+    .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .label, .accessibility__menu .icon__quick__nav__dropdown .filter_wrap .label {
       font-size: 15px;
       color: #202a50;
       font-weight: 700;
       text-transform: uppercase;
       margin-bottom: 15px; }
-    .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options {
+    .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options, .accessibility__menu .icon__quick__nav__dropdown .filter_wrap .filter_options {
       width: 100%;
       border: 1px solid #8099b2;
       border-radius: 12px;
       padding: 4px; }
       @media (max-width: 991px) {
-        .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options {
+        .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options, .accessibility__menu .icon__quick__nav__dropdown .filter_wrap .filter_options {
           opacity: 1;
           visibility: visible;
           position: static;
           display: flex; } }
-      .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options > .btn {
+      .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options > .btn, .accessibility__menu .icon__quick__nav__dropdown .filter_wrap .filter_options > .btn {
         width: 50%;
         flex: 0 0 50%;
         border-radius: 8px;
@@ -188,25 +188,25 @@ header {
         text-align: center;
         padding: 10px 15px; }
         @media (max-width: 1200px) {
-          .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options > .btn {
+          .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options > .btn, .accessibility__menu .icon__quick__nav__dropdown .filter_wrap .filter_options > .btn {
             height: unset; } }
-      .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options.contrast-switch .btn.active {
+      .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options.contrast-switch .btn.active, .accessibility__menu .icon__quick__nav__dropdown .filter_wrap .filter_options.contrast-switch .btn.active {
         background-color: #002f70 !important;
         color: #fff !important; }
-      .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options.fontsize-switch {
+      .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options.fontsize-switch, .accessibility__menu .icon__quick__nav__dropdown .filter_wrap .filter_options.fontsize-switch {
         padding: 14px; }
-        .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options.fontsize-switch > .btn {
+        .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options.fontsize-switch > .btn, .accessibility__menu .icon__quick__nav__dropdown .filter_wrap .filter_options.fontsize-switch > .btn {
           width: 33.33%;
           flex: 0 0 33.33%;
           padding: 0px 20px;
           height: 30px;
           border-radius: 0; }
-          .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options.fontsize-switch > .btn:not(:last-child) {
+          .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options.fontsize-switch > .btn:not(:last-child), .accessibility__menu .icon__quick__nav__dropdown .filter_wrap .filter_options.fontsize-switch > .btn:not(:last-child) {
             border-right: 1px solid #e5ebf0; }
-          .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options.fontsize-switch > .btn.active {
+          .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options.fontsize-switch > .btn.active, .accessibility__menu .icon__quick__nav__dropdown .filter_wrap .filter_options.fontsize-switch > .btn.active {
             background-color: transparent;
             color: #212529; }
-  .icon__quick__nav.icon__quick__nav__active .icon__quick__nav__dropdown {
+  .icon__quick__nav.icon__quick__nav__active .icon__quick__nav__dropdown, .accessibility__menu.icon__quick__nav__active .icon__quick__nav__dropdown {
     opacity: 1;
     visibility: visible; }
 
@@ -564,6 +564,48 @@ li
 
 .sticky__header header {
   box-shadow: 0px 25px 26px -22px rgba(0, 51, 102, 0.08); }
+
+.accessibility__menu, .login__menu {
+  position: relative;
+  width: auto;
+  height: auto;
+  display: block;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0; }
+  .accessibility__menu:hover, .login__menu:hover {
+    background-color: transparent; }
+  .accessibility__menu::after, .login__menu::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 12px;
+    display: block;
+    right: 6px;
+    transform: rotate(-45deg);
+    transition: 0.1s all ease-in-out;
+    border-right: 2px solid #002f70;
+    border-bottom: 2px solid #002f70; }
+  .accessibility__menu .icon__quick__nav__dropdown, .login__menu .icon__quick__nav__dropdown {
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    min-width: 100%;
+    box-shadow: none;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 30px; }
+  .accessibility__menu.icon__quick__nav__active .icon__quick__nav__dropdown, .login__menu.icon__quick__nav__active .icon__quick__nav__dropdown {
+    display: block; }
+
+@media (max-width: 990px) {
+  header .login-popup.active {
+    padding-top: 30px; } }
+
+@media (max-width: 768px) {
+  header .login-popup.active {
+    margin-top: -44px; } }
 
 /** @format */
 .hero__banner {

@@ -106,7 +106,7 @@ header {
     }
   }
 }
-.icon__quick__nav {
+.icon__quick__nav  , .accessibility__menu{
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -137,7 +137,7 @@ header {
     pointer-events: none;
   }
   &.icon__quick__nav--wheelchair {
-    @media (max-width: 720px) {
+    @media (max-width: 990px) {
       display: none;
     }
   }
@@ -681,4 +681,106 @@ header {
 }
 .sticky__header header{
   box-shadow:0px 25px 26px -22px rgba(0, 51, 102, 0.08) ;
+}
+.accessibility__menu , .login__menu{
+  position: relative;
+  width: auto;
+  height: auto;
+  display: block;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+  &:hover{
+    background-color: transparent;
+  }
+  &::after{
+ content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 12px;
+    display: block;
+    right: 6px;
+    transform: rotate(-45deg);
+    transition: 0.1s all ease-in-out;
+    border-right: 2px solid #002f70;
+    border-bottom: 2px solid #002f70;
+  }
+  .icon__quick__nav__dropdown{
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    min-width: 100%;
+    box-shadow: none;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+//   .login-popup{
+//     width: 100%;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     background-color: #fff;
+//     width: 100%;
+//     height: 100%;
+//    .btn-close{
+
+//    }
+//     .title{ h2{
+//               font-size: 32px;
+//         line-height: 38px;
+//         color: #002f70;
+//     } 
+//   p{
+//     font-size: 18px;
+//     line-height: 26px;
+//     font-family: "DubaiFont Regular", Helvetica, Arial, sans-serif;
+//     color: #002f70;
+//   }}
+//   .row>div{
+//     @media (max-width:990px) {
+//       width: 100%;
+//       flex: 0 0 100%;
+//       max-width: 100%;
+//     }
+//   }
+//   .login-grid .login-link{
+//         background: #fff;
+//     border-radius: 16px;
+//     border: 1px solid #ccd6e0;
+//             margin-bottom: 15px;
+// display: flex;
+//     text-decoration: none;
+//     .icon-wrap{
+//       height: 50px;
+//     width: 50px;
+//     font-size: 50px;
+//     i{
+//       color: #002f70;
+//       font-size: inherit;
+//     }
+//     }
+//     h3{
+//       font-size: 22px;
+//       color: #002f70;
+//       line-height: 30px;
+//     margin: 0;
+//     font-family: "DubaiFont Bold", Helvetica, Arial, sans-serif;
+//     }
+//   }
+//   }
+  &.icon__quick__nav__active{
+    .icon__quick__nav__dropdown{
+      display: block;
+    }
+  }
+}
+header .login-popup.active{
+  @media (max-width:990px) {
+    padding-top: 30px;
+  }
+  @media (max-width:768px) {
+    margin-top: -44px;
+  }
 }

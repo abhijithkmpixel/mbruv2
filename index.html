@@ -67,7 +67,7 @@
             </ul>
           </div>
           <div class="header__inner__right">
-            <a  class="icon__quick__nav icon__quick__nav--search">
+            <a class="icon__quick__nav icon__quick__nav--search">
               <svg
                 width="20"
                 height="20"
@@ -82,7 +82,7 @@
                   stroke-linejoin="round" />
               </svg>
             </a>
-            <a  class="icon__quick__nav icon__quick__nav--wheelchair">
+            <a class="icon__quick__nav icon__quick__nav--wheelchair">
               <svg
                 width="24"
                 height="24"
@@ -237,8 +237,56 @@
         <li><a href="#">About MBRU</a></li>
         <li><a href="#">Media Center</a></li>
         <li><a href="#">Contact Us</a></li>
+        <li class="accessibility__menu d-lg-none">
+          <a href="#">Accessibility</a>
+          <div class="icon__quick__nav__dropdown position-static">
+            <div class="filter_wrap">
+              <div class="label">Contrast</div>
+              <div class="btn-group filter_options contrast-switch">
+                <button
+                  type="button"
+                  class="btn btn-filter active"
+                  value="light">
+                  Light
+                </button>
+                <button type="button" class="btn btn-filter" value="dark">
+                  Dark
+                </button>
+              </div>
+            </div>
+            <div class="filter_wrap">
+              <div class="label">Font Size</div>
+              <div
+                class="btn-group filter_options fontsize-switch"
+                id="fontsize-control">
+                <button
+                  type="button"
+                  class="btn btn-filter decrese"
+                  value="decrese">
+                  <i class="icon icon-decrese" style="font-size: 14px"></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-filter normal-size"
+                  value="normal"
+                  style="font-size: 18px">
+                  A
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-filter increse"
+                  value="increse">
+                  <i class="icon icon-increse"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="login__menu d-lg-none"><a href="#">Login</a>
+</li>
       </ul>
     </aside>
+  
     <!-- hamburger menu end-->
 
     <section class="hero__banner">
@@ -477,8 +525,8 @@
                 My favourite thing about MBRU is its diversity. We have so many
                 different people here that share their experiences with one
                 another, its eye opening. I’m a lot more confident than I was
-                before coming here. another, its eye opening. I’m a lot more confident than I was
-                before coming here.
+                before coming here. another, its eye opening. I’m a lot more
+                confident than I was before coming here.
               </p>
               <h5>John Conor</h5>
               <h6>PHD</h6>
@@ -497,7 +545,6 @@
       <div class="container">
         <h2 class="primary__title text-left">Learn About MBRU</h2>
         <div class="resources__tab__links__wrap__outer">
-
           <ul
             id="resources__tab__links__wrap"
             class="resources__tab__links__wrap">

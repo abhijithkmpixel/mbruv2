@@ -17,6 +17,17 @@ $(document).ready(function () {
     $('.icon__quick__nav--wheelchair').click(function () {
         $(this).toggleClass('icon__quick__nav__active')
     })
+    $('.accessibility__menu').click(function () {
+        $(this).toggleClass('icon__quick__nav__active')
+    })
+    $('.login__menu').click(function () {
+        if ($('#loginPopup').hasClass('active')) {
+            $('#loginPopup').removeClass('active');
+        } else {
+            $('#loginPopup').addClass('active');
+        }
+        $('body').removeClass('main__navigation__open')
+    })
     $('.icon__quick__nav--wheelchair .icon__quick__nav__dropdown').click(function (e) {
         // $(this).toggleClass('icon__quick__nav__active')
         e.stopPropagation();
@@ -41,7 +52,7 @@ $(document).ready(function () {
         pauseOnFocus: false,
         pauseOnHover: false,
         speed: 900,
-        fade:true,
+        fade: true,
         autoplay: true,
         autoplaySpeed: 3000,
         infinite: true,
@@ -69,14 +80,14 @@ $(document).ready(function () {
     //     </svg>
     // </div>`)
     // });
-setTimeout(() => {
-    $('.hero__banner .slick-dots li.slick-active').append(`    <div class="circle-container">
+    setTimeout(() => {
+        $('.hero__banner .slick-dots li.slick-active').append(`    <div class="circle-container">
         <svg>
             <circle class="circle" cx="12" cy="12" r="10"></circle>
         </svg>
     </div>`)
-}, 500);
-  
+    }, 500);
+
     $('#homepage_hero_slider').on('afterChange', function (event, slick, currentSlide, nextSlide) {
         $('.hero__banner .slick-dots li.slick-active').append(`    <div class="circle-container">
         <svg>
