@@ -5,18 +5,32 @@
 }
 .title.with-desc p,section.apply .tab-panel-content .content-wrap ul li {
   color: #1a4775;
+  span,strong{
+    color: #1a4775 !important;
+  }
 }
 section.apply .tab-panel-content .content-wrap li strong,
 section.apply .tab-panel-content .content-wrap p strong{
   color: #002f70;
+}
+p,li,strong,div.wpforms-container-full .wpforms-form .wpforms-field-description, div.wpforms-container-full .wpforms-form .wpforms-field-limit-text{
+  color: #1a4775;
 }
 // body{
 //   overflow: hidden;
 // }
 body:not(.home) {
   padding-top: 133px;
+  // padding-top: 96px;
   @media (max-width:720px) {
     padding-top: 98px;
+    // padding-top: 60px;
+  }
+}
+.banner.large.banner-with-panel{
+  margin-top: -37px;
+   @media (max-width:720px) {
+      margin-top: -43px;
   }
 }
 .sidebar-inner-wrap.uk-sticky .indicator-wrap .indicator-item,
@@ -24,9 +38,15 @@ body:not(.home) {
 .sidebar-inner-wrap.uk-sticky {
   background-color: #fff;
   color: #002f70;
+  span,strong{
+    color: inherit;
+  }
   &:hover {
     @media (min-width: 1200px) {
       color: #32affc;
+       span,strong{
+    color: inherit;
+  }
     }
   }
 }
@@ -44,7 +64,7 @@ body:not(.home) {
 .sidebar-wrap .indicator-wrap .indicator-item , .sidebar-wrap .indicator-wrap .tabs ul li {
   position: relative;
   text-decoration: none !important;
-  padding-right: 20px;
+  padding-right: 35px;
   border-color: #E5E5E5;
   &:hover{
     background-color: #fff !important;
@@ -140,7 +160,7 @@ section.mbru-offers .offers-wrap .offers-title .icon {
   background-color: #fff !important;
   border-radius: 16px;
   border: 1px solid #e5ebf0 !important;
-  height: unset !important;
+  // height: unset !important;
   &:hover {
     @media (min-width: 1200px) {
       box-shadow: 0px 12px 24px -8px rgba(0, 51, 102, 0.12);
@@ -247,6 +267,9 @@ section.our-facilities .slider-footer .controls .slick-arrow {
   outline: none !important;
   box-shadow: none !important;
   height: 49px;
+  @media (max-width:990px) {
+    margin-bottom: 15px;
+  }
 }
 .banner-panel .nav-tabs .nav-link {
   background: #ebf7ff;
@@ -458,6 +481,14 @@ section.event-filter .filter-wrap .filter-item.head-item {
 .btn.btn-primary-outline {
   color: #32affc;
   font-weight: 600;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: unset;
+  border: 0;
+  padding-right: 40px;
+  line-height: 26px !important;
+  background: transparent;
   &::after {
     content: "";
     width: 12px;
@@ -465,9 +496,9 @@ section.event-filter .filter-wrap .filter-item.head-item {
     border-right: 1px solid #32affc;
     border-bottom: 1px solid #32affc;
     transform: rotate(-45deg);
-    top: 17px;
+    top: 7px;
     @media (max-width:1200px) {
-      top: 12px;
+      // top: 12px;
     }
   }
   &:hover {
@@ -475,7 +506,7 @@ section.event-filter .filter-wrap .filter-item.head-item {
     background-color: transparent;
     text-decoration: none !important;
     @media (min-width: 1200px) {
-      text-decoration: none !important;
+      text-decoration: underline !important;
     }
   }
 }
@@ -707,7 +738,7 @@ section.life-at-mbru.overview .content-wrap .overview-description ul {
 .image-text-wrap .image-text-row .text-holder p,.image-text-wrap .image-text-row .text-holder li {
   color: #1a4775;
   strong,span{
-    color: inherit;
+    color: #1a4775 !important;
   }
 }
 .block-with-pro {
@@ -1074,7 +1105,7 @@ header .login-popup{
 section.sidebar-template .content-wrap li, section.sidebar-template .content-wrap p{
   color: #1a4775;
   span,strong{
-    color: #002f70;
+    color: #002f70 !important;
   }
 }
 section.discover-mbru .split-area{
@@ -1110,7 +1141,7 @@ body:not(.dark) .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filt
 .page-template-template-media-landing section.media-news #mediaNewsData .date,section.event-filter .filtering-header .current-day,section.event-filter .result-wrap .result-item .date{
   color: #6685A3;
 }
-section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ol, section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content p, section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ul,.content-wrap-inner  .inner-content p,.content-wrap-inner .second-content ul li,section.event-filter .result-wrap .result-item .location,.facility-detail .discription p,.faq-wrap .faq-item .faq-body p,.page-content .content-area .content-area-inner h4,.page-content .content-area .content-area-inner h5,.page-content .content-area .content-area-inner h6,.page-content .content-area .content-area-inner h3,.page-content .content-area .content-area-inner h2,.facility-detail .discription li{
+section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ol, section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content p, section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ul,.content-wrap-inner  .inner-content p,.content-wrap-inner .second-content ul li,section.event-filter .result-wrap .result-item .location,.facility-detail .discription p,.faq-wrap .faq-item .faq-body p,.page-content .content-area .content-area-inner h4,.page-content .content-area .content-area-inner h5,.page-content .content-area .content-area-inner h6,.page-content .content-area .content-area-inner h3,.page-content .content-area .content-area-inner h2,.facility-detail .discription li,.facility-detail .discription h2{
   color: #1a4775 !important;
   strong{
     color: #002f70 !important;
@@ -1215,6 +1246,14 @@ section.faq-detail .faq-wrap .faq-item .faq-body{
 .tab-wrap.mCustomScrollbar{
   .vertical-tabs .tab_item{
     border-radius: 16px;
+    display: flex;
+    align-items: center;
+    .icon-wrap{
+      margin-right: 15px;
+    }
+    h4{
+      margin-bottom: 0;
+    }
   }
 }
 #mediaNewsData{
@@ -1398,6 +1437,7 @@ section.contact .contact-map#map{
         margin-left: 0;
         max-width: unset;
         max-height: unset;
+        margin-bottom: 20px;
       }
     }
    }
@@ -1411,3 +1451,126 @@ section.contact .contact-map#map{
       line-height: 1;
     }
    }
+   .plain-content .content-wrap .content-wrap-inner .table.table-secondary2 th{
+    color: #fff;
+   }
+   .block-navs.library-nav-block.pt-5{
+    padding-top: 10px !important;
+   }
+   .news-slider-wrap .news-slider .news-block .news-info,section.life-at-mbru.overview .content-wrap .overview-video+.overview-description{
+    border-radius: 16px;
+   }
+   section.faqs .content-wrap .btn-wrap{
+    @media (max-width:720px) {
+      justify-content: center;
+    }
+   }
+   .welcome h4,
+   .welcome h3,
+   .welcome h2,
+   .welcome h1,
+   .welcome h5,
+   .welcome h6,
+   .welcome h4 strong,
+   .welcome li,header .menu-popup .search-holder .additional-search .label, header .search-popup .search-holder .additional-search .label,.form-block .form-title span, .form-block .form-title strong, .form-block .form-title b, .form-block label span, .form-block label strong, .form-block label b{
+    color: #002f70;
+   }
+   .blog-list-box{
+    li{
+        overflow: hidden;
+        background-color: #fff;
+        .blog-img-box{
+          border-radius: 16px 16px 0 0;
+          width: 100%;
+          height: auto;
+          aspect-ratio: 421/280;
+          overflow: hidden;
+          a,img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .blog-txt-box{
+          border: 1px solid #ccd6e0;
+          padding: 10px 16px;
+          border-radius: 0 0 16px 16px;
+          height: auto;
+        }
+        p{
+          color: #1a4775;
+          span{
+            color: #1a4775;
+          }
+        }
+    }
+   }
+   .form-box-main{
+    border-radius: 16px;
+   }
+   .es-content-body, section.sidebar-template .content-wrap h2, section.sidebar-template .content-wrap h3{
+color: #002f70;
+   }
+   div.wpforms-container div.wpforms-uploader{
+    border-radius: 12px !important;
+    border: 1px solid #8099b2 !important;
+   }
+   .tab-pane [type="submit"]{
+    @media (max-width:990px) {
+      margin-bottom: 15px;
+    }
+   }
+   section.sidebar-template .content-wrap .sidebar-wrap{
+    @media (max-width:720px) {
+      width: 100%;
+    }
+   }
+   .fancybox-slide--html .fancybox-close-small{
+    background-color: #002f70;
+    border-radius: 5px;
+    svg path{
+      fill: #fff;
+    }
+   }
+   body.page-template-template-core .latest__news{
+    // padding-top: 0;
+   }
+   section.gallery{
+    @media (max-width:720px) {
+      padding-bottom: 60px;
+    }
+   }
+   .banner.large .banner-image .wording_wrap h1, .banner.large .banner-image .wording_wrap h2,.wall-block .wall-desc p{
+    color: #fff;
+    span,strong{
+      color: #fff;
+    }
+   }
+   .image-text-wrap .image-text-row .text-holder .block-title{
+color: #1a4775;
+   }
+  body.page-template-template-general .why__choose__us__card__new .block-title{
+    min-height: 190px;
+  }
+  section.facility-list .btn.btn-with-icon-left{
+    padding-left: 50px;
+  }
+  .plain-content .title , .page-template-template-general .overview .title{
+    margin-top: 0;
+  }
+div.wpforms-container-full .wpforms-form input[type=date], div.wpforms-container-full .wpforms-form input[type=datetime], div.wpforms-container-full .wpforms-form input[type=datetime-local], div.wpforms-container-full .wpforms-form input[type=email], div.wpforms-container-full .wpforms-form input[type=month], div.wpforms-container-full .wpforms-form input[type=number], div.wpforms-container-full .wpforms-form input[type=password], div.wpforms-container-full .wpforms-form input[type=range], div.wpforms-container-full .wpforms-form input[type=search], div.wpforms-container-full .wpforms-form input[type=tel], div.wpforms-container-full .wpforms-form input[type=text], div.wpforms-container-full .wpforms-form input[type=time], div.wpforms-container-full .wpforms-form input[type=url], div.wpforms-container-full .wpforms-form input[type=week], div.wpforms-container-full .wpforms-form select, div.wpforms-container-full .wpforms-form textarea{
+  height: 42px;
+}
+div.wpforms-container-full{
+  color: #002f70 !important;
+}
+div.wpforms-container-full .wpforms-form .wpforms-field-description.wpforms-disclaimer-description,.form-block .form-title span, .form-block .form-title strong, .form-block .form-title b, .form-block label span, .form-block label strong, .form-block label b,.registration-confirmation .content-area-inner h1,.registration-confirmation .content-area-inner h2,.registration-confirmation .content-area-inner h3{
+  color: #002f70;
+  margin-top: 0;
+}
+.dropdown-toggle::after{
+  content: none !important;
+}
+.section-block:first-of-type{
+  margin-top: 0;
+}

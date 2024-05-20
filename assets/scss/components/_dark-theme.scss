@@ -358,7 +358,7 @@
     color: #fff;
   }
   section.apply .tab-panel .tab-items li.active a {
-    background: rgba($color: #fff, $alpha: 0.1);
+    background: rgba($color: #fff, $alpha: 0.04);
   }
   section.apply .tab-panel .tab-items li.active a i {
     color: #fff !important;
@@ -443,7 +443,7 @@
       }
     }
     .page-content .content-area .content-area-inner .diagram-holder .diagram-body .flow-row .bubble-item h4{
-      background: rgba($color: #fff, $alpha: 0.04);
+      background: #142c44;
       border: 1px solid rgba($color: #fff, $alpha: 0.1);
       border-radius: 15px;
     }
@@ -454,9 +454,9 @@
       color: #fff;
     }
     section.about-university-overview .overview .content-wrap p, section.about-university-overview .overview .content-wrap li,section.history .history-timeline-wrap .timeline-item .timeline-year span,.image-text-wrap .image-text-row .text-holder p, .image-text-wrap .image-text-row .text-holder li{
-      color: #fff;
+      color: #fff !important;
       strong,a,span,b{
-        color: #fff;
+        color: #fff !important;
       }
     }
     .counter-block-new-icon img , .simple-ico-box .icon-wrap img{
@@ -469,7 +469,8 @@
       background: #002f70;
     }
     .services__grid__listing__card{
-      background-color:rgba($color: #fff, $alpha: 0.04) ;
+      background-color:#1d344b;
+      border: 1px solid rgba($color: #fff, $alpha: 0.1);
     }
     .cta__btn__secondary{
       &:hover{
@@ -489,15 +490,18 @@
     .info-window{
       color: #002f70;
     }
-   .fill .vertical-tabs .tab_item.active, .image-text-wrap .image-text-row .text-holder .btn, .navigate, section.get-in-touch .contact-options{
+    .navigate, section.get-in-touch .contact-options{
       background-color:rgba($color: #fff, $alpha: 0.04) !important;
    }
    #mediaNewsData .col-md-3 .block.wall.small > a, #mediaNewsData .col-md-6 .block.wall.small{
       border-color: rgba($color: #fff, $alpha: 0.1);
       background-color: transparent;
    }
-    section.media-news #mediaNewsData .block-title p{
-    color: #fff;
+    section.media-news #mediaNewsData .block-title p,.title.with-desc p, section.apply .tab-panel-content .content-wrap ul li{
+    color: #fff !important;
+    span,strong{
+      color: #fff !important;
+    }
    }
    .sidebar-wrap .indicator-wrap .indicator-item:hover, .sidebar-wrap .indicator-wrap .tabs ul li:hover{
     background-color: transparent !important;
@@ -558,4 +562,71 @@
    div.wpforms-container-full .wpforms-form h3{
     color: #fff;
    }
+   .select2-container--default .select2-results__option[aria-selected=true],.select2-container--default .select2-results__option--highlighted[aria-selected]{
+    background-color: #1e2f4f;
+   }
+   section.apply .tab-panel-content .content-wrap ul li:before{
+    background: #fff;
+   }
+   .news-slider-wrap .news-slider .news-block .news-info{
+    background-color: #142c44 !important;
+   }
+  .page-template-template-apply section.apply .tab-panel-content .content-wrap p strong, .page-template-template-apply section.apply .tab-panel-content .content-wrap ul strong,.gallery-carosel .slider .slider-item h3{
+    color: #fff !important;
+   }
+   .library-nav-block .nav-block{
+    background-color: rgba($color: #FFF, $alpha: 0.04) !important;
+    border: 1px solid rgba($color: #fff, $alpha: 0.1) !important;
+   }
+   section.life-at-mbru.overview .content-wrap .overview-video+.overview-description{
+    background-color: #142c44 !important;
+   }
+   .welcome h4, .welcome h4 strong, .welcome li{
+    color: #fff;
+    span,strong{
+      color: #fff !important;
+    }
+   }
+   header .menu-popup .search-holder .field-wrap.search-input .icon, header .search-popup .search-holder .field-wrap.search-input .icon,.welcome h4, .welcome h4 strong, .welcome li, header .menu-popup .search-holder .additional-search .label, header .search-popup .search-holder .additional-search .label,.blog-list-box li p{
+color: #fff;
+span,strong{
+  color: #fff;
+
+}
+   }
+   .page-template-template-college-landing-php section.academic-calender{
+    background: rgba($color: #fff, $alpha: 0.04) !important;
+   }
+   .blog-list-box li{
+    background-color: transparent;
+   }
+   .form-box-main{
+    background: rgba($color: #fff, $alpha: 0.04);
+   }
+      .es-content-body ,
+      .es-content-body td ,
+      .es-content-body *
+      {
+color: #002f70 !important;
+   }
+   div.wpforms-container div.wpforms-uploader{
+    background: rgba($color: #fff, $alpha: 0.04) !important;
+    border: 1px solid rgba($color: #fff, $alpha: 0.1) !important;
+    span{
+      color: #fff !important;
+    }
+   }
+   .es-content-body, section.sidebar-template .content-wrap h2, section.sidebar-template .content-wrap h3{
+    color: #fff;
+   }
+   section.sidebar-template .content-wrap li span, section.sidebar-template .content-wrap li strong, section.sidebar-template .content-wrap p span, section.sidebar-template .content-wrap p strong,section.apply .tab-panel-content .content-wrap p ,section.apply .tab-panel-content .content-wrap p strong,section.apply .tab-panel-content .content-wrap p span,p, li, strong, div.wpforms-container-full .wpforms-form .wpforms-field-description, div.wpforms-container-full .wpforms-form .wpforms-field-limit-text{
+    color: #fff !important;
+   }
+   div.wpforms-container-full{
+  color: #fff !important;
+}
+div.wpforms-container-full .wpforms-form .wpforms-field-description.wpforms-disclaimer-description,.registration-confirmation .content-area-inner h1, .registration-confirmation .content-area-inner h2, .registration-confirmation .content-area-inner h3{
+  color: #fff;
+  background-color: transparent;
+}
 }

@@ -88,22 +88,83 @@ header {
         display: flex;
         align-items: center;
         padding: 0;
-        margin: 0;
-        padding-bottom: 30px; }
+        margin: 0; }
         @media (max-width: 1200px) {
           header .header__inner .header__inner__left .nav__menu {
             display: none; } }
-        header .header__inner .header__inner__left .nav__menu li a {
-          font-size: 16px;
-          line-height: 1.5;
-          font-weight: 400;
-          color: #002f70;
-          text-decoration: none; }
+        header .header__inner .header__inner__left .nav__menu li {
+          position: relative;
+          padding-bottom: 30px; }
+          header .header__inner .header__inner__left .nav__menu li a {
+            font-size: 16px;
+            line-height: 1.5;
+            font-weight: 400;
+            color: #002f70;
+            text-decoration: none; }
+            @media (min-width: 1200px) {
+              header .header__inner .header__inner__left .nav__menu li a:hover {
+                color: #32affc; } }
+          header .header__inner .header__inner__left .nav__menu li .nav__menu--sub, header .header__inner .header__inner__left .nav__menu li .dropdown-menu {
+            padding: 28px 32px;
+            background-color: #fff;
+            border-radius: 10px;
+            position: absolute;
+            top: calc(100% + 0px);
+            left: -55px;
+            min-width: 384px;
+            list-style: none;
+            transition: .3s all ease-in-out;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-30px);
+            box-shadow: 0px 4px 20px 0px #B7B7B74D; }
+            header .header__inner .header__inner__left .nav__menu li .nav__menu--sub li, header .header__inner .header__inner__left .nav__menu li .dropdown-menu li {
+              padding: 0; }
+              header .header__inner .header__inner__left .nav__menu li .nav__menu--sub li::after, header .header__inner .header__inner__left .nav__menu li .dropdown-menu li::after {
+                content: none !important; }
+              header .header__inner .header__inner__left .nav__menu li .nav__menu--sub li a, header .header__inner .header__inner__left .nav__menu li .dropdown-menu li a {
+                font-size: 14px;
+                line-height: 1.5;
+                font-weight: 400;
+                color: #002f70;
+                text-decoration: none; }
+                @media (min-width: 1200px) {
+                  header .header__inner .header__inner__left .nav__menu li .nav__menu--sub li a:hover, header .header__inner .header__inner__left .nav__menu li .dropdown-menu li a:hover {
+                    color: #32affc; } }
+              header .header__inner .header__inner__left .nav__menu li .nav__menu--sub li:not(:last-child), header .header__inner .header__inner__left .nav__menu li .dropdown-menu li:not(:last-child) {
+                margin-bottom: 20px; }
+          header .header__inner .header__inner__left .nav__menu li:not(:last-child) {
+            margin-right: 25px; }
+          header .header__inner .header__inner__left .nav__menu li.dropdown::after {
+            content: "";
+            width: 100%;
+            height: 4px;
+            border-radius: 8px 8px 0 0;
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            background-color: #32AFFC;
+            opacity: 0;
+            pointer-events: none;
+            transition: .3s all ease-in-out; }
+          header .header__inner .header__inner__left .nav__menu li.active::after {
+            content: "";
+            width: 100%;
+            height: 4px;
+            border-radius: 8px 8px 0 0;
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            background-color: #32AFFC;
+            pointer-events: none;
+            opacity: 1; }
           @media (min-width: 1200px) {
-            header .header__inner .header__inner__left .nav__menu li a:hover {
-              color: #32affc; } }
-        header .header__inner .header__inner__left .nav__menu li:not(:last-child) {
-          margin-right: 25px; }
+            header .header__inner .header__inner__left .nav__menu li:hover::after {
+              opacity: 1; }
+            header .header__inner .header__inner__left .nav__menu li:hover .nav__menu--sub, header .header__inner .header__inner__left .nav__menu li:hover .dropdown-menu {
+              opacity: 1;
+              visibility: visible;
+              transform: translateY(0); } }
     header .header__inner .header__inner__right {
       display: flex;
       align-items: center;
@@ -232,6 +293,11 @@ header {
   @media (max-width: 720px) {
     .cta__btn {
       font-size: 14px; } }
+  .cta__btn.cta__btn--withicon {
+    display: flex;
+    align-items: center; }
+    .cta__btn.cta__btn--withicon i, .cta__btn.cta__btn--withicon svg {
+      margin-left: 10px; }
 
 .cta__btn__primary {
   background-color: #f5f7f9; }
@@ -2200,10 +2266,15 @@ footer .filter_wrap .filter_options .btn-filter {
 
 .title.with-desc p, section.apply .tab-panel-content .content-wrap ul li {
   color: #1a4775; }
+  .title.with-desc p span, .title.with-desc p strong, section.apply .tab-panel-content .content-wrap ul li span, section.apply .tab-panel-content .content-wrap ul li strong {
+    color: #1a4775 !important; }
 
 section.apply .tab-panel-content .content-wrap li strong,
 section.apply .tab-panel-content .content-wrap p strong {
   color: #002f70; }
+
+p, li, strong, div.wpforms-container-full .wpforms-form .wpforms-field-description, div.wpforms-container-full .wpforms-form .wpforms-field-limit-text {
+  color: #1a4775; }
 
 body:not(.home) {
   padding-top: 133px; }
@@ -2211,16 +2282,34 @@ body:not(.home) {
     body:not(.home) {
       padding-top: 98px; } }
 
+.banner.large.banner-with-panel {
+  margin-top: -37px; }
+  @media (max-width: 720px) {
+    .banner.large.banner-with-panel {
+      margin-top: -43px; } }
+
 .sidebar-inner-wrap.uk-sticky .indicator-wrap .indicator-item,
 .sidebar-inner-wrap.uk-sticky .indicator-wrap,
 .sidebar-inner-wrap.uk-sticky {
   background-color: #fff;
   color: #002f70; }
+  .sidebar-inner-wrap.uk-sticky .indicator-wrap .indicator-item span, .sidebar-inner-wrap.uk-sticky .indicator-wrap .indicator-item strong,
+  .sidebar-inner-wrap.uk-sticky .indicator-wrap span,
+  .sidebar-inner-wrap.uk-sticky .indicator-wrap strong,
+  .sidebar-inner-wrap.uk-sticky span,
+  .sidebar-inner-wrap.uk-sticky strong {
+    color: inherit; }
   @media (min-width: 1200px) {
     .sidebar-inner-wrap.uk-sticky .indicator-wrap .indicator-item:hover,
     .sidebar-inner-wrap.uk-sticky .indicator-wrap:hover,
     .sidebar-inner-wrap.uk-sticky:hover {
-      color: #32affc; } }
+      color: #32affc; }
+      .sidebar-inner-wrap.uk-sticky .indicator-wrap .indicator-item:hover span, .sidebar-inner-wrap.uk-sticky .indicator-wrap .indicator-item:hover strong,
+      .sidebar-inner-wrap.uk-sticky .indicator-wrap:hover span,
+      .sidebar-inner-wrap.uk-sticky .indicator-wrap:hover strong,
+      .sidebar-inner-wrap.uk-sticky:hover span,
+      .sidebar-inner-wrap.uk-sticky:hover strong {
+        color: inherit; } }
 
 .sidebar-inner-wrap.uk-sticky .indicator-wrap .indicator-item .active {
   background-color: #fff;
@@ -2235,7 +2324,7 @@ body:not(.home) {
 .sidebar-wrap .indicator-wrap .indicator-item, .sidebar-wrap .indicator-wrap .tabs ul li {
   position: relative;
   text-decoration: none !important;
-  padding-right: 20px;
+  padding-right: 35px;
   border-color: #E5E5E5; }
   .sidebar-wrap .indicator-wrap .indicator-item:hover, .sidebar-wrap .indicator-wrap .tabs ul li:hover {
     background-color: #fff !important; }
@@ -2328,8 +2417,7 @@ section.mbru-offers .offers-wrap .offers-title .icon {
 .library-nav-block .nav-block {
   background-color: #fff !important;
   border-radius: 16px;
-  border: 1px solid #e5ebf0 !important;
-  height: unset !important; }
+  border: 1px solid #e5ebf0 !important; }
   @media (min-width: 1200px) {
     .library-nav-block .nav-block:hover {
       box-shadow: 0px 12px 24px -8px rgba(0, 51, 102, 0.12); } }
@@ -2425,6 +2513,9 @@ section.our-facilities .slider-footer .controls .slick-arrow.slick-disabled {
   outline: none !important;
   box-shadow: none !important;
   height: 49px; }
+  @media (max-width: 990px) {
+    .row.form-row .searchinput.form-control {
+      margin-bottom: 15px; } }
 
 .banner-panel .nav-tabs .nav-link {
   background: #ebf7ff;
@@ -2608,7 +2699,15 @@ b {
 
 .btn.btn-primary-outline {
   color: #32affc;
-  font-weight: 600; }
+  font-weight: 600;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: unset;
+  border: 0;
+  padding-right: 40px;
+  line-height: 26px !important;
+  background: transparent; }
   .btn.btn-primary-outline::after {
     content: "";
     width: 12px;
@@ -2616,17 +2715,14 @@ b {
     border-right: 1px solid #32affc;
     border-bottom: 1px solid #32affc;
     transform: rotate(-45deg);
-    top: 17px; }
-    @media (max-width: 1200px) {
-      .btn.btn-primary-outline::after {
-        top: 12px; } }
+    top: 7px; }
   .btn.btn-primary-outline:hover {
     color: #32affc;
     background-color: transparent;
     text-decoration: none !important; }
     @media (min-width: 1200px) {
       .btn.btn-primary-outline:hover {
-        text-decoration: none !important; } }
+        text-decoration: underline !important; } }
 
 .vertical-tabs .tab_item:after {
   border-left-color: #d6effe; }
@@ -2845,7 +2941,7 @@ section.life-at-mbru.overview .content-wrap .overview-description ul {
 .image-text-wrap .image-text-row .text-holder p, .image-text-wrap .image-text-row .text-holder li {
   color: #1a4775; }
   .image-text-wrap .image-text-row .text-holder p strong, .image-text-wrap .image-text-row .text-holder p span, .image-text-wrap .image-text-row .text-holder li strong, .image-text-wrap .image-text-row .text-holder li span {
-    color: inherit; }
+    color: #1a4775 !important; }
 
 .block-with-pro .pro-thumbnail {
   border-radius: 16px;
@@ -3193,7 +3289,7 @@ header .login-popup {
 section.sidebar-template .content-wrap li, section.sidebar-template .content-wrap p {
   color: #1a4775; }
   section.sidebar-template .content-wrap li span, section.sidebar-template .content-wrap li strong, section.sidebar-template .content-wrap p span, section.sidebar-template .content-wrap p strong {
-    color: #002f70; }
+    color: #002f70 !important; }
 
 @media (max-width: 1200px) {
   section.discover-mbru .split-area .col-md-9 {
@@ -3221,11 +3317,11 @@ body:not(.dark) .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filt
 .page-template-template-media-landing section.media-news #mediaNewsData .date, section.event-filter .filtering-header .current-day, section.event-filter .result-wrap .result-item .date {
   color: #6685A3; }
 
-section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ol, section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content p, section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ul, .content-wrap-inner .inner-content p, .content-wrap-inner .second-content ul li, section.event-filter .result-wrap .result-item .location, .facility-detail .discription p, .faq-wrap .faq-item .faq-body p, .page-content .content-area .content-area-inner h4, .page-content .content-area .content-area-inner h5, .page-content .content-area .content-area-inner h6, .page-content .content-area .content-area-inner h3, .page-content .content-area .content-area-inner h2, .facility-detail .discription li {
+section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ol, section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content p, section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ul, .content-wrap-inner .inner-content p, .content-wrap-inner .second-content ul li, section.event-filter .result-wrap .result-item .location, .facility-detail .discription p, .faq-wrap .faq-item .faq-body p, .page-content .content-area .content-area-inner h4, .page-content .content-area .content-area-inner h5, .page-content .content-area .content-area-inner h6, .page-content .content-area .content-area-inner h3, .page-content .content-area .content-area-inner h2, .facility-detail .discription li, .facility-detail .discription h2 {
   color: #1a4775 !important; }
-  section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ol strong, section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content p strong, section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ul strong, .content-wrap-inner .inner-content p strong, .content-wrap-inner .second-content ul li strong, section.event-filter .result-wrap .result-item .location strong, .facility-detail .discription p strong, .faq-wrap .faq-item .faq-body p strong, .page-content .content-area .content-area-inner h4 strong, .page-content .content-area .content-area-inner h5 strong, .page-content .content-area .content-area-inner h6 strong, .page-content .content-area .content-area-inner h3 strong, .page-content .content-area .content-area-inner h2 strong, .facility-detail .discription li strong {
+  section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ol strong, section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content p strong, section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ul strong, .content-wrap-inner .inner-content p strong, .content-wrap-inner .second-content ul li strong, section.event-filter .result-wrap .result-item .location strong, .facility-detail .discription p strong, .faq-wrap .faq-item .faq-body p strong, .page-content .content-area .content-area-inner h4 strong, .page-content .content-area .content-area-inner h5 strong, .page-content .content-area .content-area-inner h6 strong, .page-content .content-area .content-area-inner h3 strong, .page-content .content-area .content-area-inner h2 strong, .facility-detail .discription li strong, .facility-detail .discription h2 strong {
     color: #002f70 !important; }
-  section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ol span, section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content p span, section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ul span, .content-wrap-inner .inner-content p span, .content-wrap-inner .second-content ul li span, section.event-filter .result-wrap .result-item .location span, .facility-detail .discription p span, .faq-wrap .faq-item .faq-body p span, .page-content .content-area .content-area-inner h4 span, .page-content .content-area .content-area-inner h5 span, .page-content .content-area .content-area-inner h6 span, .page-content .content-area .content-area-inner h3 span, .page-content .content-area .content-area-inner h2 span, .facility-detail .discription li span {
+  section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ol span, section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content p span, section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ul span, .content-wrap-inner .inner-content p span, .content-wrap-inner .second-content ul li span, section.event-filter .result-wrap .result-item .location span, .facility-detail .discription p span, .faq-wrap .faq-item .faq-body p span, .page-content .content-area .content-area-inner h4 span, .page-content .content-area .content-area-inner h5 span, .page-content .content-area .content-area-inner h6 span, .page-content .content-area .content-area-inner h3 span, .page-content .content-area .content-area-inner h2 span, .facility-detail .discription li span, .facility-detail .discription h2 span {
     color: inherit !important; }
 
 section.sidebar-template.right-sidebar .content-wrap .page-content .page-title .tagline, section.sidebar-template.right-sidebar .content-wrap .page-content .page-title .tagline .date, section.sidebar-template.right-sidebar .content-wrap .page-content .page-title .tagline .category, section.event-filter .result-wrap .result-item .category {
@@ -3307,7 +3403,13 @@ section.faq-detail .faq-wrap .faq-item .faq-body {
     color: #fff; }
 
 .tab-wrap.mCustomScrollbar .vertical-tabs .tab_item {
-  border-radius: 16px; }
+  border-radius: 16px;
+  display: flex;
+  align-items: center; }
+  .tab-wrap.mCustomScrollbar .vertical-tabs .tab_item .icon-wrap {
+    margin-right: 15px; }
+  .tab-wrap.mCustomScrollbar .vertical-tabs .tab_item h4 {
+    margin-bottom: 0; }
 
 #mediaNewsData {
   margin-top: 25px; }
@@ -3455,7 +3557,8 @@ header .menu-popup .btn-close, header .search-popup .btn-close {
     .overview .message-box-wrap .message-thumbnail {
       margin-left: 0;
       max-width: unset;
-      max-height: unset; } }
+      max-height: unset;
+      margin-bottom: 20px; } }
 
 @media (max-width: 990px) {
   section.apply .tab-panel-content .content-wrap .note {
@@ -3464,6 +3567,113 @@ header .menu-popup .btn-close, header .search-popup .btn-close {
 @media (max-width: 990px) {
   .title h2.no-line {
     line-height: 1; } }
+
+.plain-content .content-wrap .content-wrap-inner .table.table-secondary2 th {
+  color: #fff; }
+
+.block-navs.library-nav-block.pt-5 {
+  padding-top: 10px !important; }
+
+.news-slider-wrap .news-slider .news-block .news-info, section.life-at-mbru.overview .content-wrap .overview-video + .overview-description {
+  border-radius: 16px; }
+
+@media (max-width: 720px) {
+  section.faqs .content-wrap .btn-wrap {
+    justify-content: center; } }
+
+.welcome h4,
+.welcome h3,
+.welcome h2,
+.welcome h1,
+.welcome h5,
+.welcome h6,
+.welcome h4 strong,
+.welcome li, header .menu-popup .search-holder .additional-search .label, header .search-popup .search-holder .additional-search .label, .form-block .form-title span, .form-block .form-title strong, .form-block .form-title b, .form-block label span, .form-block label strong, .form-block label b {
+  color: #002f70; }
+
+.blog-list-box li {
+  overflow: hidden;
+  background-color: #fff; }
+  .blog-list-box li .blog-img-box {
+    border-radius: 16px 16px 0 0;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 421/280;
+    overflow: hidden; }
+    .blog-list-box li .blog-img-box a, .blog-list-box li .blog-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .blog-list-box li .blog-txt-box {
+    border: 1px solid #ccd6e0;
+    padding: 10px 16px;
+    border-radius: 0 0 16px 16px;
+    height: auto; }
+  .blog-list-box li p {
+    color: #1a4775; }
+    .blog-list-box li p span {
+      color: #1a4775; }
+
+.form-box-main {
+  border-radius: 16px; }
+
+.es-content-body, section.sidebar-template .content-wrap h2, section.sidebar-template .content-wrap h3 {
+  color: #002f70; }
+
+div.wpforms-container div.wpforms-uploader {
+  border-radius: 12px !important;
+  border: 1px solid #8099b2 !important; }
+
+@media (max-width: 990px) {
+  .tab-pane [type="submit"] {
+    margin-bottom: 15px; } }
+
+@media (max-width: 720px) {
+  section.sidebar-template .content-wrap .sidebar-wrap {
+    width: 100%; } }
+
+.fancybox-slide--html .fancybox-close-small {
+  background-color: #002f70;
+  border-radius: 5px; }
+  .fancybox-slide--html .fancybox-close-small svg path {
+    fill: #fff; }
+
+@media (max-width: 720px) {
+  section.gallery {
+    padding-bottom: 60px; } }
+
+.banner.large .banner-image .wording_wrap h1, .banner.large .banner-image .wording_wrap h2, .wall-block .wall-desc p {
+  color: #fff; }
+  .banner.large .banner-image .wording_wrap h1 span, .banner.large .banner-image .wording_wrap h1 strong, .banner.large .banner-image .wording_wrap h2 span, .banner.large .banner-image .wording_wrap h2 strong, .wall-block .wall-desc p span, .wall-block .wall-desc p strong {
+    color: #fff; }
+
+.image-text-wrap .image-text-row .text-holder .block-title {
+  color: #1a4775; }
+
+body.page-template-template-general .why__choose__us__card__new .block-title {
+  min-height: 190px; }
+
+section.facility-list .btn.btn-with-icon-left {
+  padding-left: 50px; }
+
+.plain-content .title, .page-template-template-general .overview .title {
+  margin-top: 0; }
+
+div.wpforms-container-full .wpforms-form input[type=date], div.wpforms-container-full .wpforms-form input[type=datetime], div.wpforms-container-full .wpforms-form input[type=datetime-local], div.wpforms-container-full .wpforms-form input[type=email], div.wpforms-container-full .wpforms-form input[type=month], div.wpforms-container-full .wpforms-form input[type=number], div.wpforms-container-full .wpforms-form input[type=password], div.wpforms-container-full .wpforms-form input[type=range], div.wpforms-container-full .wpforms-form input[type=search], div.wpforms-container-full .wpforms-form input[type=tel], div.wpforms-container-full .wpforms-form input[type=text], div.wpforms-container-full .wpforms-form input[type=time], div.wpforms-container-full .wpforms-form input[type=url], div.wpforms-container-full .wpforms-form input[type=week], div.wpforms-container-full .wpforms-form select, div.wpforms-container-full .wpforms-form textarea {
+  height: 42px; }
+
+div.wpforms-container-full {
+  color: #002f70 !important; }
+
+div.wpforms-container-full .wpforms-form .wpforms-field-description.wpforms-disclaimer-description, .form-block .form-title span, .form-block .form-title strong, .form-block .form-title b, .form-block label span, .form-block label strong, .form-block label b, .registration-confirmation .content-area-inner h1, .registration-confirmation .content-area-inner h2, .registration-confirmation .content-area-inner h3 {
+  color: #002f70;
+  margin-top: 0; }
+
+.dropdown-toggle::after {
+  content: none !important; }
+
+.section-block:first-of-type {
+  margin-top: 0; }
 
 /** @format */
 .dark .sidebar-inner-wrap.uk-sticky .indicator-wrap .indicator-item,
@@ -3821,7 +4031,7 @@ b {
   color: #fff; }
 
 .dark section.apply .tab-panel .tab-items li.active a {
-  background: rgba(255, 255, 255, 0.1); }
+  background: rgba(255, 255, 255, 0.04); }
 
 .dark section.apply .tab-panel .tab-items li.active a i {
   color: #fff !important; }
@@ -3901,7 +4111,7 @@ b {
     color: inherit !important; }
 
 .dark .page-content .content-area .content-area-inner .diagram-holder .diagram-body .flow-row .bubble-item h4 {
-  background: rgba(255, 255, 255, 0.04);
+  background: #142c44;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 15px; }
 
@@ -3912,9 +4122,9 @@ b {
   color: #fff; }
 
 .dark section.about-university-overview .overview .content-wrap p, .dark section.about-university-overview .overview .content-wrap li, .dark section.history .history-timeline-wrap .timeline-item .timeline-year span, .dark .image-text-wrap .image-text-row .text-holder p, .dark .image-text-wrap .image-text-row .text-holder li {
-  color: #fff; }
+  color: #fff !important; }
   .dark section.about-university-overview .overview .content-wrap p strong, .dark section.about-university-overview .overview .content-wrap p a, .dark section.about-university-overview .overview .content-wrap p span, .dark section.about-university-overview .overview .content-wrap p b, .dark section.about-university-overview .overview .content-wrap li strong, .dark section.about-university-overview .overview .content-wrap li a, .dark section.about-university-overview .overview .content-wrap li span, .dark section.about-university-overview .overview .content-wrap li b, .dark section.history .history-timeline-wrap .timeline-item .timeline-year span strong, .dark section.history .history-timeline-wrap .timeline-item .timeline-year span a, .dark section.history .history-timeline-wrap .timeline-item .timeline-year span span, .dark section.history .history-timeline-wrap .timeline-item .timeline-year span b, .dark .image-text-wrap .image-text-row .text-holder p strong, .dark .image-text-wrap .image-text-row .text-holder p a, .dark .image-text-wrap .image-text-row .text-holder p span, .dark .image-text-wrap .image-text-row .text-holder p b, .dark .image-text-wrap .image-text-row .text-holder li strong, .dark .image-text-wrap .image-text-row .text-holder li a, .dark .image-text-wrap .image-text-row .text-holder li span, .dark .image-text-wrap .image-text-row .text-holder li b {
-    color: #fff; }
+    color: #fff !important; }
 
 .dark .counter-block-new-icon img, .dark .simple-ico-box .icon-wrap img {
   filter: invert(100%) sepia(100%) saturate(10%) hue-rotate(90deg) brightness(100%) contrast(100%); }
@@ -3926,7 +4136,8 @@ b {
   background: #002f70; }
 
 .dark .services__grid__listing__card {
-  background-color: rgba(255, 255, 255, 0.04); }
+  background-color: #1d344b;
+  border: 1px solid rgba(255, 255, 255, 0.1); }
 
 @media (min-width: 1200px) {
   .dark .cta__btn__secondary:hover {
@@ -3943,15 +4154,17 @@ b {
 .dark .info-window {
   color: #002f70; }
 
-.dark .fill .vertical-tabs .tab_item.active, .dark .image-text-wrap .image-text-row .text-holder .btn, .dark .navigate, .dark section.get-in-touch .contact-options {
+.dark .navigate, .dark section.get-in-touch .contact-options {
   background-color: rgba(255, 255, 255, 0.04) !important; }
 
 .dark #mediaNewsData .col-md-3 .block.wall.small > a, .dark #mediaNewsData .col-md-6 .block.wall.small {
   border-color: rgba(255, 255, 255, 0.1);
   background-color: transparent; }
 
-.dark section.media-news #mediaNewsData .block-title p {
-  color: #fff; }
+.dark section.media-news #mediaNewsData .block-title p, .dark .title.with-desc p, .dark section.apply .tab-panel-content .content-wrap ul li {
+  color: #fff !important; }
+  .dark section.media-news #mediaNewsData .block-title p span, .dark section.media-news #mediaNewsData .block-title p strong, .dark .title.with-desc p span, .dark .title.with-desc p strong, .dark section.apply .tab-panel-content .content-wrap ul li span, .dark section.apply .tab-panel-content .content-wrap ul li strong {
+    color: #fff !important; }
 
 .dark .sidebar-wrap .indicator-wrap .indicator-item:hover, .dark .sidebar-wrap .indicator-wrap .tabs ul li:hover {
   background-color: transparent !important;
@@ -4002,3 +4215,65 @@ b {
 
 .dark div.wpforms-container-full .wpforms-form h3 {
   color: #fff; }
+
+.dark .select2-container--default .select2-results__option[aria-selected=true], .dark .select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #1e2f4f; }
+
+.dark section.apply .tab-panel-content .content-wrap ul li:before {
+  background: #fff; }
+
+.dark .news-slider-wrap .news-slider .news-block .news-info {
+  background-color: #142c44 !important; }
+
+.dark .page-template-template-apply section.apply .tab-panel-content .content-wrap p strong, .dark .page-template-template-apply section.apply .tab-panel-content .content-wrap ul strong, .dark .gallery-carosel .slider .slider-item h3 {
+  color: #fff !important; }
+
+.dark .library-nav-block .nav-block {
+  background-color: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important; }
+
+.dark section.life-at-mbru.overview .content-wrap .overview-video + .overview-description {
+  background-color: #142c44 !important; }
+
+.dark .welcome h4, .dark .welcome h4 strong, .dark .welcome li {
+  color: #fff; }
+  .dark .welcome h4 span, .dark .welcome h4 strong, .dark .welcome h4 strong span, .dark .welcome h4 strong strong, .dark .welcome li span, .dark .welcome li strong {
+    color: #fff !important; }
+
+.dark header .menu-popup .search-holder .field-wrap.search-input .icon, .dark header .search-popup .search-holder .field-wrap.search-input .icon, .dark .welcome h4, .dark .welcome h4 strong, .dark .welcome li, .dark header .menu-popup .search-holder .additional-search .label, .dark header .search-popup .search-holder .additional-search .label, .dark .blog-list-box li p {
+  color: #fff; }
+  .dark header .menu-popup .search-holder .field-wrap.search-input .icon span, .dark header .menu-popup .search-holder .field-wrap.search-input .icon strong, .dark header .search-popup .search-holder .field-wrap.search-input .icon span, .dark header .search-popup .search-holder .field-wrap.search-input .icon strong, .dark .welcome h4 span, .dark .welcome h4 strong, .dark .welcome h4 strong span, .dark .welcome h4 strong strong, .dark .welcome li span, .dark .welcome li strong, .dark header .menu-popup .search-holder .additional-search .label span, .dark header .menu-popup .search-holder .additional-search .label strong, .dark header .search-popup .search-holder .additional-search .label span, .dark header .search-popup .search-holder .additional-search .label strong, .dark .blog-list-box li p span, .dark .blog-list-box li p strong {
+    color: #fff; }
+
+.dark .page-template-template-college-landing-php section.academic-calender {
+  background: rgba(255, 255, 255, 0.04) !important; }
+
+.dark .blog-list-box li {
+  background-color: transparent; }
+
+.dark .form-box-main {
+  background: rgba(255, 255, 255, 0.04); }
+
+.dark .es-content-body,
+.dark .es-content-body td,
+.dark .es-content-body * {
+  color: #002f70 !important; }
+
+.dark div.wpforms-container div.wpforms-uploader {
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important; }
+  .dark div.wpforms-container div.wpforms-uploader span {
+    color: #fff !important; }
+
+.dark .es-content-body, .dark section.sidebar-template .content-wrap h2, .dark section.sidebar-template .content-wrap h3 {
+  color: #fff; }
+
+.dark section.sidebar-template .content-wrap li span, .dark section.sidebar-template .content-wrap li strong, .dark section.sidebar-template .content-wrap p span, .dark section.sidebar-template .content-wrap p strong, .dark section.apply .tab-panel-content .content-wrap p, .dark section.apply .tab-panel-content .content-wrap p strong, .dark section.apply .tab-panel-content .content-wrap p span, .dark p, .dark li, .dark strong, .dark div.wpforms-container-full .wpforms-form .wpforms-field-description, .dark div.wpforms-container-full .wpforms-form .wpforms-field-limit-text {
+  color: #fff !important; }
+
+.dark div.wpforms-container-full {
+  color: #fff !important; }
+
+.dark div.wpforms-container-full .wpforms-form .wpforms-field-description.wpforms-disclaimer-description, .dark .registration-confirmation .content-area-inner h1, .dark .registration-confirmation .content-area-inner h2, .dark .registration-confirmation .content-area-inner h3 {
+  color: #fff;
+  background-color: transparent; }

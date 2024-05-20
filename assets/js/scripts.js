@@ -142,9 +142,11 @@ $(document).ready(function () {
         e.stopPropagation();
         if ($(this).hasClass('sub__menu__active')) {
             $(".sub__menu__has__children").removeClass('sub__menu__has__children__active');
-
         }
-        $(this).toggleClass('sub__menu__active');
+        $('.has__children').each(function(){
+            $(this).removeClass('sub__menu__active');
+        })
+        $(this).addClass('sub__menu__active');
     })
 
     $('#header__menu__toggle__hamburger').click(function () {
