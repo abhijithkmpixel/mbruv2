@@ -96,6 +96,7 @@ header {
             visibility: hidden;
             transform: translateY(-30px);
             box-shadow: 0px 4px 20px 0px #B7B7B74D;
+            margin-top: 6px;
             li{
               padding: 0;
               &::after{
@@ -107,6 +108,7 @@ header {
             font-weight: 400;
             color: #002f70;
             text-decoration: none;
+            font-family: "DubaiFont Medium", Helvetica, Arial, sans-serif;
               &:hover {
               @media (min-width: 1200px) {
                 color: #32affc;
@@ -134,7 +136,12 @@ header {
             pointer-events: none;
             transition: .3s all ease-in-out;
           }
-          &.active::after{
+          &.active{
+            a{
+              font-family: "DubaiFont Bold", Helvetica, Arial, sans-serif;
+              color: #32AFFC;
+            }
+            &::after{
             content: "";
             width: 100%;
             height: 4px;
@@ -145,7 +152,7 @@ header {
             background-color: #32AFFC;
             pointer-events: none;
             opacity: 1;
-          }
+          }}
           &:hover{
             @media (min-width:1200px) {
               &::after{
@@ -224,7 +231,7 @@ header {
 
   .icon__quick__nav__dropdown {
     position: absolute;
-    top: calc(100% + 30px);
+    top: calc(100% + 28px);
     right: 0;
     min-width: 320px;
     background-color: #fff;
