@@ -271,7 +271,7 @@ header {
             border-right: 1px solid #e5ebf0; }
           .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options.fontsize-switch > .btn.active, .accessibility__menu .icon__quick__nav__dropdown .filter_wrap .filter_options.fontsize-switch > .btn.active {
             background-color: transparent;
-            color: #212529; }
+            color: #002f70; }
   .icon__quick__nav.icon__quick__nav__active .icon__quick__nav__dropdown, .accessibility__menu.icon__quick__nav__active .icon__quick__nav__dropdown {
     opacity: 1;
     visibility: visible; }
@@ -1079,10 +1079,13 @@ li
         .our__programs__search__section .our__programs__search__section__form__wrap form,
         .our__programs__search__section .our__programs__search__section__form__wrap .form {
           flex-direction: column; } }
-      @media (max-width: 720px) {
-        .our__programs__search__section .our__programs__search__section__form__wrap form .cta__btn,
-        .our__programs__search__section .our__programs__search__section__form__wrap .form .cta__btn {
-          width: 100%; } }
+      .our__programs__search__section .our__programs__search__section__form__wrap form .cta__btn,
+      .our__programs__search__section .our__programs__search__section__form__wrap .form .cta__btn {
+        display: inline-block; }
+        @media (max-width: 720px) {
+          .our__programs__search__section .our__programs__search__section__form__wrap form .cta__btn,
+          .our__programs__search__section .our__programs__search__section__form__wrap .form .cta__btn {
+            width: 100%; } }
       .our__programs__search__section .our__programs__search__section__form__wrap form fieldset,
       .our__programs__search__section .our__programs__search__section__form__wrap .form fieldset {
         position: relative;
@@ -2278,8 +2281,10 @@ section.apply .tab-panel-content .content-wrap li strong,
 section.apply .tab-panel-content .content-wrap p strong {
   color: #002f70; }
 
-p, li, strong, div.wpforms-container-full .wpforms-form .wpforms-field-description, div.wpforms-container-full .wpforms-form .wpforms-field-limit-text {
+p, li, strong, span, div.wpforms-container-full .wpforms-form .wpforms-field-description, div.wpforms-container-full .wpforms-form .wpforms-field-limit-text {
   color: #1a4775; }
+  p span, li span, strong span, span span, div.wpforms-container-full .wpforms-form .wpforms-field-description span, div.wpforms-container-full .wpforms-form .wpforms-field-limit-text span {
+    color: #1a4775 !important; }
 
 body:not(.home) {
   padding-top: 133px; }
@@ -2793,9 +2798,11 @@ section.why-choose .block .why__choose__us__card__new, .sidebar-wrap .widget .bl
       color: #002f70;
       font-weight: 400;
       margin-bottom: 0px; }
-  .why__choose__us__card__new .block-thumbnail img,
+  .why__choose__us__card__new .block-thumbnail img, .why__choose__us__card__new .news-thumb-img img,
   .block .why__choose__us__card__new .block-thumbnail img,
-  section.why-choose .block .why__choose__us__card__new .block-thumbnail img, .sidebar-wrap .widget .block > a .block-thumbnail img {
+  .block .why__choose__us__card__new .news-thumb-img img,
+  section.why-choose .block .why__choose__us__card__new .block-thumbnail img,
+  section.why-choose .block .why__choose__us__card__new .news-thumb-img img, .sidebar-wrap .widget .block > a .block-thumbnail img, .sidebar-wrap .widget .block > a .news-thumb-img img {
     width: 100%;
     height: auto;
     aspect-ratio: 421/280;
@@ -3030,7 +3037,8 @@ textarea {
   font-size: 18px !important;
   font-style: normal !important;
   font-weight: 400 !important;
-  line-height: 24px !important; }
+  line-height: 24px !important;
+  padding: 2px 10px; }
   input[type="text"]::placeholder,
   input[type="email"]::placeholder,
   input[type="search"]::placeholder,
@@ -3040,7 +3048,7 @@ textarea {
   select::placeholder,
   textarea::placeholder {
     color: #8099b2 !important;
-    font-size: 18px !important;
+    font-size: 15px !important;
     font-style: normal !important;
     font-weight: 400 !important;
     line-height: 24px !important; }
@@ -3066,7 +3074,8 @@ textarea {
 
 section.apply .tab-panel .tab-items li.active a {
   background: #d6effe;
-  color: #002f70; }
+  color: #002f70;
+  border-radius: 16px; }
   section.apply .tab-panel .tab-items li.active a i {
     color: #002f70 !important; }
 
@@ -3410,7 +3419,8 @@ section.faq-detail .faq-wrap .faq-item .faq-body {
 .tab-wrap.mCustomScrollbar .vertical-tabs .tab_item {
   border-radius: 16px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  text-decoration: none !important; }
   .tab-wrap.mCustomScrollbar .vertical-tabs .tab_item .icon-wrap {
     margin-right: 15px; }
   .tab-wrap.mCustomScrollbar .vertical-tabs .tab_item h4 {
@@ -3536,7 +3546,7 @@ div.wpforms-container-full {
   min-height: 150px !important; }
 
 .page-content .content-area .content-area-inner table tr:first-child td {
-  background-color: #002f70; }
+  background-color: #d6effe; }
 
 header .menu-popup .btn-close, header .search-popup .btn-close {
   border-radius: 8px; }
@@ -3679,6 +3689,72 @@ div.wpforms-container-full .wpforms-form .wpforms-field-description.wpforms-disc
 
 .section-block:first-of-type {
   margin-top: 0; }
+
+.sidebar-wrap .faq-wrap .faq-item .faq-body, .sidebar-wrap .faq-wrap .faq-item .faq-head:not(:last-child) {
+  margin-bottom: 15px; }
+
+.banner-panel .nav-tabs {
+  flex-wrap: wrap; }
+  @media (max-width: 720px) {
+    .banner-panel .nav-tabs .nav-link {
+      width: 50%;
+      min-width: 50%; } }
+
+@media (max-width: 720px) {
+  .page-template-template-program-landing .btn-wrap.right-btn {
+    justify-content: center; } }
+
+.wpforms-confirmation-container-full, div[submit-success] > .wpforms-confirmation-container-full:not(.wpforms-redirection-message) {
+  background: #002f70;
+  border: 1px solid #002f70;
+  border-radius: 16px; }
+  .wpforms-confirmation-container-full p, div[submit-success] > .wpforms-confirmation-container-full:not(.wpforms-redirection-message) p {
+    color: #fff; }
+
+section.event-filter .filtering-header {
+  border-radius: 16px;
+  overflow: hidden;
+  border-color: #CCD6E0; }
+
+@media (min-width: 1200px) {
+  section.news-detail {
+    padding-bottom: 70px; } }
+
+.facility-detail .image-gallery-slider .slider-item img {
+  width: 100%; }
+
+@font-face {
+  font-family: icomoon-CONM1;
+  src: url(../fonts/icomoon-CONM1.eot);
+  src: url(../fonts/icomoon-CONM1.eot) format("embedded-opentype"), url(../fonts/icomoon-CONM1.ttf) format("truetype"), url(../fonts/icomoon-CONM1.woff) format("woff"), url(../fonts/icomoon-CONM1.svg) format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+.slider-block-01 {
+  border-radius: 16px; }
+  .slider-block-01 .team-img-box {
+    border-radius: 16px;
+    box-shadow: none; }
+
+.blog-banner-block {
+  border-radius: 20px;
+  overflow: hidden; }
+
+.profile-imb-box {
+  border-radius: 16px;
+  box-shadow: none; }
+
+.profile-txt-box-main h4 {
+  color: #1a4775; }
+
+#searchBtnClose {
+  padding: 10px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+footer .middle__footer p {
+  color: #6685a3 !important; }
 
 /** @format */
 .dark .sidebar-inner-wrap.uk-sticky .indicator-wrap .indicator-item,
@@ -4072,8 +4148,8 @@ b {
 
 .dark .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options.fontsize-switch > .btn, .dark section.sidebar-template .content-wrap li, .dark section.sidebar-template .content-wrap p, .dark section.sidebar-template .content-wrap li, .dark section.sidebar-template .content-wrap p, .dark section.sidebar-template .content-wrap li, .dark section.sidebar-template .content-wrap p, .dark section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ol strong, .dark section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content p strong, .dark section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ul strong, .dark .content-wrap-inner .inner-content p strong, .dark .content-wrap-inner .second-content ul li strong, .dark section.event-filter .result-wrap .result-item .location strong, .dark .facility-detail .discription p strong, .dark .faq-wrap .faq-item .faq-body p strong, .dark .page-content .content-area .content-area-inner h4 strong, .dark .page-content .content-area .content-area-inner h5 strong, .dark .page-content .content-area .content-area-inner h6 strong, .dark .page-content .content-area .content-area-inner h3 strong, .dark .page-content .content-area .content-area-inner h2 strong, .dark .facility-detail .discription li strong {
   color: #fff !important; }
-  .dark .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options.fontsize-switch > .btn a, .dark .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options.fontsize-switch > .btn b, .dark .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options.fontsize-switch > .btn strong, .dark section.sidebar-template .content-wrap li a, .dark section.sidebar-template .content-wrap li b, .dark section.sidebar-template .content-wrap li strong, .dark section.sidebar-template .content-wrap p a, .dark section.sidebar-template .content-wrap p b, .dark section.sidebar-template .content-wrap p strong, .dark section.sidebar-template .content-wrap li a, .dark section.sidebar-template .content-wrap li b, .dark section.sidebar-template .content-wrap li strong, .dark section.sidebar-template .content-wrap p a, .dark section.sidebar-template .content-wrap p b, .dark section.sidebar-template .content-wrap p strong, .dark section.sidebar-template .content-wrap li a, .dark section.sidebar-template .content-wrap li b, .dark section.sidebar-template .content-wrap li strong, .dark section.sidebar-template .content-wrap p a, .dark section.sidebar-template .content-wrap p b, .dark section.sidebar-template .content-wrap p strong, .dark section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ol strong a, .dark section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ol strong b, .dark section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ol strong strong, .dark section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content p strong a, .dark section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content p strong b, .dark section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content p strong strong, .dark section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ul strong a, .dark section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ul strong b, .dark section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ul strong strong, .dark .content-wrap-inner .inner-content p strong a, .dark .content-wrap-inner .inner-content p strong b, .dark .content-wrap-inner .inner-content p strong strong, .dark .content-wrap-inner .second-content ul li strong a, .dark .content-wrap-inner .second-content ul li strong b, .dark .content-wrap-inner .second-content ul li strong strong, .dark section.event-filter .result-wrap .result-item .location strong a, .dark section.event-filter .result-wrap .result-item .location strong b, .dark section.event-filter .result-wrap .result-item .location strong strong, .dark .facility-detail .discription p strong a, .dark .facility-detail .discription p strong b, .dark .facility-detail .discription p strong strong, .dark .faq-wrap .faq-item .faq-body p strong a, .dark .faq-wrap .faq-item .faq-body p strong b, .dark .faq-wrap .faq-item .faq-body p strong strong, .dark .page-content .content-area .content-area-inner h4 strong a, .dark .page-content .content-area .content-area-inner h4 strong b, .dark .page-content .content-area .content-area-inner h4 strong strong, .dark .page-content .content-area .content-area-inner h5 strong a, .dark .page-content .content-area .content-area-inner h5 strong b, .dark .page-content .content-area .content-area-inner h5 strong strong, .dark .page-content .content-area .content-area-inner h6 strong a, .dark .page-content .content-area .content-area-inner h6 strong b, .dark .page-content .content-area .content-area-inner h6 strong strong, .dark .page-content .content-area .content-area-inner h3 strong a, .dark .page-content .content-area .content-area-inner h3 strong b, .dark .page-content .content-area .content-area-inner h3 strong strong, .dark .page-content .content-area .content-area-inner h2 strong a, .dark .page-content .content-area .content-area-inner h2 strong b, .dark .page-content .content-area .content-area-inner h2 strong strong, .dark .facility-detail .discription li strong a, .dark .facility-detail .discription li strong b, .dark .facility-detail .discription li strong strong {
-    color: inherit !important; }
+  .dark .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options.fontsize-switch > .btn a, .dark .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options.fontsize-switch > .btn b, .dark .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options.fontsize-switch > .btn strong, .dark .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options.fontsize-switch > .btn span, .dark section.sidebar-template .content-wrap li a, .dark section.sidebar-template .content-wrap li b, .dark section.sidebar-template .content-wrap li strong, .dark section.sidebar-template .content-wrap li span, .dark section.sidebar-template .content-wrap p a, .dark section.sidebar-template .content-wrap p b, .dark section.sidebar-template .content-wrap p strong, .dark section.sidebar-template .content-wrap p span, .dark section.sidebar-template .content-wrap li a, .dark section.sidebar-template .content-wrap li b, .dark section.sidebar-template .content-wrap li strong, .dark section.sidebar-template .content-wrap li span, .dark section.sidebar-template .content-wrap p a, .dark section.sidebar-template .content-wrap p b, .dark section.sidebar-template .content-wrap p strong, .dark section.sidebar-template .content-wrap p span, .dark section.sidebar-template .content-wrap li a, .dark section.sidebar-template .content-wrap li b, .dark section.sidebar-template .content-wrap li strong, .dark section.sidebar-template .content-wrap li span, .dark section.sidebar-template .content-wrap p a, .dark section.sidebar-template .content-wrap p b, .dark section.sidebar-template .content-wrap p strong, .dark section.sidebar-template .content-wrap p span, .dark section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ol strong a, .dark section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ol strong b, .dark section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ol strong strong, .dark section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ol strong span, .dark section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content p strong a, .dark section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content p strong b, .dark section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content p strong strong, .dark section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content p strong span, .dark section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ul strong a, .dark section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ul strong b, .dark section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ul strong strong, .dark section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ul strong span, .dark .content-wrap-inner .inner-content p strong a, .dark .content-wrap-inner .inner-content p strong b, .dark .content-wrap-inner .inner-content p strong strong, .dark .content-wrap-inner .inner-content p strong span, .dark .content-wrap-inner .second-content ul li strong a, .dark .content-wrap-inner .second-content ul li strong b, .dark .content-wrap-inner .second-content ul li strong strong, .dark .content-wrap-inner .second-content ul li strong span, .dark section.event-filter .result-wrap .result-item .location strong a, .dark section.event-filter .result-wrap .result-item .location strong b, .dark section.event-filter .result-wrap .result-item .location strong strong, .dark section.event-filter .result-wrap .result-item .location strong span, .dark .facility-detail .discription p strong a, .dark .facility-detail .discription p strong b, .dark .facility-detail .discription p strong strong, .dark .facility-detail .discription p strong span, .dark .faq-wrap .faq-item .faq-body p strong a, .dark .faq-wrap .faq-item .faq-body p strong b, .dark .faq-wrap .faq-item .faq-body p strong strong, .dark .faq-wrap .faq-item .faq-body p strong span, .dark .page-content .content-area .content-area-inner h4 strong a, .dark .page-content .content-area .content-area-inner h4 strong b, .dark .page-content .content-area .content-area-inner h4 strong strong, .dark .page-content .content-area .content-area-inner h4 strong span, .dark .page-content .content-area .content-area-inner h5 strong a, .dark .page-content .content-area .content-area-inner h5 strong b, .dark .page-content .content-area .content-area-inner h5 strong strong, .dark .page-content .content-area .content-area-inner h5 strong span, .dark .page-content .content-area .content-area-inner h6 strong a, .dark .page-content .content-area .content-area-inner h6 strong b, .dark .page-content .content-area .content-area-inner h6 strong strong, .dark .page-content .content-area .content-area-inner h6 strong span, .dark .page-content .content-area .content-area-inner h3 strong a, .dark .page-content .content-area .content-area-inner h3 strong b, .dark .page-content .content-area .content-area-inner h3 strong strong, .dark .page-content .content-area .content-area-inner h3 strong span, .dark .page-content .content-area .content-area-inner h2 strong a, .dark .page-content .content-area .content-area-inner h2 strong b, .dark .page-content .content-area .content-area-inner h2 strong strong, .dark .page-content .content-area .content-area-inner h2 strong span, .dark .facility-detail .discription li strong a, .dark .facility-detail .discription li strong b, .dark .facility-detail .discription li strong strong, .dark .facility-detail .discription li strong span {
+    color: #fff !important; }
 
 .dark .acad-cal-pdf, .dark .academic-calender .select2-container--default .select2-selection--single .select2-selection__rendered, .dark .select2-results__option {
   color: #fff !important; }
@@ -4282,3 +4358,9 @@ b {
 .dark div.wpforms-container-full .wpforms-form .wpforms-field-description.wpforms-disclaimer-description, .dark .registration-confirmation .content-area-inner h1, .dark .registration-confirmation .content-area-inner h2, .dark .registration-confirmation .content-area-inner h3 {
   color: #fff;
   background-color: transparent; }
+
+.dark .wpforms-confirmation-container-full, .dark div[submit-success] > .wpforms-confirmation-container-full:not(.wpforms-redirection-message) {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1); }
+  .dark .wpforms-confirmation-container-full p, .dark div[submit-success] > .wpforms-confirmation-container-full:not(.wpforms-redirection-message) p {
+    color: #fff; }

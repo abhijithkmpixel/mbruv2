@@ -13,8 +13,11 @@ section.apply .tab-panel-content .content-wrap li strong,
 section.apply .tab-panel-content .content-wrap p strong{
   color: #002f70;
 }
-p,li,strong,div.wpforms-container-full .wpforms-form .wpforms-field-description, div.wpforms-container-full .wpforms-form .wpforms-field-limit-text{
+p,li,strong,span,div.wpforms-container-full .wpforms-form .wpforms-field-description, div.wpforms-container-full .wpforms-form .wpforms-field-limit-text{
   color: #1a4775;
+  span{
+    color: #1a4775 !important;
+  }
 }
 // body{
 //   overflow: hidden;
@@ -576,7 +579,7 @@ section.why-choose .block .why__choose__us__card__new , .sidebar-wrap .widget .b
     }
   }
 
-  .block-thumbnail img {
+  .block-thumbnail img , .news-thumb-img img{
     width: 100%;
     height: auto;
     aspect-ratio: 421/280;
@@ -835,9 +838,10 @@ textarea {
   font-style: normal !important;
   font-weight: 400 !important;
   line-height: 24px !important;
+  padding: 2px 10px;
   &::placeholder {
     color: #8099b2 !important;
-    font-size: 18px !important;
+    font-size: 15px !important;
     font-style: normal !important;
     font-weight: 400 !important;
     line-height: 24px !important;
@@ -863,6 +867,7 @@ textarea {
 section.apply .tab-panel .tab-items li.active a {
   background: #d6effe;
   color: #002f70;
+  border-radius: 16px;
   i {
     color: #002f70 !important;
   }
@@ -1248,6 +1253,7 @@ section.faq-detail .faq-wrap .faq-item .faq-body{
     border-radius: 16px;
     display: flex;
     align-items: center;
+    text-decoration: none !important;
     .icon-wrap{
       margin-right: 15px;
     }
@@ -1407,7 +1413,7 @@ section.contact .contact-map#map{
     min-height: 150px !important;
    }
    .page-content .content-area .content-area-inner table tr:first-child td{
-    background-color: #002f70;
+    background-color: #d6effe;
    }
    header .menu-popup .btn-close, header .search-popup .btn-close{
     border-radius: 8px;
@@ -1573,4 +1579,81 @@ div.wpforms-container-full .wpforms-form .wpforms-field-description.wpforms-disc
 }
 .section-block:first-of-type{
   margin-top: 0;
+}
+.sidebar-wrap .faq-wrap .faq-item .faq-body, .sidebar-wrap .faq-wrap .faq-item .faq-head:not(:last-child){
+margin-bottom: 15px;
+}
+.banner-panel .nav-tabs {
+  flex-wrap: wrap;
+  .nav-link{
+  @media (max-width:720px) {
+    width: 50%;
+    min-width: 50%;
+  }
+}}
+.page-template-template-program-landing .btn-wrap.right-btn{
+  @media (max-width:720px) {
+    justify-content: center;
+  }
+}
+.wpforms-confirmation-container-full, div[submit-success]>.wpforms-confirmation-container-full:not(.wpforms-redirection-message){
+  background: #002f70;
+  border: 1px solid #002f70;
+  border-radius: 16px;
+  p{
+    color: #fff;
+  }
+}
+section.event-filter .filtering-header{
+  border-radius: 16px;
+  overflow: hidden;
+  border-color: #CCD6E0;
+}
+section.news-detail{
+  @media (min-width:1200px) {
+    padding-bottom: 70px;
+  }
+}
+.facility-detail .image-gallery-slider .slider-item img{
+  width: 100%;
+}
+@font-face {
+  font-family: icomoon-CONM1;
+  src: url(../fonts/icomoon-CONM1.eot);
+  src: url(../fonts/icomoon-CONM1.eot)
+      format("embedded-opentype"),
+    url(../fonts/icomoon-CONM1.ttf)
+      format("truetype"),
+    url(../fonts/icomoon-CONM1.woff)
+      format("woff"),
+    url(../fonts/icomoon-CONM1.svg)
+      format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+.slider-block-01 {
+  border-radius: 16px;
+  .team-img-box{
+  border-radius: 16px;
+  box-shadow: none;
+}}
+.blog-banner-block{
+  border-radius: 20px;
+  overflow: hidden;
+}
+.profile-imb-box{
+  border-radius: 16px;
+  box-shadow: none;
+}
+.profile-txt-box-main h4{
+  color:  #1a4775;
+}
+#searchBtnClose{
+  padding: 10px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .middle__footer p{
+  color: #6685a3 !important;
 }

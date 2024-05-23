@@ -396,8 +396,8 @@
     }
     .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options.fontsize-switch > .btn,section.sidebar-template .content-wrap li, section.sidebar-template .content-wrap p,section.sidebar-template .content-wrap li, section.sidebar-template .content-wrap p,section.sidebar-template .content-wrap li, section.sidebar-template .content-wrap p,section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ol strong, section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content p strong, section.sidebar-template.right-sidebar .content-wrap .page-content .plain-content ul strong, .content-wrap-inner .inner-content p strong, .content-wrap-inner .second-content ul li strong, section.event-filter .result-wrap .result-item .location strong, .facility-detail .discription p strong, .faq-wrap .faq-item .faq-body p strong, .page-content .content-area .content-area-inner h4 strong, .page-content .content-area .content-area-inner h5 strong, .page-content .content-area .content-area-inner h6 strong, .page-content .content-area .content-area-inner h3 strong, .page-content .content-area .content-area-inner h2 strong, .facility-detail .discription li strong{
       color: #fff !important;
-      a,b,strong{
-        color: inherit !important;
+      a,b,strong,span{
+        color: #fff !important;
       }
     }
     .acad-cal-pdf ,.academic-calender .select2-container--default .select2-selection--single .select2-selection__rendered,.select2-results__option{
@@ -628,5 +628,12 @@ color: #002f70 !important;
 div.wpforms-container-full .wpforms-form .wpforms-field-description.wpforms-disclaimer-description,.registration-confirmation .content-area-inner h1, .registration-confirmation .content-area-inner h2, .registration-confirmation .content-area-inner h3{
   color: #fff;
   background-color: transparent;
+}
+.wpforms-confirmation-container-full, div[submit-success]>.wpforms-confirmation-container-full:not(.wpforms-redirection-message){
+  background: rgba($color: #fff, $alpha: 0.04);
+  border: 1px solid rgba($color: #fff, $alpha: 0.1);
+  p{
+    color: #fff;
+  }
 }
 }
