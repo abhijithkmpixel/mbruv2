@@ -62,11 +62,15 @@ footer {
         column-count: unset;
         flex-direction: column;
         justify-content: center;
+        margin-bottom: 16px;
       }
       li {
         padding: 0 13px;
         @media (max-width: 1200px) {
           padding: 10px 14px;
+        }
+        @media (max-width: 720px) {
+          padding: 10px 4px;
         }
         a {
           font-size: 13px;
@@ -332,7 +336,7 @@ footer {
     z-index: 100;
     box-shadow: 0px -4px 20px 4px rgba(0,0,0,0.16);
     @media (max-width: 720px) {
-      background-color: #002f70;
+      // background-color: #002f70;
     padding: 8px 0 15px;
 
     }
