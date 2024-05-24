@@ -38,7 +38,8 @@ header {
   width: 100%;
   background-color: #fff;
   height: 96px;
-  z-index: 1000; }
+  z-index: 1000;
+  box-shadow: 0px 25px 26px -22px rgba(0, 51, 102, 0.08); }
   @media (max-width: 720px) {
     header {
       height: 55px; } }
@@ -632,9 +633,6 @@ li
         color: #fff; }
       .dark .fixed__main__navigation__menu > ul li.has__children::after {
         border-color: #fff; }
-
-.sticky__header header {
-  box-shadow: 0px 25px 26px -22px rgba(0, 51, 102, 0.08); }
 
 .accessibility__menu, .login__menu {
   position: relative;
@@ -1905,8 +1903,7 @@ footer {
   z-index: 100; }
   @media (min-width: 720px) {
     footer {
-      padding-bottom: 108px;
-      margin-top: 50px; } }
+      padding-bottom: 108px; } }
   @media (max-width: 990px) {
     footer .container {
       max-width: 100%; } }
@@ -2538,13 +2535,15 @@ section.our-facilities .slider-footer .controls .slick-arrow.slick-disabled {
 section.banner-panel .panel-wrap {
   background: #fff !important;
   border-radius: 20px;
-  overflow: hidden; }
+  overflow: hidden;
+  border: 1px solid #e5ebf0 !important;
+  box-shadow: none !important; }
 
 .tab-pane .WhiteLink {
   color: #002f70 !important; }
 
 .custom-select-dropdown .select2-container .select2-selection--single {
-  height: 49px;
+  height: 48px;
   border-radius: 12px;
   border: 1px solid #8099b2;
   color: #8099b2; }
@@ -2699,7 +2698,8 @@ b {
   background-color: #fff;
   color: #002f70;
   border-radius: 12px;
-  text-decoration: none !important; }
+  text-decoration: none !important;
+  box-shadow: none !important; }
   .discover-mbru .vertical-tabs-wrap .vertical-tabs a.tab_item p {
     color: inherit; }
 
@@ -2722,10 +2722,11 @@ b {
     content: "";
     width: 12px;
     height: 12px;
-    border-right: 1px solid #32affc;
-    border-bottom: 1px solid #32affc;
+    border-right: 1px solid #003366;
+    border-bottom: 1px solid #003366;
     transform: rotate(-45deg);
-    top: 7px; }
+    top: 7px;
+    right: 24px; }
   .btn.btn-primary-outline:hover {
     color: #32affc;
     background-color: transparent;
@@ -2807,6 +2808,15 @@ section.why-choose .block .why__choose__us__card__new, .sidebar-wrap .widget .bl
     height: auto;
     aspect-ratio: 421/280;
     object-fit: cover; }
+  .why__choose__us__card__new:hover,
+  .block .why__choose__us__card__new:hover,
+  section.why-choose .block .why__choose__us__card__new:hover, .sidebar-wrap .widget .block > a:hover {
+    background: #fff; }
+    @media (min-width: 1200px) {
+      .why__choose__us__card__new:hover,
+      .block .why__choose__us__card__new:hover,
+      section.why-choose .block .why__choose__us__card__new:hover, .sidebar-wrap .widget .block > a:hover {
+        box-shadow: 0px 12px 24px -8px rgba(0, 51, 102, 0.12); } }
 
 #mediaNewsData .col-md-3 .block.wall.small > a,
 #mediaNewsData .col-md-6 .block.wall.small {
@@ -2858,8 +2868,8 @@ section.why-choose .block .why__choose__us__card__new, .sidebar-wrap .widget .bl
   top: 50%;
   width: 12px;
   height: 12px;
-  border-right: 1.2px solid #002f70;
-  border-bottom: 1.2px solid #002f70;
+  border-right: 1.2px solid #32AFFC;
+  border-bottom: 1.2px solid #32AFFC;
   transform: rotate(-45deg) translateY(-50%); }
 
 .acad-cal-pdf {
@@ -2883,7 +2893,7 @@ section.why-choose .block .why__choose__us__card__new, .sidebar-wrap .widget .bl
   overflow: hidden; }
 
 .faq-wrap .faq-item {
-  border-radius: 12px; }
+  border-radius: 16px; }
   .faq-wrap .faq-item .faq-head {
     background-color: #fff;
     color: #002f70;
@@ -3693,12 +3703,14 @@ div.wpforms-container-full .wpforms-form .wpforms-field-description.wpforms-disc
 .sidebar-wrap .faq-wrap .faq-item .faq-body, .sidebar-wrap .faq-wrap .faq-item .faq-head:not(:last-child) {
   margin-bottom: 15px; }
 
-.banner-panel .nav-tabs {
-  flex-wrap: wrap; }
-  @media (max-width: 720px) {
-    .banner-panel .nav-tabs .nav-link {
-      width: 50%;
-      min-width: 50%; } }
+@media (max-width: 720px) {
+  .banner-panel .nav-tabs {
+    flex-wrap: wrap; } }
+
+@media (max-width: 720px) {
+  .banner-panel .nav-tabs .nav-link {
+    width: 50%;
+    min-width: 50%; } }
 
 @media (max-width: 720px) {
   .page-template-template-program-landing .btn-wrap.right-btn {
@@ -3755,6 +3767,112 @@ section.event-filter .filtering-header {
 
 footer .middle__footer p {
   color: #6685a3 !important; }
+
+.banner.large.banner-with-panel {
+  overflow: hidden; }
+
+.backstretch {
+  width: 100% !important; }
+  .backstretch img {
+    width: 100% !important; }
+
+.row.program_list .block-title {
+  height: auto !important;
+  min-height: unset !important; }
+
+.services__grid__listing__card {
+  border: 1px solid #e5ebf0;
+  border-radius: 16px; }
+
+.block.well.type1 .block-title {
+  box-shadow: none; }
+
+.block.well.type1:hover {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); }
+
+.slider-footer {
+  display: block;
+  align-items: center;
+  margin-top: 20px; }
+
+div.wpforms-container-full .wpforms-form input[type=date], div.wpforms-container-full .wpforms-form input[type=datetime], div.wpforms-container-full .wpforms-form input[type=datetime-local], div.wpforms-container-full .wpforms-form input[type=email], div.wpforms-container-full .wpforms-form input[type=month], div.wpforms-container-full .wpforms-form input[type=number], div.wpforms-container-full .wpforms-form input[type=password], div.wpforms-container-full .wpforms-form input[type=range], div.wpforms-container-full .wpforms-form input[type=search], div.wpforms-container-full .wpforms-form input[type=tel], div.wpforms-container-full .wpforms-form input[type=text], div.wpforms-container-full .wpforms-form input[type=time], div.wpforms-container-full .wpforms-form input[type=url], div.wpforms-container-full .wpforms-form input[type=week], div.wpforms-container-full .wpforms-form select, div.wpforms-container-full .wpforms-form textarea {
+  height: 48px !important; }
+
+div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
+  height: 120px !important;
+  resize: none; }
+
+.contact .wpforms-field.wpforms-field-select, .question .wpforms-field.wpforms-field-select {
+  position: relative; }
+  .contact .wpforms-field.wpforms-field-select::after, .question .wpforms-field.wpforms-field-select::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-right: 1px solid #002f70;
+    border-bottom: 1px solid #002f70;
+    border-radius: 0;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 45%;
+    right: 22px; }
+  .contact .wpforms-field.wpforms-field-select select, .question .wpforms-field.wpforms-field-select select {
+    -webkit-appearance: none;
+    appearance: none !important; }
+
+.navigate .navigate-wrap a h3, .navigate .navigate-wrap a p {
+  color: #fff; }
+
+.navigate-wrap span .icon {
+  top: 5px; }
+
+.navigate-wrap span .icon i, .navigate-wrap span .icon {
+  color: #32AFFC; }
+
+.discover-mbru .content-wrap .simple-slideshow {
+  box-shadow: none !important; }
+
+.title h2 + .filter_wrap {
+  scrollbar-width: none; }
+
+.block.wall .block-title .tagline {
+  border-left: none !important;
+  padding-left: 0 !important; }
+
+div.wpforms-container-full .wpforms-form button[type=submit] {
+  width: 100%; }
+
+.sidebar-wrap .faq-wrap .faq-item.active .faq-head:before {
+  border-color: transparent; }
+
+.sidebar-wrap .faq-wrap .faq-item:not(.active) .faq-head:after {
+  top: 32px; }
+
+nav.tabs > ul > li.submenu-itm .acc-icn {
+  width: 14px;
+  height: 2px;
+  background-color: #002f70;
+  display: block;
+  border-radius: 10px;
+  right: 10px;
+  top: 32px; }
+  nav.tabs > ul > li.submenu-itm .acc-icn::after {
+    content: "";
+    height: 14px;
+    width: 2px;
+    background-color: #002f70;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    transform: translate(-50%, -50%); }
+  nav.tabs > ul > li.submenu-itm .acc-icn i {
+    display: none; }
+
+nav.tabs > ul > li.submenu-itm.acc-active .acc-icn::after {
+  display: none; }
+
+.info-panel .info-body .info-item .info-title h3, .summary-list .summary-item .summary-title h3 {
+  margin-bottom: 5px; }
 
 /** @format */
 .dark .sidebar-inner-wrap.uk-sticky .indicator-wrap .indicator-item,

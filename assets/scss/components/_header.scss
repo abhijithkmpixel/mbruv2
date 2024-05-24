@@ -8,6 +8,8 @@ header {
   background-color: #fff;
   height: 96px;
   z-index: 1000;
+  box-shadow:0px 25px 26px -22px rgba(0, 51, 102, 0.08) ;
+
   @media (max-width: 720px) {
     height: 55px;
   }
@@ -768,9 +770,7 @@ margin-left: 10px;
     }
   }
 }
-.sticky__header header{
-  box-shadow:0px 25px 26px -22px rgba(0, 51, 102, 0.08) ;
-}
+
 .accessibility__menu , .login__menu{
   position: relative;
   width: auto;
