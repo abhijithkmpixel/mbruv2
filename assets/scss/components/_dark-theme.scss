@@ -20,6 +20,9 @@
   }
   .sidebar-inner-wrap.uk-sticky .indicator-wrap .indicator-item {
     color: #fff;
+    strong,span{
+      color: #fff;
+    }
     &.active {
       color: #32affc;
     }
@@ -509,6 +512,9 @@
     b,strong{
       color: inherit;
     }
+
+
+
    }
    .tab-wrap.mCustomScrollbar .vertical-tabs .tab_item.active{
     background-color: rgba($color: #fff, $alpha: 0.1);
@@ -559,7 +565,7 @@
    .our__programs__search__section .our__programs__search__section__form__wrap form fieldset.search__field svg path, .our__programs__search__section .our__programs__search__section__form__wrap .form fieldset.search__field svg path{
     stroke: #fff;
    }
-   div.wpforms-container-full .wpforms-form h3{
+   div.wpforms-container-full .wpforms-form h3,.image-text-wrap .image-text-row .text-holder .block-title{
     color: #fff;
    }
    .select2-container--default .select2-results__option[aria-selected=true],.select2-container--default .select2-results__option--highlighted[aria-selected]{
@@ -616,7 +622,7 @@ color: #002f70 !important;
       color: #fff !important;
     }
    }
-   .es-content-body, section.sidebar-template .content-wrap h2, section.sidebar-template .content-wrap h3{
+   .es-content-body, section.sidebar-template .content-wrap h2, section.sidebar-template .content-wrap h3,.sidebar-template .form-block.general-form h4, .sidebar-template .form-block.general-form .custom-radio, .sidebar-template .form-block.general-form h3{
     color: #fff;
    }
    section.sidebar-template .content-wrap li span, section.sidebar-template .content-wrap li strong, section.sidebar-template .content-wrap p span, section.sidebar-template .content-wrap p strong,section.apply .tab-panel-content .content-wrap p ,section.apply .tab-panel-content .content-wrap p strong,section.apply .tab-panel-content .content-wrap p span,p, li, strong, div.wpforms-container-full .wpforms-form .wpforms-field-description, div.wpforms-container-full .wpforms-form .wpforms-field-limit-text{
@@ -636,4 +642,66 @@ div.wpforms-container-full .wpforms-form .wpforms-field-description.wpforms-disc
     color: #fff;
   }
 }
+.footer__bottom{
+  background-color: #0a233c;
+  @media (max-width:1200px) {
+    background-color: transparent;
+  }
+}
+.action__btn img{
+  // filter: invert(100%) sepia(100%) saturate(10%) hue-rotate(90deg) brightness(100%) contrast(100%);
+}
+.accessibility__menu::after, .login__menu::after{
+  border-color: #fff;
+}
+.fixed__main__navigation__menu .icon__quick__nav__dropdown{
+  background-color: transparent;
+  border: none;
+}
+p span, li span, strong span, span span, div.wpforms-container-full .wpforms-form .wpforms-field-description span, div.wpforms-container-full .wpforms-form .wpforms-field-limit-text span{
+  color: #fff !important;
+}
+.fixed__main__navigation__menu .icon__quick__nav .icon__quick__nav__dropdown .filter_wrap .filter_options > .btn,
+ .fixed__main__navigation__menu .accessibility__menu .icon__quick__nav__dropdown .filter_wrap .filter_options > .btn{
+  color: #002f70;
+  i{
+    color: #002f70;
+  }
+ }
+ li span{
+  color: #fff !important;
+ }
+ .page-content .content-area .content-area-inner table tr:first-child td{
+  background-color: rgba($color: #fff, $alpha: 0.04);
+ }
+ .btn.btn-primary-outline i{
+  color: #fff;
+ }
+ nav.tabs > ul > li.submenu-itm .acc-icn{
+  background-color: #fff;
+  &::after{
+    background-color: #fff;
+  }
+ }
+ header .header__inner .header__inner__left .nav__menu li:hover .nav__menu--sub, header .header__inner .header__inner__left .nav__menu li:hover .dropdown-menu{
+  background-color: #002f70;
+  box-shadow: none;
+  border: 1px solid rgba($color: #fff, $alpha: 0.1);
+    li{
+      a{
+      color: #fff;
+      }
+    }
+ }
+  .iti__country-list, div.wpforms-container .wpforms-form .iti__country-list, div.wpforms-container-full .wpforms-form .iti__country-list, #wpforms-conversational-form-page .iti__country-list{
+  background-color: #002f70 !important;
+ }
+  .sidebar-inner-wrap.uk-sticky .indicator-wrap .indicator-item:hover{
+strong,span{
+  color: #32affc !important;
+}
+ }
+  .facility-detail .discription h2{
+    color: #fff !important;
+  }
 }

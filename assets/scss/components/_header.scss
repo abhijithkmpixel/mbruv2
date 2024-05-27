@@ -476,6 +476,8 @@ margin-left: 10px;
     padding-left: 0;
   }
   & > ul {
+    height: 74dvh;
+    overflow-y: auto;
     li {
       cursor: pointer;
       &:not(:last-child) {
@@ -620,7 +622,7 @@ margin-left: 10px;
           position: absolute;
           top: 12px;
           right: 6px;
-          transform: rotate(45deg);
+          transform: rotate(-45deg);
           transition: 0.1s all ease-in-out;
           border-right: 2px solid #002f70;
           border-bottom: 2px solid #002f70;
@@ -866,6 +868,9 @@ margin-left: 10px;
   &.icon__quick__nav__active{
     .icon__quick__nav__dropdown{
       display: block;
+    }
+    &::after{
+      transform: rotate(45deg);
     }
   }
 }

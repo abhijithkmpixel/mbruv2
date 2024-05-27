@@ -138,16 +138,28 @@ $(document).ready(function () {
     })
 
 
+    // $('.has__children').click(function (e) {
+    //     e.stopPropagation();
+    //     if ($(this).hasClass('sub__menu__active')) {
+    //         $(".sub__menu__has__children").removeClass('sub__menu__has__children__active');
+    //     }
+    //     $('.has__children').each(function(){
+    //         $(this).removeClass('sub__menu__active');
+    //     })
+    //     $(this).addClass('sub__menu__active');
+    // })
+
+
     $('.has__children').click(function (e) {
         e.stopPropagation();
-        if ($(this).hasClass('sub__menu__active')) {
-            $(".sub__menu__has__children").removeClass('sub__menu__has__children__active');
+        var isActive = $(this).hasClass('sub__menu__active');
+        $(".has__children").removeClass('sub__menu__active');
+        if (!isActive) {
+            $(this).addClass('sub__menu__active');
         }
-        $('.has__children').each(function(){
-            $(this).removeClass('sub__menu__active');
-        })
-        $(this).addClass('sub__menu__active');
-    })
+    });
+
+    
 
     $('#header__menu__toggle__hamburger').click(function () {
         if ($('body').hasClass('main__navigation__open')) {
