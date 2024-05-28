@@ -649,7 +649,10 @@ div.wpforms-container-full .wpforms-form .wpforms-field-description.wpforms-disc
   }
 }
 .action__btn img{
-  // filter: invert(100%) sepia(100%) saturate(10%) hue-rotate(90deg) brightness(100%) contrast(100%);
+  filter: invert(100%) sepia(100%) saturate(10%) hue-rotate(90deg) brightness(100%) contrast(100%);
+  @media (max-width:1200px) {
+    filter: none;
+  }
 }
 .accessibility__menu::after, .login__menu::after{
   border-color: #fff;
@@ -702,6 +705,25 @@ strong,span{
 }
  }
   .facility-detail .discription h2{
+    color: #fff !important;
+  }
+  .flatpickr-calendar.open{
+    background-color: #233950;
+  }
+  .sidebar-template .form-block.general-form h4 label::before, .sidebar-template .form-block.general-form .custom-radio label::before, .sidebar-template .form-block.general-form h3 label::before{
+    border-color: #fff;
+  }
+  .sidebar-template .form-block.general-form h4 input:checked + label::before, .sidebar-template .form-block.general-form .custom-radio input:checked + label::before, .sidebar-template .form-block.general-form h3 input:checked + label::before{
+    background: #fff;
+    border-color: #fff;
+    .sidebar-template .form-block.general-form h4 input:checked + label::after, .sidebar-template .form-block.general-form .custom-radio input:checked + label::after, .sidebar-template .form-block.general-form h3 input:checked + label::after{
+      color: #002f70;
+    }
+  }
+  .latest__news .container::after{
+      display: none !important;
+  }
+  .facility-detail .discription h2 strong,.faq-wrap .faq-item .faq-body p b, .faq-wrap .faq-item .faq-body p strong{
     color: #fff !important;
   }
 }

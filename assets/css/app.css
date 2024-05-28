@@ -2183,10 +2183,10 @@ footer {
     .footer__bottom {
       padding: 8px 0 15px; } }
   .footer__bottom .action__btn {
-    padding: 12px 0;
-    background-color: #fff; }
+    padding: 12px 0; }
     @media (max-width: 1200px) {
       .footer__bottom .action__btn {
+        background-color: #fff;
         padding: 12px;
         border-radius: 50%;
         width: 44px;
@@ -2196,9 +2196,13 @@ footer {
       .footer__bottom .action__btn {
         width: 38px;
         height: 38px;
-        padding: 7px; }
-        .footer__bottom .action__btn:not(:last-child) {
-          margin-left: 10px; } }
+        padding: 7px; } }
+    @media (max-width: 990px) {
+      .footer__bottom .action__btn:not(:last-child) {
+        margin-left: 20px; } }
+    @media (max-width: 720px) {
+      .footer__bottom .action__btn:not(:last-child) {
+        margin-left: 10px; } }
     @media (max-width: 1200px) {
       .footer__bottom .action__btn img {
         margin-right: 0; } }
@@ -2222,7 +2226,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between; }
-    @media (max-width: 720px) {
+    @media (max-width: 990px) {
       .footer__bottom .container {
         justify-content: center; } }
 
@@ -2443,7 +2447,7 @@ section.our-facilities .slider-footer .controls .slick-arrow.slick-disabled {
   opacity: 0.5; }
 
 .back-to-top .icon-wrap {
-  background-color: transparent;
+  background-color: #fff;
   border: 1px solid #002f70; }
   .back-to-top .icon-wrap i {
     color: #002f70; }
@@ -2859,7 +2863,7 @@ section.why-choose .block .why__choose__us__card__new, .sidebar-wrap .widget .bl
   background-color: transparent; }
 
 .back-to-top {
-  z-index: 100; }
+  z-index: 1000; }
 
 .navigate-wrap span .icon i,
 .navigate-wrap span .icon {
@@ -4562,6 +4566,12 @@ b {
     .dark .footer__bottom {
       background-color: transparent; } }
 
+.dark .action__btn img {
+  filter: invert(100%) sepia(100%) saturate(10%) hue-rotate(90deg) brightness(100%) contrast(100%); }
+  @media (max-width: 1200px) {
+    .dark .action__btn img {
+      filter: none; } }
+
 .dark .accessibility__menu::after, .dark .login__menu::after {
   border-color: #fff; }
 
@@ -4607,4 +4617,22 @@ b {
   color: #32affc !important; }
 
 .dark .facility-detail .discription h2 {
+  color: #fff !important; }
+
+.dark .flatpickr-calendar.open {
+  background-color: #233950; }
+
+.dark .sidebar-template .form-block.general-form h4 label::before, .dark .sidebar-template .form-block.general-form .custom-radio label::before, .dark .sidebar-template .form-block.general-form h3 label::before {
+  border-color: #fff; }
+
+.dark .sidebar-template .form-block.general-form h4 input:checked + label::before, .dark .sidebar-template .form-block.general-form .custom-radio input:checked + label::before, .dark .sidebar-template .form-block.general-form h3 input:checked + label::before {
+  background: #fff;
+  border-color: #fff; }
+  .dark .sidebar-template .form-block.general-form h4 input:checked + label::before .sidebar-template .form-block.general-form h4 input:checked + label::after, .dark .sidebar-template .form-block.general-form h4 input:checked + label::before .sidebar-template .form-block.general-form .custom-radio input:checked + label::after, .dark .sidebar-template .form-block.general-form h4 input:checked + label::before .sidebar-template .form-block.general-form h3 input:checked + label::after, .dark .sidebar-template .form-block.general-form .custom-radio input:checked + label::before .sidebar-template .form-block.general-form h4 input:checked + label::after, .dark .sidebar-template .form-block.general-form .custom-radio input:checked + label::before .sidebar-template .form-block.general-form .custom-radio input:checked + label::after, .dark .sidebar-template .form-block.general-form .custom-radio input:checked + label::before .sidebar-template .form-block.general-form h3 input:checked + label::after, .dark .sidebar-template .form-block.general-form h3 input:checked + label::before .sidebar-template .form-block.general-form h4 input:checked + label::after, .dark .sidebar-template .form-block.general-form h3 input:checked + label::before .sidebar-template .form-block.general-form .custom-radio input:checked + label::after, .dark .sidebar-template .form-block.general-form h3 input:checked + label::before .sidebar-template .form-block.general-form h3 input:checked + label::after {
+    color: #002f70; }
+
+.dark .latest__news .container::after {
+  display: none !important; }
+
+.dark .facility-detail .discription h2 strong, .dark .faq-wrap .faq-item .faq-body p b, .dark .faq-wrap .faq-item .faq-body p strong {
   color: #fff !important; }
