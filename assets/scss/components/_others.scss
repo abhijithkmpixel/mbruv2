@@ -1881,3 +1881,16 @@ section.history .timeline-popups .popup-timeline .popup-inner{
     color: #fff;
   }
 }
+.gm-control-active>img{
+  top: 9px !important;
+}
+div.wpforms-container-full .wpforms-field-date-time .wpforms-field-date-dropdown-wrap.wpforms-field-medium{
+  width: 100%;
+}
+div.wpforms-container-full .wpforms-field-date-time .wpforms-field-date-time-date-day, div.wpforms-container-full .wpforms-field-date-time .wpforms-field-date-time-date-month, div.wpforms-container-full .wpforms-field-date-time .wpforms-field-date-time-date-year{
+  width: max-content;
+  @media (max-width:720px) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

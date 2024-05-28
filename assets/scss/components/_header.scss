@@ -477,7 +477,9 @@ margin-left: 10px;
   }
   & > ul {
     height: 74dvh;
-    overflow-y: auto;
+    @media (max-width:720px) { 
+      overflow-y: auto;
+    }
     li {
       cursor: pointer;
       &:not(:last-child) {
@@ -622,7 +624,7 @@ margin-left: 10px;
           position: absolute;
           top: 12px;
           right: 6px;
-          transform: rotate(-45deg);
+          transform: rotate(45deg);
           transition: 0.1s all ease-in-out;
           border-right: 2px solid #002f70;
           border-bottom: 2px solid #002f70;

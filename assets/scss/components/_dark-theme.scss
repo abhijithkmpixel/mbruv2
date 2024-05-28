@@ -723,7 +723,10 @@ strong,span{
   .latest__news .container::after{
       display: none !important;
   }
-  .facility-detail .discription h2 strong,.faq-wrap .faq-item .faq-body p b, .faq-wrap .faq-item .faq-body p strong{
+  .facility-detail .discription h2 strong,.faq-wrap .faq-item .faq-body p b, .faq-wrap .faq-item .faq-body p strong,.welcome h4, .welcome h3, .welcome h2, .welcome h1, .welcome h5, .welcome h6, .welcome h4 strong, .welcome li, header .menu-popup .search-holder .additional-search .label, header .search-popup .search-holder .additional-search .label, .form-block .form-title span, .form-block .form-title strong, .form-block .form-title b, .form-block label span, .form-block label strong, .form-block label b{
     color: #fff !important;
+  }
+  .select2-container--default .select2-results__group{
+    background: #0a233c;
   }
 }

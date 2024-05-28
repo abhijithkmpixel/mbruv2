@@ -409,8 +409,10 @@ header {
     list-style: none;
     padding-left: 0; }
   .fixed__main__navigation__menu > ul {
-    height: 74dvh;
-    overflow-y: auto; }
+    height: 74dvh; }
+    @media (max-width: 720px) {
+      .fixed__main__navigation__menu > ul {
+        overflow-y: auto; } }
     .fixed__main__navigation__menu > ul li {
       cursor: pointer; }
       .fixed__main__navigation__menu > ul li:not(:last-child) {
@@ -533,7 +535,7 @@ header {
           position: absolute;
           top: 12px;
           right: 6px;
-          transform: rotate(-45deg);
+          transform: rotate(45deg);
           transition: 0.1s all ease-in-out;
           border-right: 2px solid #002f70;
           border-bottom: 2px solid #002f70; }
@@ -3949,6 +3951,19 @@ input:focus-visible {
 .tab-wrap.mCustomScrollbar .vertical-tabs .tab_item.active i {
   color: #fff; }
 
+.gm-control-active > img {
+  top: 9px !important; }
+
+div.wpforms-container-full .wpforms-field-date-time .wpforms-field-date-dropdown-wrap.wpforms-field-medium {
+  width: 100%; }
+
+div.wpforms-container-full .wpforms-field-date-time .wpforms-field-date-time-date-day, div.wpforms-container-full .wpforms-field-date-time .wpforms-field-date-time-date-month, div.wpforms-container-full .wpforms-field-date-time .wpforms-field-date-time-date-year {
+  width: max-content; }
+  @media (max-width: 720px) {
+    div.wpforms-container-full .wpforms-field-date-time .wpforms-field-date-time-date-day, div.wpforms-container-full .wpforms-field-date-time .wpforms-field-date-time-date-month, div.wpforms-container-full .wpforms-field-date-time .wpforms-field-date-time-date-year {
+      width: 100%;
+      margin-bottom: 10px; } }
+
 /** @format */
 .dark .sidebar-inner-wrap.uk-sticky .indicator-wrap .indicator-item,
 .dark .sidebar-inner-wrap.uk-sticky .indicator-wrap,
@@ -4634,5 +4649,8 @@ b {
 .dark .latest__news .container::after {
   display: none !important; }
 
-.dark .facility-detail .discription h2 strong, .dark .faq-wrap .faq-item .faq-body p b, .dark .faq-wrap .faq-item .faq-body p strong {
+.dark .facility-detail .discription h2 strong, .dark .faq-wrap .faq-item .faq-body p b, .dark .faq-wrap .faq-item .faq-body p strong, .dark .welcome h4, .dark .welcome h3, .dark .welcome h2, .dark .welcome h1, .dark .welcome h5, .dark .welcome h6, .dark .welcome h4 strong, .dark .welcome li, .dark header .menu-popup .search-holder .additional-search .label, .dark header .search-popup .search-holder .additional-search .label, .dark .form-block .form-title span, .dark .form-block .form-title strong, .dark .form-block .form-title b, .dark .form-block label span, .dark .form-block label strong, .dark .form-block label b {
   color: #fff !important; }
+
+.dark .select2-container--default .select2-results__group {
+  background: #0a233c; }
