@@ -152,6 +152,40 @@
     background-color: rgba($color: #fff, $alpha: 0.04);
   }
 }
+.our__programs__search__section__row{
+  &>div{
+    @media (max-width:990px) {
+      margin-bottom: 20px;
+    }
+  }
+  .our__programs__search__section__row__card{
+    padding: 24px;
+    border-radius: 20px;
+    transition: .2s all ease-in-out;
+    border: 1px solid #E5EBF0;
+    width: 100%;
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h5{
+      font-size: 26px;
+      font-family: "DubaiFont Bold", Helvetica, Arial, sans-serif;
+      line-height: 1.1;
+      color: #002F70;
+      margin: 0;
+    }
+    svg{
+      width: 28px;
+      height: auto;
+    }
+    &:hover{
+      @media (min-width:1200px) {
+       box-shadow: 0px 8px 12px -4px #00336614;
+      }
+    }
+  }
+}
 body:not(.dark) {
   .our__programs__search__section
     .our__programs__search__section__form__wrap

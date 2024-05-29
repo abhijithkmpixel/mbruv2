@@ -330,6 +330,9 @@ header {
   border: 0;
   outline: 0;
   transition: 0.2s all ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   svg {
     width: 20px;
     height: auto;
@@ -350,6 +353,12 @@ header {
     i,svg{
 margin-left: 10px;
     }
+  }
+}
+.cta__icon__right{
+  svg{
+    margin-left: 17px;
+    margin-right: 0;
   }
 }
 .cta__btn__primary {
@@ -379,6 +388,14 @@ margin-left: 10px;
         path {
           fill: #fff;
         }
+      }
+    }
+  }
+  &.cta__btn__secondary--100{
+  background-color: #32AFFC;
+    &:hover{
+      @media (min-width:1200px) {
+        background-color: #002f70;
       }
     }
   }
