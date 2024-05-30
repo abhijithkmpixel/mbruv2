@@ -333,6 +333,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: max-content;
   svg {
     width: 20px;
     height: auto;
@@ -375,7 +376,7 @@ margin-left: 10px;
     }
   }
     &:focus{
-    color: #fff ;
+    color: #002f70 ;
   }
 }
 .cta__btn__secondary {

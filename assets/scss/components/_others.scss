@@ -1897,3 +1897,8 @@ div.wpforms-container-full .wpforms-field-date-time .wpforms-field-date-time-dat
 .banner .wording_wrap .cta__btn{
   width: max-content;
 }
+.gallery-carosel{
+  @media (max-width:990px) {
+    padding-bottom: 30px;
+  }
+}

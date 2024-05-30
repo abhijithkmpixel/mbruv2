@@ -416,7 +416,7 @@
     .sidebar-wrap .indicator-wrap .indicator-item.active, .sidebar-wrap .indicator-wrap .tabs ul li.active{
       background-color: transparent;
       background: transparent;
-      color: #32affc;
+      color: #32affc !important;
       &::after{
         border-color: #32affc;
       }
@@ -729,7 +729,7 @@ strong,span{
   .select2-container--default .select2-results__group{
     background: #0a233c;
   }
-  .our__programs__search__section__row .our__programs__search__section__row__card h5{
+  .our__programs__search__section__row .our__programs__search__section__row__card h5, section.event-filter .filtering-header .current-day{
     color: #fff;
   }
   .our__programs__search__section__row .our__programs__search__section__row__card svg path{
@@ -746,5 +746,33 @@ strong,span{
     }
       }
     }
+  }
+  .select2-container--default .select2-results, .select2-results__options{
+    background-color: #0a233c;
+  }
+  .result-listing-wrap .result-item .label-wrap .year span{
+    color: #fff;
+    border-color: #fff;
+  }
+  header .search-popup{
+    background-color: #002f70;
+  }
+  .custom-radio input:checked+label:after{
+    color: #002f70 !important;
+  }
+  .cta__btn__secondary{
+    i{
+      color: red;
+      &:hover{
+        @media (min-width:1200px) {
+          i{
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .flatpickr-day.flatpickr-disabled, .flatpickr-day.flatpickr-disabled:hover,span.flatpickr-weekday{
+    color: #fff;
   }
 }
