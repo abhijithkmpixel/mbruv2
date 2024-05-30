@@ -324,6 +324,8 @@ header {
       color: #fff; }
       .cta__btn__primary:hover svg path {
         fill: #fff; } }
+  .cta__btn__primary:focus {
+    color: #fff; }
 
 .cta__btn__secondary {
   background-color: #002f70;
@@ -336,6 +338,8 @@ header {
         color: #fff; }
         .cta__btn__secondary:hover svg path {
           fill: #fff; } }
+  .cta__btn__secondary:focus {
+    color: #fff; }
   .cta__btn__secondary.cta__btn__secondary--100 {
     background-color: #32AFFC; }
     @media (min-width: 1200px) {
@@ -352,6 +356,8 @@ header {
       color: #fff; }
       .cta__btn__secondary--border:hover svg path {
         fill: #fff; } }
+  .cta__btn__secondary--border:focus {
+    color: #002f70; }
 
 .cta__btn__tertiary {
   background-color: transparent;
@@ -364,6 +370,8 @@ header {
       border-color: #002f70; }
       .cta__btn__tertiary:hover svg path {
         fill: #002f70; } }
+  .cta__btn__tertiary:focus {
+    color: #fff; }
 
 .cta__with__icon {
   display: flex;

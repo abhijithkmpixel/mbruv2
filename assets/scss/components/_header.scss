@@ -374,6 +374,9 @@ margin-left: 10px;
       }
     }
   }
+    &:focus{
+    color: #fff ;
+  }
 }
 .cta__btn__secondary {
   background-color: #002f70;
@@ -390,6 +393,9 @@ margin-left: 10px;
         }
       }
     }
+  }
+   &:focus{
+    color: #fff ;
   }
   &.cta__btn__secondary--100{
   background-color: #32AFFC;
@@ -415,6 +421,9 @@ margin-left: 10px;
       }
     }
   }
+   &:focus{
+    color: #002f70 ;
+  }
 }
 .cta__btn__tertiary {
   background-color: transparent;
@@ -432,6 +441,9 @@ margin-left: 10px;
         }
       }
     }
+  }
+    &:focus{
+    color: #fff ;
   }
 }
 .cta__with__icon {
