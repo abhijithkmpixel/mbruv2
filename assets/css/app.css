@@ -4020,6 +4020,10 @@ div.wpforms-container-full .wpforms-field-date-time .wpforms-field-date-time-dat
   .gallery-carosel {
     padding-bottom: 30px; } }
 
+@media (max-width: 990px) {
+  .custom-select-dropdown {
+    margin-bottom: 30px; } }
+
 /** @format */
 .dark .sidebar-inner-wrap.uk-sticky .indicator-wrap .indicator-item,
 .dark .sidebar-inner-wrap.uk-sticky .indicator-wrap,
@@ -4506,7 +4510,7 @@ b {
 
 .dark #mediaNewsData .col-md-3 .block.wall.small > a, .dark #mediaNewsData .col-md-6 .block.wall.small {
   border-color: rgba(255, 255, 255, 0.1);
-  background-color: transparent; }
+  background-color: rgba(255, 255, 255, 0.04); }
 
 .dark section.media-news #mediaNewsData .block-title p, .dark .title.with-desc p, .dark section.apply .tab-panel-content .content-wrap ul li {
   color: #fff !important; }
@@ -4743,5 +4747,5 @@ b {
     .dark .cta__btn__secondary i:hover i {
       color: #fff; } }
 
-.dark .flatpickr-day.flatpickr-disabled, .dark .flatpickr-day.flatpickr-disabled:hover, .dark span.flatpickr-weekday {
+.dark .flatpickr-day.flatpickr-disabled, .dark .flatpickr-day.flatpickr-disabled:hover, .dark span.flatpickr-weekday, .dark .block.wall.large .block-title .tagline, .dark .block.wall.large .block-title h4, .dark .block.wall.large .block-title p, .dark .block.wall.small a:hover .block-title .tagline, .dark .block.wall.small a:hover .block-title h4, .dark .block.wall.small a:hover .block-title p, .dark .block.well a:hover .block-title h4, .dark .block.well a:hover .block-title p {
   color: #fff; }

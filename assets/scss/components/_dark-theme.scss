@@ -498,7 +498,7 @@
    }
    #mediaNewsData .col-md-3 .block.wall.small > a, #mediaNewsData .col-md-6 .block.wall.small{
       border-color: rgba($color: #fff, $alpha: 0.1);
-      background-color: transparent;
+      background-color: rgba(255, 255, 255, 0.04);
    }
     section.media-news #mediaNewsData .block-title p,.title.with-desc p, section.apply .tab-panel-content .content-wrap ul li{
     color: #fff !important;
@@ -772,7 +772,7 @@ strong,span{
       }
     }
   }
-  .flatpickr-day.flatpickr-disabled, .flatpickr-day.flatpickr-disabled:hover,span.flatpickr-weekday{
+  .flatpickr-day.flatpickr-disabled, .flatpickr-day.flatpickr-disabled:hover,span.flatpickr-weekday,.block.wall.large .block-title .tagline, .block.wall.large .block-title h4, .block.wall.large .block-title p, .block.wall.small a:hover .block-title .tagline, .block.wall.small a:hover .block-title h4, .block.wall.small a:hover .block-title p, .block.well a:hover .block-title h4, .block.well a:hover .block-title p{
     color: #fff;
   }
 }

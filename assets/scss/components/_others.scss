@@ -1902,3 +1902,8 @@ div.wpforms-container-full .wpforms-field-date-time .wpforms-field-date-time-dat
     padding-bottom: 30px;
   }
 }
+.custom-select-dropdown{
+    @media (max-width:990px) {
+    margin-bottom: 30px;
+  }
+}
