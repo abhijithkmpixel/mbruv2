@@ -63,7 +63,7 @@ footer {
         column-count: unset;
         flex-direction: column;
         justify-content: center;
-        margin-bottom: 16px;
+        margin-bottom: 8px;
       }
       li {
         padding: 0 13px;
@@ -71,7 +71,7 @@ footer {
           padding: 10px 14px;
         }
         @media (max-width: 720px) {
-          padding: 10px 4px;
+          padding: 4px 4px;
         }
         a {
           font-size: 13px;

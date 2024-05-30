@@ -735,4 +735,16 @@ strong,span{
   .our__programs__search__section__row .our__programs__search__section__row__card svg path{
     fill: #fff;
   }
+  .cta__btn.cta__btn__secondary.cta__btn__secondary--100{
+    svg path{
+      fill: #002f70;
+    }
+    &:hover{
+      @media (min-width:1200px) {
+          svg path{
+      fill: #fff;
+    }
+      }
+    }
+  }
 }
