@@ -558,6 +558,11 @@ section.why-choose .block .why__choose__us__card__new , .sidebar-wrap .widget .b
   overflow: hidden;
   display: block;
   background-color: #fff;
+  p,.expanding-content{
+    &:empty{
+      display: none !important;
+    }
+  }
   .morecontent {
     display: none !important;
   }
@@ -566,7 +571,7 @@ section.why-choose .block .why__choose__us__card__new , .sidebar-wrap .widget .b
     margin-left: 0;
     padding: 16px 24px 16px;
     box-shadow: none;
-    min-height: 150px;
+    // min-height: 150px;
     h4 {
       font-size: 24px;
       line-height: 1.2;
@@ -951,7 +956,7 @@ section.sidebar-template .content-wrap .page-content .dir-letters a.active {
 }
 .result-list-ul li {
   border-radius: 20px;
-  border: 1px solid #e5ebf0 !important;
+  // border: 1px solid #e5ebf0 !important;
   h3 {
     color: #002f70;
   }
@@ -959,6 +964,11 @@ section.sidebar-template .content-wrap .page-content .dir-letters a.active {
     color: #1a4775 !important;
     b {
       color: #002f70 !important;
+    }
+  }
+  &:hover{
+    @media (min-width:1200px) {
+      box-shadow: 0px 12px 24px -8px rgba(0, 51, 102, 0.12);
     }
   }
 }
@@ -1323,7 +1333,7 @@ section.faq-detail .faq-wrap .faq-item .faq-body{
         &>a{
           height: 100%;
           .block-title{
-            height: inherit;
+            // height: inherit;
           }
         }
       }
@@ -1579,7 +1589,7 @@ color: #002f70;
 color: #1a4775;
    }
   body.page-template-template-general .why__choose__us__card__new .block-title{
-    min-height: 190px;
+    // min-height: 190px;
   }
   section.facility-list .btn.btn-with-icon-left{
     padding-left: 50px;
@@ -1906,4 +1916,7 @@ div.wpforms-container-full .wpforms-field-date-time .wpforms-field-date-time-dat
     @media (max-width:990px) {
     margin-bottom: 30px;
   }
+}
+section.sidebar-template .content-wrap .faq-wrap ul li{
+  color: #1a4775;
 }

@@ -79,6 +79,8 @@ header {
             font-weight: 400;
             color: #002f70;
             text-decoration: none;
+              font-family: "DubaiFont Regular", Helvetica, Arial, sans-serif;
+
             &:hover {
               @media (min-width: 1200px) {
                 color: #32affc;
@@ -107,11 +109,11 @@ header {
               }
               a{
                   font-size: 14px;
-            line-height: 1.5;
-            font-weight: 400;
-            color: #002f70;
-            text-decoration: none;
-            font-family: "DubaiFont Medium", Helvetica, Arial, sans-serif;
+                  line-height: 1.5;
+                  font-weight: 500;
+                  color: #002f70;
+                  text-decoration: none;
+                  font-family: "DubaiFont Medium", Helvetica, Arial, sans-serif;
               &:hover {
               @media (min-width: 1200px) {
                 color: #32affc;
@@ -535,6 +537,9 @@ margin-left: 10px;
         display: none;
         border-top: 2px solid #e5ebf0;
         padding-left: 24px;
+        &>li{
+          // border: 0 !important;
+        }
         .sub__menu__has__children {
           position: relative;
           &::after {
@@ -545,7 +550,7 @@ margin-left: 10px;
             top: 15px;
             right: 6px;
             transition: 0.1s all ease-in-out;
-            transform: rotate(45deg);
+            transform: rotate(-45deg);
             border-right: 2px solid #002f70;
             border-bottom: 2px solid #002f70;
           }
@@ -562,6 +567,7 @@ margin-left: 10px;
             transition: 0.2s all ease-in-out;
             opacity: 0;
             visibility: hidden;
+
             @media (max-width: 990px) {
               max-width: 370px;
             }
@@ -582,6 +588,7 @@ margin-left: 10px;
               margin-bottom: 10px;
               letter-spacing: 0.2px;
               text-transform: uppercase;
+              font-family: "DubaiFont Bold", Helvetica, Arial, sans-serif;
               @media (max-width: 720px) {
                 color: #32affc;
               }
@@ -629,7 +636,7 @@ margin-left: 10px;
             }
           }
           &.sub__menu__has__children__active {
-            border-color: #32affc;
+            // border-color: #32affc;
             & > a {
               color: #32affc;
             }
@@ -641,6 +648,22 @@ margin-left: 10px;
               opacity: 1;
               visibility: visible;
             }
+          }
+          &:hover{
+            // @media (min-width:1200px) {
+            //   .sub__menu__has__children__menu{
+            //     opacity: 1;
+            //     visibility: visible;
+             
+            //   }
+            //      &>a{
+            //         color: #32AFFC;
+                  
+            //     }
+            //     &::after{
+            //       border-color: #32AFFC;
+            //     }
+            // }
           }
         }
       }

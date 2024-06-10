@@ -159,7 +159,7 @@ $(document).ready(function () {
         }
     });
 
-    
+
 
     $('#header__menu__toggle__hamburger').click(function () {
         if ($('body').hasClass('main__navigation__open')) {
@@ -181,14 +181,51 @@ $(document).ready(function () {
 
     })
 
-    $('.sub__menu__has__children').click(function (e) {
-        e.stopPropagation();
-        var isActive = $(this).hasClass('sub__menu__has__children__active');
-        $(".sub__menu__has__children").removeClass('sub__menu__has__children__active');
-        if (!isActive) {
-            $(this).addClass('sub__menu__has__children__active');
-        }
-    });
+    if (window.innerWidth < 1200) {
+        $('.sub__menu__has__children').click(function (e) {
+            e.stopPropagation();
+            var isActive = $(this).hasClass('sub__menu__has__children__active');
+            $(".sub__menu__has__children").removeClass('sub__menu__has__children__active');
+            if (!isActive) {
+                $(this).addClass('sub__menu__has__children__active');
+            }
+        });
+    }
+
+
+    // trial 
+    let timeout;
+    if (window.innerWidth > 1200) {
+
+        $('.sub__menu>li').on('mouseenter', function (e) {
+            e.stopPropagation();
+            clearTimeout(timeout); // Clear any previous timeout
+
+            var isActive = $(this).hasClass('sub__menu__has__children__active');
+            if (!isActive) {
+                $(".sub__menu>li").removeClass('sub__menu__has__children__active');
+                $(this).addClass('sub__menu__has__children__active');
+            }
+        });
+
+        $('.sub__menu>li').on('mouseleave', function (e) {
+            e.stopPropagation();
+            var $this = $(this);
+
+            timeout = setTimeout(() => {
+                $this.removeClass('sub__menu__has__children__active');
+            }, 200); // 1 second delay
+        });
+
+        $('.sub__menu>li').on('mousemove', function (e) {
+            e.stopPropagation();
+            clearTimeout(timeout); // Clear timeout if mouse is moving within the element
+        });
+    }
+
+
+    // trial 
+
     $('.sub__menu').click(function (e) {
         e.stopPropagation();
     })
