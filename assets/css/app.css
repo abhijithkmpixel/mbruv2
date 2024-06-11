@@ -4760,3 +4760,6 @@ b {
 
 .dark .flatpickr-day.flatpickr-disabled, .dark .flatpickr-day.flatpickr-disabled:hover, .dark span.flatpickr-weekday, .dark .block.wall.large .block-title .tagline, .dark .block.wall.large .block-title h4, .dark .block.wall.large .block-title p, .dark .block.wall.small a:hover .block-title .tagline, .dark .block.wall.small a:hover .block-title h4, .dark .block.wall.small a:hover .block-title p, .dark .block.well a:hover .block-title h4, .dark .block.well a:hover .block-title p {
   color: #fff; }
+
+.dark .fixed__main__navigation__menu > ul li .sub__menu .sub__menu__has__children .sub__menu__has__children__menu a:hover {
+  color: #32affc; }
